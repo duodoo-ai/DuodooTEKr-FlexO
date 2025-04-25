@@ -46,6 +46,69 @@
                     <field name="complete_path" readonly="1"/>
                     <field name="parent_id"/>
                 </field>
+                <xpath expr="//page[@name='maintenance']" position="after">
+                    <page string="技术指标" groups="odoo_maintenance.group_equipment_spec_admin">
+                        <field name="spec_ids" mode="list,form">
+                            <list>
+                                <field name="parameter_type"/>
+                                <field name="drive_type"/>
+                                <field name="rated_power"/>
+                                <field name="current_value"/>
+                                <field name="unit"/>
+                            </list>
+                            <form>
+                                <group>
+                                    <group string="基础信息">
+                                        <field name="parameter_type"/>
+                                        <field name="current_value"/>
+                                        <field name="unit"/>
+                                        <field name="effective_date"/>
+                                        <field name="revision"/>
+                                    </group>
+                                    <group string="驱动参数" invisible="parameter_type != 'drive'">
+                                        <field name="drive_type"/>
+                                        <field name="motor_power"/>
+                                        <field name="rated_speed"/>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group string="支撑参数" invisible="parameter_type != 'mechanical'">
+                                        <field name="bearing_type"/>
+                                        <field name="bearing_life"/>
+                                        <field name="lubrication_cycle"/>
+                                    </group>
+                                    <group string="电气参数" invisible="parameter_type != 'power'">
+                                        <field name="rated_power"/>
+                                        <field name="rated_voltage"/>
+                                        <field name="power_factor"/>
+                                    </group>
+                                </group>
+                                <field name="alert_rule_ids">
+                                    <list>
+                                        <field name="name"/>
+                                        <field name="condition_type"/>
+                                        <field name="min_value"/>
+                                        <field name="max_value"/>
+                                        <field name="severity_level"/>
+                                    </list>
+                                    <form>
+                                        <group>
+                                            <field name="name"/>
+                                            <field name="condition_type"/>
+                                            <field name="min_value" required="condition_type in ['min','range']"/>
+                                            <field name="max_value" required="condition_type in ['max','range']"/>
+                                        </group>
+                                        <group>
+                                            <field name="action_type"/>
+                                            <field name="severity_level"/>
+                                            <field name="notify_user_ids" widget="many2many_tags"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </form>
+                        </field>
+                    </page>
+                </xpath>
                 <!-- 添加巡检记录 -->
                 <xpath expr="//notebook" position="inside">
                     <page string="巡检记录">
