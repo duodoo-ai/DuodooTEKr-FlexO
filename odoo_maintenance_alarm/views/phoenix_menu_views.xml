@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem
+            id="action_socket_server_start_meu"
+            name="指令操作台"
+            action='action_socket_server_start'
+            parent="odoo_phoenix_maintenance.menu_equipment_form_meu"
+            groups="maintenance.group_equipment_manager,base.group_user"
+            sequence="210"/>
+        <menuitem
+            id="phoenix_audible_address_meu"
+            name="声光设备地址"
+            action='action_phoenix_audible_address'
+            parent="odoo_phoenix_maintenance.menu_maintenance_configuration_meu"
+            groups="maintenance.group_equipment_manager"
+            sequence="1036"/>
+</odoo>

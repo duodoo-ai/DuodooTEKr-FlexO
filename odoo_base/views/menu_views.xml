@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="0">
+        <menuitem id='root_menu'
+                name='基础档案'
+                web_icon="odoo_base,static/description/icon.png"
+                groups="base.user_admin"
+                sequence="490"/>
+
+        <menuitem
+                name="基本配置"
+                id="sub_base_menu"
+                sequence="10"
+                groups="base.user_admin"
+                parent="root_menu"/>
+        <menuitem
+                name="系统日志"
+                action="action_server_log"
+                id="server_log_menu"
+                sequence="1"
+                groups="base.user_admin"
+                parent="root_menu"/>
+        <menuitem id='clean_data_menu'
+              name='数据清理'
+              action='core_clean_business_data_action'
+              parent='root_menu'
+                  groups="base.user_admin"
+              sequence='50'/>
+        <menuitem
+                name="主数据"
+                id="sub_mdata_menu"
+                sequence="80"
+                groups="base.user_admin"
+                parent="root_menu"/>
+        <menuitem
+                name="接口配置"
+                id="sub_interface_menu"
+                sequence="100"
+                groups="base.user_admin"
+                parent="root_menu"/>
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+.status-btn {
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+.status-btn.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#cameraInput {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.custom-file-upload {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}

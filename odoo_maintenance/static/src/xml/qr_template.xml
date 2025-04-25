@@ -1,0 +1,17 @@
+<templates>
+    <t t-name="QRScannerTemplate">
+        <div class="text-center p-4">
+            <div class="scanner-header bg-primary p-3">
+                <h3 class="text-white mb-0">设备扫码巡检</h3>
+            </div>
+            <div class="scanner-container p-3" style="position: relative">
+                <div class="scanner-frame"/>
+                <div class="text-center mt-2">
+                    <button class="btn btn-lg btn-primary start-scan">
+                        <i class="fa fa-camera"/> 启动摄像头
+                    </button>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

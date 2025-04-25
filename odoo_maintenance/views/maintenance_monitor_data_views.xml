@@ -1,0 +1,71 @@
+<odoo>
+    <!-- 设备表单视图扩展 -->
+    <record id="view_equipment_form_monitoring" model="ir.ui.view">
+        <field name="name">maintenance.equipment.form.monitoring</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='maintenance']" position="after">
+                <page string="位置指标" groups="odoo_maintenance.group_equipment_monitor_admin">
+                    <field name="monitoring_data_ids">
+                        <list>
+                            <field name="timestamp"/>
+                            <field name="signal_strength" widget="progressbar"/>
+                            <field name="flow_rate" optional="show"/>
+                            <field name="liquid_level" optional="show"/>
+                            <field name="battery_level" widget="progressbar"/>
+                            <field name="temperature" optional="show"/>
+                            <field name="flow_rate" optional="show"/>
+                        </list>
+                        <form>
+                            <field name="equipment_id" readonly="1"/>
+                            <group>
+                                <group string="系统状态">
+                                    <field name="timestamp"/>
+                                    <field name="firmware_version"/>
+                                    <field name="memory_free"/>
+                                    <field name="signal_strength"/>
+                                    <field name="battery_level"/>
+                                </group>
+                                <group string="位置信息">
+                                    <field name="gps_longitude"/>
+                                    <field name="gps_latitude"/>
+                                    <field name="gsm_longitude"/>
+                                    <field name="gsm_latitude"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="环境数据">
+                                    <field name="temperature"/>
+                                    <field name="humidity"/>
+                                    <field name="pressure"/>
+                                </group>
+                                <group string="流体监测">
+                                    <field name="flow_rate"/>
+                                    <field name="liquid_level"/>
+                                </group>
+                            </group>
+                            <group string="气象数据">
+                                <group>
+                                    <field name="wind_speed"/>
+                                </group>
+                                <group>
+                                    <field name="wind_direction"/>
+                                </group>
+                            </group>
+                            <group string="热力图">
+                                <group>
+                                    <field name="heatmap_scale"/>
+                                    <button name="action_generate_heatmap" string="生成热力图" type="object" class="btn-primary"/>
+                                </group>
+                                <group>
+                                    <field name="heatmap_data" widget="image"/>
+                                </group>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

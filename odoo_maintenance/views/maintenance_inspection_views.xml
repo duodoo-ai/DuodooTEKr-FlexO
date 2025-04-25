@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_equipment_inspection_tree" model="ir.ui.view">
+            <field name="name">equipment.inspection.tree</field>
+            <field name="model">equipment.inspection</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="inspection_date"/>
+                    <field name="equipment_id"/>
+                    <field name="operator_id"/>
+                    <field name="status" decoration-danger="status == 'danger'"
+                           decoration-warning="status == 'warning'"/>
+                    <field name="notes"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_equipment_inspection_form" model="ir.ui.view">
+            <field name="name">equipment.inspection.form</field>
+            <field name="model">equipment.inspection</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+						<field name="status" widget="statusbar" clickable="true"/>
+					</header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="equipment_id"/>
+                                <field name="inspection_date"/>
+                                <field name="operator_id"/>
+                            </group>
+                        </group>
+                        <div class="oe_title">
+                            <field name="notes" placeholder="详细记录发现的问题..."/>
+                        </div>
+                        <div class="row">
+                            <field name="image" widget="image" class="col-6"/>
+                            <field name="location" class="col-6"/>
+                        </div>
+                    </sheet>
+                    <oe_chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_equipment_inspection" model="ir.actions.act_window">
+            <field name="name">巡检记录</field>
+            <field name="res_model">equipment.inspection</field>
+            <field name="view_mode">list,form</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'list', 'view_id': ref('view_equipment_inspection_tree')}),
+                          (0, 0, {'view_mode': 'form', 'view_id': ref('view_equipment_inspection_form')}),
+                          ]"/>
+             <field name="help" type="html">
+                <p>
+                   巡检记录
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

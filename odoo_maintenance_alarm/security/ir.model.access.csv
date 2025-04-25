@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_phoenix_audible_address,access.phoenix_audible_address,model_phoenix_audible_address,,1,1,1,1
+access_socket_server_start,access.socket_server_start,model_socket_server_start,,1,1,1,1
+
+access_alarm_autovacuum,access.alarm_autovacuum,model_alarm_autovacuum,,1,1,1,1
+
+
+

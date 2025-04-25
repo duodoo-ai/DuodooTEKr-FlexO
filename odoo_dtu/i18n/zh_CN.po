@@ -1,0 +1,162 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_dtu
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-26 00:57+0000\n"
+"PO-Revision-Date: 2025-03-26 00:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: odoo_dtu
+#: model:ir.ui.menu,name:odoo_dtu.dtu_data_collection_meu
+msgid "DTU"
+msgstr "DTU盒子"
+
+#. module: odoo_dtu
+#: model:ir.model,name:odoo_dtu.model_dtu_data
+#: model_terms:ir.ui.view,arch_db:odoo_dtu.dtu_data_collection_tree
+msgid "DTU Data Collection"
+msgstr "DTU数据采集"
+
+#. module: odoo_dtu
+#: model:ir.actions.act_window,name:odoo_dtu.action_dtu_data_collection
+msgid "DTU Data Collection Action"
+msgstr "DTU数据采集"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__id
+msgid "ID"
+msgstr "唯一码"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__imei
+msgid "IMEI"
+msgstr "国际移动设备身份码"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__write_uid
+msgid "Last Updated by"
+msgstr "最后修改人"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__write_date
+msgid "Last Updated on"
+msgstr "最后修改时间"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__name
+msgid "name"
+msgstr "泵站名称"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__time
+msgid "Upload time"
+msgstr "上传时间"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__model
+msgid "model"
+msgstr "型号"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__version
+msgid "version"
+msgstr "版本"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__running_time
+msgid "running_time"
+msgstr "运行时间"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__remaining_memory
+msgid "remaining_memory"
+msgstr "剩余内存"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__signal_strength
+msgid "signal_strength"
+msgstr "信号强度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__pressure
+msgid "pressure"
+msgstr "压力"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__traffic
+msgid "traffic"
+msgstr "流量"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__liquid_level
+msgid "liquid_level"
+msgstr "液位"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__temperature
+msgid "temperature"
+msgstr "温度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__atmospheric_pressure
+msgid "atmospheric_pressure"
+msgstr "气压"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__humidity
+msgid "humidity"
+msgstr "湿度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__gps_longitude
+msgid "gps_longitude"
+msgstr "GPS经度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__gps_latitude
+msgid "gps_latitude"
+msgstr "GPS纬度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__gsm_longitude
+msgid "gsm_longitude"
+msgstr "GSM经度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__gsm_latitude
+msgid "gsm_latitude"
+msgstr "GSM纬度"
+
+#. module: odoo_dtu
+#: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__Company
+msgid "Company"
+msgstr "公司"

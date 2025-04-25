@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_server_log_token,access.server_log_token,model_server_log,tone_server_logger,1,1,1,1
+access_business_data_table,access_business_data_table,model_business_data_table,,1,1,1,1
+access_clean_business_data,access_clean_business_data,model_clean_business_data,,1,1,1,1
+access_clean_business_log,access_clean_business_log,model_clean_business_log,,1,1,1,1

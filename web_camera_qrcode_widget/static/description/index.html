@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery and JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <style>
+        /*html,
+        body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
+            font-size: 0.9375rem;
+            font-weight: 400;
+            line-height: 1.45;
+            color: #343a40;
+            text-align: left;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1140px;
+            width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+        .container::before,
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+    <section class="oe_container">
+        <h1 class="oe_slogan">Web Camera QRCode Widget</h1>
+        <h1 class="oe_slogan">&#x7F51;&#x9875;&#x626B;&#x7801;&#x5C0F;&#x90E8;&#x4EF6;</h1>
+        <br />
+        <h2 class="display-5">
+            Features &#x529F;&#x80FD;:
+        </h2>
+        <hr />
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills"
+                     id="v-pills-features-en-tab"
+                     role="tablist"
+                     aria-orientation="vertical">
+                    <a class="nav-link active"
+                       id="v-pills-features-en-tab"
+                       data-toggle="pill"
+                       href="#v-pills-features-en"
+                       role="tab"
+                       aria-controls="v-pills-features-en"
+                       aria-selected="true">English</a>
+                    <a class="nav-link"
+                       id="v-pills-features-cn-tab"
+                       data-toggle="pill"
+                       href="#v-pills-features-cn"
+                       role="tab"
+                       aria-controls="v-pills-features-cn"
+                       aria-selected="false">&#x4E2D;&#x6587;</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content"
+                     id="v-pills-features-en-tabContent">
+                    <div class="tab-pane fade show active"
+                         id="v-pills-features-en"
+                         role="tabpanel"
+                         aria-labelledby="v-pills-features-en-tab">
+                        <ul class="list-group">
+                            <li class="list-group-item">Odoo field widget.</li>
+                            <li class="list-group-item">Use the camera to identify QR codes and barcodes.</li>
+                            <li class="list-group-item">Support multiple cameras. The selected camera will be cached in
+                                a cookie.</li>
+                            <li class="list-group-item">Support the identification of multiple QR codes or barcodes.
+                            </li>
+                            <li class="list-group-item">Support mobile browser.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="v-pills-features-cn"
+                         role="tabpanel"
+                         aria-labelledby="v-pills-features-cn-tab">
+                        <ul class="list-group">
+                            <li class="list-group-item">Odoo&#x5B57;&#x6BB5;&#x5C0F;&#x90E8;&#x4EF6;&#x3002;
+                            </li>
+                            <li class="list-group-item">
+                                &#x4F7F;&#x7528;&#x6444;&#x50CF;&#x5934;&#x8BC6;&#x522B;&#x4E8C;&#x7EF4;&#x7801;&#x548C;&#x6761;&#x5F62;&#x7801;&#x3002;
+                            </li>
+                            <li class="list-group-item">
+                                &#x652F;&#x6301;&#x591A;&#x4E2A;&#x6444;&#x50CF;&#x5934;&#x3002;&#x9009;&#x5B9A;&#x7684;&#x76F8;&#x673A;&#x5C06;&#x7F13;&#x5B58;&#x5728;cookie&#x4E2D;&#x3002;
+                            </li>
+                            <li class="list-group-item">
+                                &#x652F;&#x6301;&#x8BC6;&#x522B;&#x591A;&#x4E2A;&#x4E8C;&#x7EF4;&#x7801;&#x6216;&#x6761;&#x5F62;&#x7801;&#x3002;
+                            </li>
+                            <li class="list-group-item">&#x652F;&#x6301;&#x624B;&#x673A;&#x6D4F;&#x89C8;&#x5668;&#x3002;
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h4 class="display-5">
+            Related technology &#x76F8;&#x5173;&#x6280;&#x672F;:
+        </h4>
+        <hr />
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills"
+                     id="v-pills-technology-en-tab"
+                     role="tablist"
+                     aria-orientation="vertical">
+                    <a class="nav-link active"
+                       id="v-pills-technology-en-tab"
+                       data-toggle="pill"
+                       href="#v-pills-technology-en"
+                       role="tab"
+                       aria-controls="v-pills-technology-en"
+                       aria-selected="true">English</a>
+                    <a class="nav-link"
+                       id="v-pills-technology-cn-tab"
+                       data-toggle="pill"
+                       href="#v-pills-technology-cn"
+                       role="tab"
+                       aria-controls="v-pills-technology-cn"
+                       aria-selected="false">&#x4E2D;&#x6587;</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content"
+                     id="v-pills-technology-en-tabContent">
+                    <div class="tab-pane fade show active"
+                         id="v-pills-technology-en"
+                         role="tabpanel"
+                         aria-labelledby="v-pills-technology-en-tab">
+                        <ul class="list-group">
+                            <li class="list-group-item active"
+                                aria-current="true"><b>ZXing-js</b></li>
+                            <li class="list-group-item"><a href="https://zxing-js.github.io/library/"
+                                   target="_blank">See Live Preview in browser.</a></li>
+                            <li class="list-group-item">Used to identify a single barcode or QR code.</li>
+                            <li class="list-group-item">
+                                <b>Supported Formats:</b>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">1D product</th>
+                                            <th scope="col">1D industrial</th>
+                                            <th scope="col">2D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UPC-A</td>
+                                            <td>Code 39</td>
+                                            <td>QR Code</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UPC-E</td>
+                                            <td>Code 128</td>
+                                            <td>Data Matrix</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-8</td>
+                                            <td>ITF</td>
+                                            <td>Aztec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-13</td>
+                                            <td>RSS-14</td>
+                                            <td>PDF 417</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li class="list-group-item active"
+                                aria-current="true"><b>pyzbar</b></li>
+                            <li class="list-group-item"><a href="https://pypi.org/project/pyzbar/"
+                                   target="_blank">Project description</a></li>
+                            <li class="list-group-item">Used to identify multiple barcodes or QR codes.</li>
+                            <li class="list-group-item">
+                                <b>Supported Formats:</b>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">1D product</th>
+                                            <th scope="col">1D industrial</th>
+                                            <th scope="col">2D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UPC-A</td>
+                                            <td>Code 39</td>
+                                            <td>QR Code</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UPC-E</td>
+                                            <td>Code 128</td>
+                                            <td>PDF 417</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-8</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-13</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="v-pills-technology-cn"
+                         role="tabpanel"
+                         aria-labelledby="v-pills-technology-cn-tab">
+                        <ul class="list-group">
+                            <li class="list-group-item active"
+                                aria-current="true"><b>ZXing-js</b></li>
+                            <li class="list-group-item"><a href="https://zxing-js.github.io/library/"
+                                   target="_blank">&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x67E5;&#x770B;&#x5B9E;&#x65F6;&#x9884;&#x89C8;&#x3002;</a>
+                            </li>
+                            <li class="list-group-item">
+                                &#x7528;&#x4E8E;&#x8BC6;&#x522B;&#x5355;&#x4E2A;&#x6761;&#x5F62;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;&#x3002;
+                            </li>
+                            <li class="list-group-item">
+                                <b>&#x652F;&#x6301;&#x7684;&#x683C;&#x5F0F;&#xFF1A;</b>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">1D product</th>
+                                            <th scope="col">1D industrial</th>
+                                            <th scope="col">2D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UPC-A</td>
+                                            <td>Code 39</td>
+                                            <td>QR Code</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UPC-E</td>
+                                            <td>Code 128</td>
+                                            <td>Data Matrix</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-8</td>
+                                            <td>ITF</td>
+                                            <td>Aztec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-13</td>
+                                            <td>RSS-14</td>
+                                            <td>PDF 417</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li class="list-group-item active"
+                                aria-current="true"><b>pyzbar</b></li>
+                            <li class="list-group-item"><a href="https://pypi.org/project/pyzbar/"
+                                   target="_blank">&#x9879;&#x76EE;&#x4ECB;&#x7ECD;</a></li>
+                            <li class="list-group-item">
+                                &#x7528;&#x4E8E;&#x8BC6;&#x522B;&#x591A;&#x4E2A;&#x6761;&#x5F62;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;&#x3002;
+                            </li>
+                            <li class="list-group-item">
+                                <b>&#x652F;&#x6301;&#x7684;&#x683C;&#x5F0F;&#xFF1A;</b>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">1D product</th>
+                                            <th scope="col">1D industrial</th>
+                                            <th scope="col">2D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UPC-A</td>
+                                            <td>Code 39</td>
+                                            <td>QR Code</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UPC-E</td>
+                                            <td>Code 128</td>
+                                            <td>PDF 417</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-8</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAN-13</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <h2 class="display-5">
+            How to install and use &#x5982;&#x4F55;&#x5B89;&#x88C5;&#x548C;&#x4F7F;&#x7528;:
+        </h2>
+        <hr>
+        <div class="lead">
+            <div class="row">
+                <div class="col-3">Document path &#x6587;&#x6863;&#x8DEF;&#x5F84;:</div>
+                <div class="col-9"><kbd>/doc/index.rst</kbd></div>
+            </div>
+        </div>
+
+        <br />
+        <h2 class="display-5">
+            Camera configuration &#25293;&#25668;&#37197;&#32622;:
+        </h2>
+        <hr />
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills"
+                     id="v-pills-camera-en-tab"
+                     role="tablist"
+                     aria-orientation="vertical">
+                    <a class="nav-link active"
+                       id="v-pills-camera-en-tab"
+                       data-toggle="pill"
+                       href="#v-pills-camera-en"
+                       role="tab"
+                       aria-controls="v-pills-camera-en"
+                       aria-selected="true">English</a>
+                    <a class="nav-link "
+                       id="v-pills-camera-cn-tab"
+                       data-toggle="pill"
+                       href="#v-pills-camera-cn"
+                       role="tab"
+                       aria-controls="v-pills-camera-cn"
+                       aria-selected="false">&#x4E2D;&#x6587;</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content"
+                     id="v-pills-camera-en-tabContent">
+                    <div class="tab-pane fade  show active"
+                         id="v-pills-camera-en"
+                         role="tabpanel"
+                         aria-labelledby="v-pills-camera-en-tab">
+                        <ul class="list-group">
+                            <li class="list-group-item active"
+                                aria-current="true"><b>Screenshot</b></li>
+                            <li class="list-group-item"><img src="config-en.png"
+                                     style="width: 770px;" /></li>
+                            <li class="list-group-item active"
+                                aria-current="true"><b>Description</b></li>
+                            <li class="list-group-item">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col"
+                                                style="width: 30%;">Parameter</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Auto start camera</td>
+                                            <td>The default is true.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Need confirmation</td>
+                                            <td>The default is true. Enabling this option requires confirmation of the
+                                                scan results. If this option is turned off, the dialog will be
+                                                automatically closed after successful scanning.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Flip Horizontal</td>
+                                            <td>The default is false. When on, the camera flips horizontally.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Flip Vertical</td>
+                                            <td>The default is false. When on, the camera flips vertically.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Identify multiple</td>
+                                            <td>The default is false. Enable this option to recognize multiple barcodes
+                                                and QR codes at the same time.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Select multiple</td>
+                                            <td>The default is false. You need to enable 'identify multiple' to display
+                                                this option. Enable this option to obtain multiple scan results.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mobile devices only use back camera</td>
+                                            <td>The default is true, which is valid only on mobile devices. If this
+                                                option is enabled, only the back camera can be used on the mobile
+                                                device. Turn this option off to select a camera on your mobile device.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="v-pills-camera-cn"
+                         role="tabpanel"
+                         aria-labelledby="v-pills-camera-cn-tab">
+                        <ul class="list-group">
+                            <li class="list-group-item active"
+                                aria-current="true"><b>&#25130;&#22270;</b></li>
+                            <li class="list-group-item"><img src="config-cn.png"
+                                     style="width: 770px;" /></li>
+                            <li class="list-group-item active"
+                                aria-current="true"><b>&#25551;&#36848;</b></li>
+                            <li class="list-group-item">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col"
+                                                style="width: 30%;">&#21442;&#25968;</th>
+                                            <th scope="col">&#25551;&#36848;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&#33258;&#21160;&#21551;&#21160;&#25668;&#20687;&#22836;</td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#84;&#114;&#117;&#101;&#12290;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#38656;&#35201;&#30830;&#35748;&#32467;&#26524;</td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#84;&#114;&#117;&#101;&#12290;&#21551;&#29992;&#27492;&#36873;&#39033;&#65292;&#38656;&#35201;&#30830;&#35748;&#25195;&#25551;&#32467;&#26524;&#12290;&#20851;&#38381;&#27492;&#36873;&#39033;&#65292;&#25195;&#25551;&#25104;&#21151;&#21518;&#65292;&#23558;&#20250;&#33258;&#21160;&#20851;&#38381;&#24377;&#26694;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#27700;&#24179;&#32763;&#36716;</td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#70;&#97;&#108;&#115;&#101;&#12290;&#21551;&#29992;&#27492;&#36873;&#39033;&#65292;&#21017;&#20250;&#27700;&#24179;&#32763;&#36716;&#25668;&#20687;&#22836;&#12290;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#22402;&#30452;&#32763;&#36716;</td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#70;&#97;&#108;&#115;&#101;&#12290;&#21551;&#29992;&#27492;&#36873;&#39033;&#65292;&#21017;&#20250;&#22402;&#30452;&#32763;&#36716;&#25668;&#20687;&#22836;&#12290;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#35782;&#21035;&#22810;&#20010;</td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#70;&#97;&#108;&#115;&#101;&#12290;&#21551;&#29992;&#27492;&#36873;&#39033;&#65292;&#21487;&#20197;&#21516;&#26102;&#35782;&#21035;&#22810;&#20010;&#26465;&#24418;&#30721;&#21644;&#20108;&#32500;&#30721;&#12290;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#36873;&#25321;&#22810;&#20010;</td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#70;&#97;&#108;&#115;&#101;&#65292;&#38656;&#35201;&#21551;&#29992;&#8220;&#35782;&#21035;&#22810;&#20010;&#8221;&#25165;&#33021;&#26174;&#31034;&#27492;&#36873;&#39033;&#12290;&#21551;&#29992;&#27492;&#36873;&#39033;&#65292;&#21487;&#20197;&#33719;&#21462;&#22810;&#20010;&#25195;&#25551;&#32467;&#26524;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#31227;&#21160;&#35774;&#22791;&#21482;&#20351;&#29992;&#21518;&#32622;&#25668;&#20687;&#22836;
+                                            </td>
+                                            <td>&#40664;&#35748;&#20026;&#32;&#84;&#114;&#117;&#101;&#65292;&#20165;&#22312;&#31227;&#21160;&#35774;&#22791;&#19978;&#26377;&#25928;&#12290;&#21551;&#29992;&#27492;&#36873;&#39033;&#65292;&#21017;&#20250;&#22312;&#31227;&#21160;&#35774;&#22791;&#19978;&#21482;&#33021;&#20351;&#29992;&#21518;&#32622;&#25668;&#20687;&#22836;&#12290;&#20851;&#38381;&#27492;&#36873;&#39033;&#65292;&#21487;&#20197;&#22312;&#31227;&#21160;&#35774;&#22791;&#19978;&#36873;&#25321;&#25668;&#20687;&#22836;&#12290;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </section>
+
+    <section class="oe_container">
+        <div class="oe_row">
+            <h2 class="oe_slogan">Screenshot of the latest version
+                &#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x622A;&#x56FE;</h2>
+            <hr>
+            <div id="carousel-Screenshot"
+                 class="carousel slide carousel-fade bg-dark"
+                 data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-Screenshot"
+                        data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#carousel-Screenshot"
+                        data-slide-to="1"></li>
+                    <li data-target="#carousel-Screenshot"
+                        data-slide-to="2"></li>
+                    <li data-target="#carousel-Screenshot"
+                        data-slide-to="3"></li>
+                    <li data-target="#carousel-Screenshot"
+                        data-slide-to="4"></li>
+                    <li data-target="#carousel-Screenshot"
+                        data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item d-flex justify-content-center active">
+                        <img src="screenshot1.jpeg"
+                             class="d-block w-auto"
+                             style="height: 900px;"
+                             alt="PC zxing">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>PC zxing</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <img src="screenshot2.jpeg"
+                             class="d-block w-auto"
+                             style="height: 900px;"
+                             alt="PC pyzbar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>PC pyzbar</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <img src="screenshot3.jpg"
+                             class="d-block w-auto"
+                             style="height: 900px;"
+                             alt="Android zxing">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Android zxing</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <img src="screenshot4.jpg"
+                             class="d-block w-auto"
+                             style="height: 900px;"
+                             alt="Android pyzbar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Android pyzbar</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <img src="screenshot5.jpg"
+                             class="d-block w-auto"
+                             style="height: 900px;"
+                             alt="IOS zxing">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>IOS zxing</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <img src="screenshot6.jpg"
+                             class="d-block w-auto"
+                             style="height: 900px;"
+                             alt="IOS pyzbar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>IOS pyzbar</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-target="#carousel-Screenshot"
+                        data-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                          aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next"
+                        type="button"
+                        data-target="#carousel-Screenshot"
+                        data-slide="next">
+                    <span class="carousel-control-next-icon"
+                          aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <br />
+
+    <section class="oe_container">
+        <div class="oe_row">
+            <h2 class="oe_slogan">Recording screen &#x5F55;&#x5C4F;</h2>
+            <hr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h4>PC browser uses zxing to identify a single barcode or QR code</h4>
+                    <h4>PC&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;ZXing&#x8BC6;&#x522B;&#x5355;&#x4E2A;&#x6761;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;
+                    </h4>
+                    <hr />
+                    <video muted
+                           controls>
+                        <source src="pc-zxing.mp4"
+                                type="video/mp4" />
+                    </video>
+                </li>
+                <li class="list-group-item">
+                    <h4>PC browser uses pyzbar to recognize multiple barcodes or QR codes</h4>
+                    <h4>PC&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;pyzbar&#x8BC6;&#x522B;&#x591A;&#x4E2A;&#x6761;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;
+                    </h4>
+                    <hr />
+                    <video muted
+                           controls>
+                        <source src="pc-pyzbar.mp4"
+                                type="video/mp4" />
+                    </video>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>The Android browser uses pyzbar to identify a single barcode or QR code
+                            </h4>
+                            <h4>Android&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;pyzbar&#x8BC6;&#x522B;&#x5355;&#x4E2A;&#x4E2A;&#x6761;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;
+                            </h4>
+                            <hr />
+                            <video muted
+                                   controls>
+                                <source src="android-zxing.mp4"
+                                        type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="col-6">
+                            <h4>The Android browser uses pyzbar to recognize multiple barcodes or QR codes</h4>
+                            <h4>Android&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;pyzbar&#x8BC6;&#x522B;&#x591A;&#x4E2A;&#x6761;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;
+                            </h4>
+                            <hr />
+                            <hr />
+                            <video muted
+                                   controls>
+                                <source src="android-pyzbar.mp4"
+                                        type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>The IOS browser uses pyzbar to identify a single barcode or QR code
+                            </h4>
+                            <h4>IOS&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;pyzbar&#x8BC6;&#x522B;&#x5355;&#x4E2A;&#x4E2A;&#x6761;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;
+                            </h4>
+                            <hr />
+                            <video muted
+                                   controls>
+                                <source src="ios-zxing.mp4"
+                                        type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="col-6">
+                            <h4>The IOS browser uses pyzbar to recognize multiple barcodes or QR codes</h4>
+                            <h4>IOS&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;pyzbar&#x8BC6;&#x522B;&#x591A;&#x4E2A;&#x6761;&#x7801;&#x6216;&#x4E8C;&#x7EF4;&#x7801;
+                            </h4>
+                            <hr />
+                            <video muted
+                                   controls>
+                                <source src="ios-pyzbar.mp4"
+                                        type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
