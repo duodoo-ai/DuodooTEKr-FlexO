@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="dtu_data_collection_tree">
+        <field name="name">DTU Data Collection Tree</field>
+        <field name="model">dtu.data</field>
+        <field name="arch" type="xml">
+            <list string="DTU Data Collection" delete="0" create="0" default_order="id desc">
+                <field name="name" optional="show"/>
+                <field name="imei" optional="show"/>
+                <field name="time" optional="show"/>
+                <field name="model" optional="hide"/>
+                <field name="version" optional="hide"/>
+                <field name="running_time" optional="hide"/>
+                <field name="remaining_memory" optional="hide"/>
+                <field name="signal_strength" optional="hide"/>
+                <field name="pressure" optional="show"/>
+                <field name="traffic" optional="show"/>
+                <field name="liquid_level" optional="show"/>
+                <field name="temperature" optional="show"/>
+                <field name="atmospheric_pressure" optional="show"/>
+                <field name="humidity" optional="show"/>
+                <field name="gps_longitude" optional="hide"/>
+                <field name="gps_latitude" optional="hide"/>
+                <field name="gsm_longitude" optional="show"/>
+                <field name="gsm_latitude" optional="show"/>
+                <field name="company_id" optional="hide"/>
+                <field name="id" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_dtu_data_collection" model="ir.actions.act_window">
+        <field name="name">DTU Data Collection Action</field>
+        <field name="res_model">dtu.data</field>
+        <field name="view_mode">list</field>
+        <field name="search_view_id" ref=""/>
+        <field name="view_ids"
+           eval="[(5, 0, 0),
+                  (0, 0, {'view_mode': 'list', 'view_id': ref('dtu_data_collection_tree')}),
+                  ]"/>
+    </record>
+</odoo>

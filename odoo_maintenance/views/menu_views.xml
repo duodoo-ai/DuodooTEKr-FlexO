@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--大模块，设备管理-->
+    <menuitem
+            id="menu_maintenance_root"
+            name="Equipment Management"
+            web_icon="odoo_maintenance,static/description/icon.png"
+            sequence="480"/>
+    <!--子模块，子菜单菜单-->
+    <menuitem
+        id="menu_equipment_form_meu"
+        name="Equipment"
+        parent="menu_maintenance_root"
+        action="maintenance.hr_equipment_action"
+        groups="maintenance.group_equipment_manager,base.group_user"
+        sequence="5"/>
+
+    <!--大模块，工单管理-->
+    <menuitem
+            id="menu_maintain_root"
+            name="Maintain work order"
+            web_icon="odoo_maintenance,static/description/icon_worder.png"
+            sequence="481"/>
+    <!--子模块，子菜单菜单-->
+        <menuitem
+            id="menu_m_request_form_sub"
+            name="Maintenance Requests"
+            parent="menu_maintain_root"
+            action="maintenance.hr_equipment_request_action"
+            groups="maintenance.group_equipment_manager,base.group_user"
+            sequence="10"/>
+        <menuitem
+            id="menu_m_request_calendar_sub"
+            name="Maintenance Calendar"
+            parent="menu_maintain_root"
+            action="maintenance.hr_equipment_request_action_cal"
+            groups="maintenance.group_equipment_manager,base.group_user"
+            sequence="12"/>
+        <menuitem
+        id="menu_maintenance_teams"
+        name="Maintenance Teams"
+        parent="menu_maintain_root"
+        action="maintenance.maintenance_team_action_settings"
+        groups="maintenance.group_equipment_manager"
+        sequence="13"/>
+        <menuitem
+        id="menu_maintenance_stage_configuration"
+        name="Maintenance Stages"
+        parent="menu_maintain_root"
+        action="maintenance.hr_equipment_stage_action"
+        groups="maintenance.group_equipment_manager"
+        sequence="15"/>
+
+
+    <!--子模块，设置子菜单-->
+    <menuitem
+        id="menu_m_reports_meu"
+        name="Reporting"
+        parent="menu_maintenance_root"
+        groups="maintenance.group_equipment_manager,base.group_user"
+        sequence="25"/>
+        <menuitem
+            id="menu_m_reports_oee_sub"
+            name="Overall Equipment Effectiveness (OEE)"
+            parent="menu_m_reports_meu"
+            groups="maintenance.group_equipment_manager,base.group_user"
+            sequence="1"/>
+        <menuitem
+            id="menu_m_reports_losses_sub"
+            name="Losses Analysis"
+            parent="menu_m_reports_meu"
+            groups="maintenance.group_equipment_manager,base.group_user"
+            sequence="2"/>
+
+    <!--子模块，设置子菜单-->
+    <menuitem
+        id="menu_maintenance_configuration_meu"
+        name="Configuration"
+        parent="menu_maintenance_root"
+        groups="maintenance.group_equipment_manager,base.group_user"
+        sequence="100"/>
+
+    <menuitem
+        id="menu_maintenance_cat"
+        name="Equipment Categories"
+        parent="menu_maintenance_configuration_meu"
+        action="maintenance.hr_equipment_category_action"
+        groups="maintenance.group_equipment_manager"
+        sequence="12"/>
+    <menuitem
+        id="maintenance_menu_config_activity_type_meu"
+        name="Activity Types"
+        action="maintenance.mail_activity_type_action_config_maintenance"
+        parent="menu_maintenance_configuration_meu"
+        sequence="1500"
+        groups="base.group_no_one"/>
+
+    <!--子模块，设置子菜单 技术指标-->
+    <menuitem
+        id="menu_view_equipment_spec_meu"
+        name="技术指标"
+        parent="menu_maintenance_root"
+        action="odoo_maintenance.action_view_equipment_spec"
+        groups="group_equipment_spec_admin"
+        sequence="50"/>
+
+    <!--子模块，设置子菜单 技术指标-->
+    <menuitem
+        id="menu_view_equipment_monitoring_meu"
+        name="流体监控"
+        parent="menu_maintenance_root"
+        action="odoo_maintenance.action_view_equipment_monitoring_2025"
+        groups="odoo_maintenance.group_equipment_monitor_admin"
+        sequence="60"/>
+
+<!--    <menuitem-->
+<!--            id="menu_equipment_inspection"-->
+<!--            name="设备巡检"-->
+<!--            parent="menu_maintenance_root"-->
+<!--            action="action_equipment_inspection"-->
+<!--            sequence="215"/>-->
+<!--    <menuitem-->
+<!--            id="menu_equipment_inspection_list"-->
+<!--            name="巡检记录"-->
+<!--            parent="menu_equipment_inspection"-->
+<!--            action="action_equipment_inspection"-->
+<!--            groups="base.group_user"/>-->
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+         <record id="inherit_hr_equipment_category_view_tree" model="ir.ui.view">
+            <field name="name">inherit.equipment.category.list</field>
+            <field name="model">maintenance.equipment.category</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_category_view_tree"/>
+            <field name="arch" type="xml">
+		    	<field name="technician_user_id" position="before">
+                    <field name="technical_type" optional="show"/>
+                </field>
+                <field name="technician_user_id" position="after">
+                    <field name="active" optional="show"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="inherit_hr_equipment_category_view_form" model="ir.ui.view">
+            <field name="name">inherit.equipment.category.form</field>
+            <field name="model">maintenance.equipment.category</field>
+             <field name="inherit_id" ref="maintenance.hr_equipment_category_view_form"/>
+            <field name="arch" type="xml">
+		    	<field name="technician_user_id" position="before">
+                    <field name="technical_type" class="oe_inline"/>
+                </field>
+                <field name="note" position="after">
+                    <field name="active"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

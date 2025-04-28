@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--    # 控制类-->
+    <record id="maintenance_equipment_category_01" model="maintenance.equipment.category">
+        <field name="name">PLC</field>
+        <field name="technical_type">control</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_02" model="maintenance.equipment.category">
+        <field name="name">变频器</field>
+        <field name="technical_type">control</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_03" model="maintenance.equipment.category">
+        <field name="name">驱动器</field>
+        <field name="technical_type">control</field>
+        <field name="active">True</field>
+    </record>
+ <!--    # 电机类-->
+    <record id="maintenance_equipment_category_04" model="maintenance.equipment.category">
+        <field name="name">伺服电机</field>
+        <field name="technical_type">motor</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_05" model="maintenance.equipment.category">
+        <field name="name">步进电机</field>
+        <field name="technical_type">motor</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_06" model="maintenance.equipment.category">
+        <field name="name">三相电机</field>
+        <field name="technical_type">motor</field>
+        <field name="active">True</field>
+    </record>
+<!--    # 传感类-->
+    <record id="maintenance_equipment_category_07" model="maintenance.equipment.category">
+        <field name="name">温度传感器</field>
+        <field name="technical_type">sensor</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_08" model="maintenance.equipment.category">
+        <field name="name">光电传感器</field>
+        <field name="technical_type">sensor</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_09" model="maintenance.equipment.category">
+        <field name="name">编码器</field>
+        <field name="technical_type">sensor</field>
+        <field name="active">True</field>
+    </record>
+<!--    # 继电类-->
+    <record id="maintenance_equipment_category_11" model="maintenance.equipment.category">
+        <field name="name">时间继电器</field>
+        <field name="technical_type">relay</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_12" model="maintenance.equipment.category">
+        <field name="name">中间继电器</field>
+        <field name="technical_type">relay</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_13" model="maintenance.equipment.category">
+        <field name="name">固态继电器</field>
+        <field name="technical_type">relay</field>
+        <field name="active">True</field>
+    </record>
+<!--    # 电子类-->
+    <record id="maintenance_equipment_category_14" model="maintenance.equipment.category">
+        <field name="name">电容</field>
+        <field name="technical_type">electronic</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_15" model="maintenance.equipment.category">
+        <field name="name">电感</field>
+        <field name="technical_type">electronic</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_16" model="maintenance.equipment.category">
+        <field name="name">电阻</field>
+        <field name="technical_type">electronic</field>
+        <field name="active">True</field>
+    </record>
+<!--    # 协议类-->
+    <record id="maintenance_equipment_category_17" model="maintenance.equipment.category">
+        <field name="name">MODBUS</field>
+        <field name="technical_type">protocol</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_18" model="maintenance.equipment.category">
+        <field name="name">PROFINET</field>
+        <field name="technical_type">protocol</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_19" model="maintenance.equipment.category">
+        <field name="name">CC-Link</field>
+        <field name="technical_type">protocol</field>
+        <field name="active">True</field>
+    </record>
+<!--    # 串口类-->
+    <record id="maintenance_equipment_category_21" model="maintenance.equipment.category">
+        <field name="name">RS232</field>
+        <field name="technical_type">serial</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_22" model="maintenance.equipment.category">
+        <field name="name">RS485</field>
+        <field name="technical_type">serial</field>
+        <field name="active">True</field>
+    </record>
+    <record id="maintenance_equipment_category_23" model="maintenance.equipment.category">
+        <field name="name">RS422</field>
+        <field name="technical_type">serial</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

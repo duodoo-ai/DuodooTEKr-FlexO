@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dtu_data_service,access.dtu_data_service,model_dtu_data_service,,1,1,1,1
+access_dtu_data_controller,access.dtu_data_controller,model_dtu_data_controller,,1,1,1,1
+

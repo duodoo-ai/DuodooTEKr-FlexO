@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem
+            id="dtu_data_collection_meu"
+            name="DTU"
+            action='action_dtu_data_collection'
+            parent="iot.iot_menu_root"
+            sequence="0"/>
+</odoo>

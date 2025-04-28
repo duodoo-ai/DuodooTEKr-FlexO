@@ -1,0 +1,39 @@
+<odoo>
+    <!-- 技术参数表单扩展 -->
+    <record id="view_equipment_spec_form_extend" model="ir.ui.view">
+        <field name="name">maintenance.equipment.spec.form.extend</field>
+        <field name="model">maintenance.equipment.spec</field>
+        <field name="inherit_id" ref="odoo_maintenance.view_equipment_spec_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/group/group" position="after">
+                <group string="旋转参数" invisible="parameter_type != 'rotation'">
+                    <field name="rotational_speed"/>
+                    <field name="speed_unit"/>
+                </group>
+
+                <group string="振动参数" invisible="parameter_type != 'vibration'">
+                    <field name="vibration_speed"/>
+                    <field name="acceleration_envelope_2"/>
+                    <field name="acceleration_envelope_3"/>
+                </group>
+
+                <group string="温度参数" invisible="parameter_type != 'temperature'">
+                    <field name="temperature"/>
+                    <field name="temp_unit"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+<!--    &lt;!&ndash; 告警规则表单增强 &ndash;&gt;-->
+<!--    <record id="view_alert_rule_form_extend" model="ir.ui.view">-->
+<!--        <field name="name">maintenance.alert.rule.form.extend</field>-->
+<!--        <field name="model">maintenance.alert.rule</field>-->
+<!--        <field name="inherit_id" ref="alert_rule_ids"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//field[@name='parameter_name']" position="attributes">-->
+<!--                <attribute name="widget">selection_with_unit</attribute>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+</odoo>
