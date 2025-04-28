@@ -1,0 +1,86 @@
+<odoo>
+    <!-- 485通讯协议指令集 : views -->
+    <record id="socket_server_start_tree" model="ir.ui.view">
+        <field name="name">485通讯协议指令集</field>
+        <field name="model">socket.server.start</field>
+        <field name="arch" type="xml">
+            <list string="通讯协议指令集"
+                  create="1"
+                  delete="1"
+                  decoration-success="type == 'connector'"
+                  decoration-bf="type == 'control'"
+                  default_order="code"
+            >
+                <header>
+                    <button name="send_value_to_socket" string="发送指令" type="object" class="btn-primary"/>
+                    <button string="取消" class="btn-secondary" special="cancel"/>
+                </header>
+                <field name="code" optional="show" readonly="'note','=','由系统创建'"/>
+                <field name="action" optional="show" readonly="'note','=','由系统创建'"/>
+                <field name="name" optional="show" readonly="'note','=','由系统创建'"/>
+                <field name="type"
+                    decoration-success="type == 'connector'"
+                    decoration-info="type == 'control'"
+                    widget="badge" force_save="1" optional="show" class="text-dark"/>
+                <button name="action_clear_alarm" type="object" string="清除告警" icon="fa-ban"
+                        invisible="type in ['control','connector']" class="btn-warning"
+                />
+                <button name="send_value_to_socket" type="object" string="下发指令" icon="fa-tags"
+                        invisible="type in ['connector','platform']" class="btn-info"/>
+                <field name="note" readonly="1" optional="show"/>
+                <field name="active" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="socket_server_start_kanban" model="ir.ui.view">
+    <field name="name">485通讯协议指令集</field>
+    <field name="model">socket.server.start</field>
+    <field name="arch" type="xml">
+        <kanban class="o_kanban_mobile custom-kanban" create="0" default_order="code">
+            <field name="name" />
+            <field name='action'/>
+            <field name='code'/>
+            <field name='type'/>
+            <templates>
+                <t t-name="kanban-box">
+                    <div t-attf-class="oe_kanban_card oe_kanban_global_click oe_semantic_html_override">
+                        <div class="oe_kanban_content" tooltip="kanban-tooltip">
+                            <div class="o_kanban_record_body">
+                                <span class="oe_grey">指令- <field name="action"/><br/></span>
+                                <br/>
+                            </div>
+                            <div class="o_kanban_record_bottom">
+                                <div class="oe_kanban_bottom_left">
+                                    <button name="action_clear_alarm" type="object" string="清除告警" icon="fa-ban"
+                                            invisible="type in ['control','connector']" class="btn-warning"
+                                    />
+                                    <button name="send_value_to_socket" type="object" string="下发指令" icon="fa-tags"
+                                            invisible="type in ['connector','platform']" class="btn-info"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+    </field>
+</record>
+
+    <!-- 流量阀值 : actions -->
+    <record id="action_socket_server_start" model="ir.actions.act_window">
+        <field name="name">操作台</field>
+        <field name="res_model">socket.server.start</field>
+        <field name="view_mode">list,kanban</field>
+        <field name="view_ids"
+           eval="[(5, 0, 0),
+                  (0, 0, {'view_mode': 'kanban', 'view_id': ref('socket_server_start_kanban')}),
+                  (0, 0, {'view_mode': 'list', 'view_id': ref('socket_server_start_tree')}),
+                  ]"/>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            485通讯协议指令集
+          </p>
+        </field>
+    </record>
+</odoo>

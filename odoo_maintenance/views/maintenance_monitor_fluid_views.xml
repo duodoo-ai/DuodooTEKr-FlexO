@@ -1,0 +1,103 @@
+<odoo>
+    <!-- 设备表单视图扩展 -->
+    <record id="view_equipment_list_monitoring_2025" model="ir.ui.view">
+        <field name="name">equipment.monitoring.data.form.monitoring</field>
+        <field name="model">equipment.monitoring.data</field>
+        <field name="arch" type="xml">
+            <list string="流体监控">
+                <field name="equipment_id" optional="show"/>
+                <field name="timestamp" optional="show"/>
+                <field name="firmware_version" optional="show"/>
+                <field name="memory_free" optional="show"/>
+                <field name="signal_strength" optional="show"/>
+                <field name="battery_level" optional="show"/>
+                <field name="temperature" optional="show"/>
+                <field name="humidity" optional="show"/>
+                <field name="pressure" optional="show"/>
+                <field name="liquid_level" optional="show"/>
+                <field name="gps_longitude" optional="show"/>
+                <field name="gps_latitude" optional="show"/>
+                <field name="gsm_longitude" optional="show"/>
+                <field name="gsm_latitude" optional="show"/>
+                <field name="wind_speed" optional="show"/>
+                <field name="wind_direction" optional="show"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_equipment_form_monitoring_2025" model="ir.ui.view">
+        <field name="name">equipment.monitoring.data.form</field>
+        <field name="model">equipment.monitoring.data</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="设备">
+                        <div class="oe_title">
+                            <h1><field name="equipment_id" options="{'no_open': True, 'no_create': True}"/></h1>
+                        </div>
+                    </group>
+                    <group>
+                        <group string="系统状态">
+                            <field name="timestamp" invisible="1"/>
+                            <field name="firmware_version"/>
+                            <field name="memory_free"/>
+                            <field name="signal_strength"/>
+                            <field name="battery_level"/>
+                        </group>
+                        <group string="位置信息">
+                            <field name="gps_longitude"/>
+                            <field name="gps_latitude"/>
+                            <field name="gsm_longitude"/>
+                            <field name="gsm_latitude"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="环境数据">
+                            <field name="temperature"/>
+                            <field name="humidity"/>
+                            <field name="pressure"/>
+                        </group>
+                        <group string="流体监测">
+                            <field name="flow_rate"/>
+                            <field name="liquid_level"/>
+                        </group>
+                    </group>
+                    <group string="气象数据">
+                        <group>
+                            <field name="wind_speed"/>
+                        </group>
+                        <group>
+                            <field name="wind_direction"/>
+                        </group>
+                    </group>
+                    <group string="热力图">
+                        <group>
+                            <field name="heatmap_scale"/>
+                            <button name="action_generate_heatmap" string="生成热力图" type="object" class="btn-primary"/>
+                        </group>
+                        <group>
+                            <field name="heatmap_data" widget="image"/>
+                        </group>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_equipment_monitoring_2025" model="ir.actions.act_window">
+        <field name="name">流体监控</field>
+        <field name="res_model">equipment.monitoring.data</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_ids"
+               eval="[(5, 0, 0),
+                      (0, 0, {'view_mode': 'list', 'view_id': ref('view_equipment_list_monitoring_2025')}),
+                      (0, 0, {'view_mode': 'form', 'view_id': ref('view_equipment_form_monitoring_2025')}),
+                      ]"/>
+         <field name="help" type="html">
+            <p>
+               流体监控
+            </p>
+        </field>
+    </record>
+</odoo>

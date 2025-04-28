@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- noupdate="1" 表示模块更新时保留已修改的数据 -->
+    <data noupdate="1">
+        <!-- 通用技术指标模板 -->
+        <record id="default_spec_template" model="maintenance.equipment.spec">
+            <field name="drive_type">electric</field>
+            <field name="rated_power">7.5</field>
+            <field name="rated_voltage">380.0</field>
+            <field name="bearing_type">rolling</field>
+            <field name="equipment_id" ref="maintenance.equipment_monitor1"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+    </data>
+</odoo>
