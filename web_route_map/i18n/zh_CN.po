@@ -1,0 +1,459 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_route_map
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-16 01:40+0000\n"
+"PO-Revision-Date: 2025-04-16 09:42+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid ""
+".st0{opacity:0.3;enable-background:new;}\n"
+"                .st1{fill:currentColor;stroke:#1A1919;stroke-width:3;stroke-miterlimit:10;}"
+msgstr ""
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                                Sign up to Amap and create an application."
+msgstr ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                                注册高德地图并创建一个应用。"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                                Sign up to MapBox to get a free token"
+msgstr ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                                注册 MapBox 以获取免费令牌"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                                Sign up to Tencent Map and create an application."
+msgstr ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                                注册腾讯地图并创建应用程序。"
+
+#. module: web_route_map
+#: model:ir.model,name:web_route_map.model_ir_actions_act_window_view
+msgid "Action Window View"
+msgstr "动作窗体视图"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.js:0
+#: model_terms:ir.ui.view,arch_db:web_route_map.view_res_partner_filter_inherit_map
+msgid "Address"
+msgstr "地址"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__map_provider__amap
+msgid "Amap"
+msgstr "高德"
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_config_settings__amap_jsapi_key
+msgid "Amap JSAPI Key"
+msgstr "高德地图JSAPI密钥"
+
+#. module: web_route_map
+#. odoo-python
+#: code:addons/rhino-data-pipe/web_route_map/models/res_config_settings.py:0
+#: code:addons/web_route_map/models/res_config_settings.py:0
+msgid "Amap JSAPI Key is not configured"
+msgstr "高德地图JSAPI密钥未配置"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Amap JSAPI Key:"
+msgstr "高德地图JSAPI密钥："
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_config_settings__amap_web_services_key
+msgid "Amap Web Services Key"
+msgstr "高德地图Web服务密钥"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Amap Web Services Key:"
+msgstr "高德地图Web服务密钥："
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_config_settings__amap_map_style
+msgid "Amap map style"
+msgstr "高德地图样式"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__grey
+msgid "Ascot Grey"
+msgstr "雅士灰"
+
+#. module: web_route_map
+#: model:ir.model,name:web_route_map.model_base
+msgid "Base"
+msgstr "基础"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Close"
+msgstr "关闭"
+
+#. module: web_route_map
+#: model:ir.model,name:web_route_map.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
+
+#. module: web_route_map
+#: model:ir.model,name:web_route_map.model_res_partner
+msgid "Contact"
+msgstr "联系人"
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_partner__contact_address_complete
+#: model:ir.model.fields,field_description:web_route_map.field_res_users__contact_address_complete
+msgid "Contact Address Complete"
+msgstr "完成联系地址"
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_config_settings__map_provider
+msgid "Default Map Provider"
+msgstr "默认地图提供商"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Default Provider"
+msgstr "默认提供商"
+
+#. module: web_route_map
+#: model:ir.model.fields,help:web_route_map.field_res_config_settings__map_provider
+msgid "Default map provider to use"
+msgstr "要使用的默认地图提供商"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Enable the map feature to activate the route and style"
+msgstr "启用地图功能以激活路线和样式"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__whitesmoke
+msgid "Far Mountains"
+msgstr "远山黛"
+
+#. module: web_route_map
+#: model:ir.model.fields,help:web_route_map.field_res_config_settings__amap_map_style
+msgid "Go to Create a custom map style: https://lbs.amap.com/dev/mapstyle/index"
+msgstr "创建自定义地图样式：https://lbs.amap.com/dev/mapstyle/index"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__graffiti
+msgid "Graffiti"
+msgstr "涂鸦"
+
+#. module: web_route_map
+#: model:ir.model,name:web_route_map.model_ir_http
+msgid "HTTP Routing"
+msgstr "HTTP 路由"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__blue
+msgid "Indigo blue"
+msgstr "靛青蓝"
+
+#. module: web_route_map
+#. odoo-python
+#: code:addons/rhino-data-pipe/web_route_map/models/res_config_settings.py:0
+#: code:addons/web_route_map/models/res_config_settings.py:0
+msgid "Invalid map provider"
+msgstr "无效的地图提供程序"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_view.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_view.js:0
+msgid "Items"
+msgstr "项目"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Locating new addresses..."
+msgstr "找到新的地址..."
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__macaron
+msgid "Macaron"
+msgstr "马卡龙"
+
+#. module: web_route_map
+#. odoo-python
+#: code:addons/rhino-data-pipe/web_route_map/models/res_config_settings.py:0
+#: code:addons/web_route_map/models/res_config_settings.py:0
+msgid "Map Box Token is not configured"
+msgstr "未配置 Map Box 令牌"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Map Routes"
+msgstr "地图路线"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__map_provider__map_box
+msgid "MapBox"
+msgstr "MapBox"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "MapBox servers unreachable"
+msgstr "无法访问 MapBox 服务器"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__light
+msgid "Moonshine silver"
+msgstr "月光银"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.js:0
+msgid "Name"
+msgstr "名称"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Navigate to"
+msgstr "导航至"
+
+#. module: web_route_map
+#: model:ir.model.fields,help:web_route_map.field_res_config_settings__amap_jsapi_key
+#: model:ir.model.fields,help:web_route_map.field_res_config_settings__amap_web_services_key
+#: model:ir.model.fields,help:web_route_map.field_res_config_settings__map_box_token
+#: model:ir.model.fields,help:web_route_map.field_res_config_settings__tencent_map_key
+msgid "Necessary for some functionalities in the map view"
+msgstr "对于地图视图中的某些功能是必需的"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "No"
+msgstr "否"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "None"
+msgstr "无"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__normal
+msgid "Normal"
+msgstr "标准"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Open"
+msgstr "打开"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "OpenStreetMap's request limit exceeded, try again later."
+msgstr "已超出OpenStreetMap的请求限制，请稍后再试。"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__dark
+msgid "Phantom Black"
+msgstr "幻影黑"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__darkblue
+msgid "Polar Night Blue"
+msgstr "极夜蓝"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__ir_actions_act_window_view__view_mode__route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__ir_ui_view__type__route_map
+msgid "Route Map"
+msgstr "路线图"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__wine
+msgid "Sauce seed"
+msgstr "酱籽"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Set up token"
+msgstr "设置令牌"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "Some routing points are too far apart"
+msgstr "某些路由点相距太远"
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__map_provider__tencent_map
+msgid "Tencent Map"
+msgstr "腾讯地图"
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_config_settings__tencent_map_key
+msgid "Tencent Map Key"
+msgstr "腾讯地图密钥"
+
+#. module: web_route_map
+#. odoo-python
+#: code:addons/rhino-data-pipe/web_route_map/models/res_config_settings.py:0
+#: code:addons/web_route_map/models/res_config_settings.py:0
+msgid "Tencent Map Key is not configured"
+msgstr "腾讯地图密钥未配置"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Tencent Map Key:"
+msgstr "腾讯地图密钥："
+
+#. module: web_route_map
+#: model:ir.model.fields.selection,name:web_route_map.selection__res_config_settings__amap_map_style__fresh
+msgid "The grass is blue"
+msgstr "草色青"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "The view has switched to another provider but functionalities will be limited"
+msgstr "视图已切换到另一个提供程序，但功能将受到限制"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "To get routing on your map, you first need to set up your MapBox token. It's free."
+msgstr "要在地图上获取路线，您首先需要设置 MapBox 令牌。注册完全免费。"
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_res_config_settings__map_box_token
+msgid "Token Map Box"
+msgstr "MapBox令牌"
+
+#. module: web_route_map
+#: model_terms:ir.ui.view,arch_db:web_route_map.res_config_settings_view_form
+msgid "Token Map Box:"
+msgstr "腾讯地图密钥："
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "Token invalid"
+msgstr "令牌无效"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "Too many requests, try again in a few minutes"
+msgstr "请求太多，请在几分钟内重试"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "Too many routing points (maximum 25)"
+msgstr "路由点过多（最多 25 个）"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "Unauthorized connection"
+msgstr "未经授权的连接"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Undefined"
+msgstr "未定义的"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "Unsuccessful routing request:"
+msgstr "不成功的线路请求："
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_controller.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_controller.js:0
+msgid "Untitled"
+msgstr "未命名的"
+
+#. module: web_route_map
+#: model:ir.model,name:web_route_map.model_ir_ui_view
+msgid "View"
+msgstr "视图"
+
+#. module: web_route_map
+#: model:ir.model.fields,field_description:web_route_map.field_ir_actions_act_window_view__view_mode
+#: model:ir.model.fields,field_description:web_route_map.field_ir_ui_view__type
+msgid "View Type"
+msgstr "视图类型"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_renderer.xml:0
+msgid "View in Google Maps"
+msgstr "在谷歌地图"
+
+#. module: web_route_map
+#. odoo-javascript
+#: code:addons/rhino-data-pipe/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+#: code:addons/web_route_map/static/src/views/route_map_view/route_map_model.js:0
+msgid "Yes"
+msgstr "是"
+
+#. module: web_route_map
+#. odoo-python
+#: code:addons/rhino-data-pipe/web_route_map/models/models.py:0
+#: code:addons/web_route_map/models/models.py:0
+msgid "You need to set a Contact field on this model to use the Map View"
+msgstr "你需要在这个模型上设置一个联系人字段来使用地图视图"

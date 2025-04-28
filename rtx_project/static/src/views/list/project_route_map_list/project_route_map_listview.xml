@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="project.ProjectRouteMapListView" t-inherit="web.ListRenderer" t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_list_renderer')]" position="attributes">
+            <attribute name="class" add="w-50" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_list_renderer')]" position="after">
+            <div class="project_route_map w-50 p-2">
+                <div class="alert alert-warning" role="alert" t-if="state.emap_provider['has_error']">
+                    <h4 class="alert-heading">
+                        <i class="bi bi-exclamation-triangle"></i>Error!</h4>
+                    <p>
+                        <t t-esc="state.emap_provider['message']"/>
+                    </p>
+                    <hr/>
+                    <p class="mb-0">
+                        <t t-esc="state.emap_provider['suggtions']"/>
+                    </p>
+                </div>
+                <t t-else="">
+                    <TencentProjectRouteMap projects="state.projects" key="state.emap_provider['key']" zoom="8" t-if="state.emap_provider['tech_name']=='tencent_map'"/>
+                    <AmapProjectRouteMap projects="state.projects" key="state.emap_provider['key']" zoom="8" t-if="state.emap_provider['tech_name']=='amap'"/>
+                </t>
+            </div>
+        </xpath>
+    </t>
+
+</templates>

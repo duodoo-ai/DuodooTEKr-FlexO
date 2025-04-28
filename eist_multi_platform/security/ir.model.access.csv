@@ -1,0 +1,10 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_res_multi_platform_devices_admin",access_res_multi_platform_devices_admin,model_res_multi_platform_devices,group_multi_platform_user,1,1,1,0
+"access_res_multi_platform_devices_user",access_res_multi_platform_devices_user,model_res_multi_platform_devices,group_multi_platform_admin,1,0,0,0
+"access_res_multi_platform_apps_admin",access_res_multi_platform_apps_admin,model_res_multi_platform_apps,group_multi_platform_user,1,1,1,1
+"access_res_multi_platform_apps_user",access_res_multi_platform_apps_user,model_res_multi_platform_apps,group_multi_platform_admin,1,0,0,0
+"access_res_multi_platform_menus_admin",access_res_multi_platform_menus_admin,model_res_multi_platform_menus,group_multi_platform_user,1,1,1,1
+"access_res_multi_platform_menus_user",access_res_multi_platform_menus_user,model_res_multi_platform_menus,group_multi_platform_admin,1,0,0,0
+"access_res_multi_platform_submenus_admin",access_res_multi_platform_submenus_admin,model_res_multi_platform_submenus,group_multi_platform_user,1,1,1,1
+"access_res_multi_platform_submenus_user",access_res_multi_platform_submenus_user,model_res_multi_platform_submenus,group_multi_platform_admin,1,0,0,0
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="view_multi_platform_submenu_filter" model="ir.ui.view">
+        <field name="name">res.multi_platform.submenus.search</field>
+        <field name="model">res.multi_platform.submenus</field>
+        <field name="arch" type="xml">
+            <search string="Submenus">
+                <field name="parent_ids" icon="fa-list-ul" enable_counters="1"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_res_multi_platform_submenus_kanban" model="ir.ui.view">
+        <field name="name">res.multi_platform.submenus.kanban</field>
+        <field name="model">res.multi_platform.submenus</field>
+        <field name="arch" type="xml">
+            <kanban sample="1">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="image_icon"/>
+                <field name="char_icon"/>
+                <field name="icon_type"/>
+
+                <templates>
+                    <t t-name="card" class="flex-row">
+                        <aside class="o_kanban_aside_full">
+                            <div class="o_kanban_image_fill position-relative w-100" t-if="record.icon_type.raw_value=='image'">
+                                <field name="image_icon" class="h-100" widget="image" options="{'img_class': 'object-fit-cover'}"/>
+                            </div>
+                            <t t-else="">
+                                <field name="char_icon" widget="kanbak_material_icon"/>
+                            </t>
+                        </aside>
+                        <main class="ps-2 ps-md-0">
+                            <div class="mb-1">
+                                <field name="name" class="mb-0 fw-bold fs-5"/>
+                            </div>
+                            <field name="code" class="text-truncate"/>
+                            <field name="route" class="text-truncate"/>
+                            <footer>
+
+                            </footer>
+                        </main>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_res_multi_platform_submenus_list" model="ir.ui.view">
+        <field name="name">res.multi_platform.submenus.list</field>
+        <field name="model">res.multi_platform.submenus</field>
+        <field name="arch" type="xml">
+            <list sample="1">
+                <header>
+
+                </header>
+                <field name='sequence' widget='handle'/>
+                <field name="name"/>
+                <field name="parent_ids" widget="many2many_tags" options="{'no_open': True, 'no_create_edit': True}"/>
+                <field name="image_icon" widget="image" options='{"size": [32, 32]}'/>
+                <field name="char_icon" widget="material_icon"/>
+                <field name="icon_type"/>
+                <field name="code"/>
+                <field name="res_model_id"/>
+                <field name="res_id"/>
+                <field name="route"/>
+                <field name="company_id"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_open_multi_platform_submenu" model="ir.actions.act_window">
+        <field name="name">SubMenus</field>
+        <field name="res_model">res.multi_platform.submenus</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="view_id" eval="False"/>
+        <field name="search_view_id" ref="view_multi_platform_submenu_filter"/>
+    </record>
+
+</odoo>

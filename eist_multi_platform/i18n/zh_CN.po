@@ -1,0 +1,985 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eist_multi_platform
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-13 08:32+0000\n"
+"PO-Revision-Date: 2025-04-13 16:47+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: eist_multi_platform
+#: model_terms:ir.ui.view,arch_db:eist_multi_platform.view_res_multi_platform_menus_kanban
+msgid ""
+"<i class=\"fa fa-mobile fa-fw fa-lg text-success\" title=\"Display in the "
+"bottom application bar of the mobile application\"/>"
+msgstr ""
+"<i class=\"fa fa-mobile fa-fw fa-lg text-success\" title=\"在移动应用程序的底部"
+"应用程序栏中显示\"/>"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_menus.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_menus.py:0
+#: model:ir.model.constraint,message:eist_multi_platform.constraint_res_multi_platform_menus_name_uniq
+msgid "A record of that name already exists."
+msgstr "该名称的记录已存在。"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_menus.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_menus.py:0
+#: model:ir.model.constraint,message:eist_multi_platform.constraint_res_multi_platform_menus_code_uniq
+msgid "A record of the code already exists"
+msgstr "该代码的记录已存在"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__group_ids
+msgid "Access Groups"
+msgstr "访问组"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__active
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__active
+msgid "Active"
+msgstr "已启用"
+
+#. module: eist_multi_platform
+#: model:res.groups,name:eist_multi_platform.group_multi_platform_admin
+msgid "Administrator"
+msgstr "管理员"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_notification__push_type__alert
+msgid "Alerts"
+msgstr "警告"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid ""
+"All version number acquisition methods failed, and the default version number: "
+"1.0.0 is used"
+msgstr "所有版本号获取方法均失败，使用默认版本号：1.0.0"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "An app record has been created:%s"
+msgstr "已创建应用记录：%s"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_apps__platform__android
+msgid "Android"
+msgstr "Android"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__app_filename
+msgid "App Name"
+msgstr "应用名称"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__app_file_path
+msgid "App Path"
+msgstr "应用程序路径"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__app_file_size
+msgid "App file size(MB)"
+msgstr "应用文件大小 （MB）"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_base_import_import
+msgid "Base Import"
+msgstr "基础导入"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__build_number
+msgid "Build number"
+msgstr "内部版本号"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Cancel"
+msgstr "取消"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_menus__icon_type__character
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_submenus__icon_type__character
+msgid "Character"
+msgstr "字符"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__char_icon
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__char_icon
+msgid "Character Icon"
+msgstr "字符图标"
+
+#. module: eist_multi_platform
+#: model_terms:ir.ui.view,arch_db:eist_multi_platform.view_res_multi_platform_menus_form
+msgid "Character icon text"
+msgstr "字符图标文本"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__child_ids
+msgid "Child Menus"
+msgstr "子菜单"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__code
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__code
+msgid "Code"
+msgstr "代码"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_devices__device_type__computer
+msgid "Computer devices"
+msgstr "计算机"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_partner
+msgid "Contact"
+msgstr "联系人"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__create_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__create_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__create_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__create_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__create_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__create_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__create_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__create_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Currently, the DMG file format is not supported"
+msgstr "目前不支持 DMG 文件格式"
+
+#. module: eist_multi_platform
+#: model:res.multi_platform.menus,name:eist_multi_platform.multi_platform_main_menu_dashboard
+msgid "Dashboard"
+msgstr "仪表盘"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Deleted old version file: %s:"
+msgstr "已删除的旧版本文件： %s："
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__description
+msgid "Description"
+msgstr "描述"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__name
+msgid "Device Name"
+msgstr "设备名称"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__device_type
+msgid "Device Type"
+msgstr "设备类型"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__display_name
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__display_name
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__display_name
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__display_name
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__display_in_bottom_app_bar
+msgid "Display in bottom app bar"
+msgstr "显示在底部应用栏"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_notification__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Error checking if version exists: %s"
+msgstr "检查版本是否存在时出错： %s"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__external_id
+msgid "External ID"
+msgstr "外部 ID"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Extracted from other fields to the build number: %s"
+msgstr "从其他字段提取到内部版本号：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Extracted from other fields to the version number: %s"
+msgstr "从其他字段提取到版本号：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Extracted from the file name to the version number: %s"
+msgstr "从文件名提取到版本号：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Extracted from the file version to the build number: %s"
+msgstr "从文件版本提取到内部版本号： %s"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_notification__state__failed
+msgid "Failed"
+msgstr "失败"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to delete an old version of the file:%s"
+msgstr "无法删除文件的旧版本：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to delete old version file: %s"
+msgstr "无法删除旧版本文件 %s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to delete the file:%s"
+msgstr "删除文件失败：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to get Android APK information:"
+msgstr "无法获取 Android APK 信息："
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to get Linux package information:"
+msgstr "无法获取 Linux 软件包信息："
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to get MacOS application information:"
+msgstr "无法获取 MacOS 应用程序信息："
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to get Windows EXE information:"
+msgstr "无法获取 Windows EXE 信息："
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Failed to get the version number, using the default version number: 1.0.0"
+msgstr "使用默认版本号获取版本号失败：1.0.0"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/android_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/android_utils.py:0
+msgid "Failed to parse AndroidManifest.xml: %s"
+msgstr "无法解析AndroidManifest.xml： %s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/android_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/android_utils.py:0
+msgid "Failed to read the version information from the APK file"
+msgstr "无法从 APK 文件中读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/android_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/android_utils.py:0
+msgid "Failed to read the version information from the APK file: %s"
+msgstr "无法从 APK 文件 %s 中读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Failed to read the version information of the EXE file: %s"
+msgstr "无法读取 EXE 文件的版本信息： %s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to update file size:%s"
+msgstr "无法更新文件大小：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Failed to upload file:%s"
+msgstr "上传文件失败：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "File size check failed: %s"
+msgstr "文件大小检查失败： %s"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/views/fields/material_icon/material_icon.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/views/fields/material_icon/material_icon.js:0
+msgid "Form Material Icon"
+msgstr "表单 Material 图标"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_ir_http
+msgid "HTTP Routing"
+msgstr "HTTP 路由"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__id
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__id
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__id
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__id
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__id
+msgid "ID"
+msgstr ""
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__icon_type
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__icon_type
+msgid "Icon Type"
+msgstr "图标类型"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,help:eist_multi_platform.field_res_multi_platform_menus__display_in_bottom_app_bar
+msgid ""
+"If true, the menu will be displayed in the bottom application bar of the mobile "
+"terminal application. By default, four application menus are displayed, which "
+"can be set in the configuration."
+msgstr ""
+"如果为 true，则菜单将显示在移动终端应用程序的底部应用程序栏中。默认情况下，将显"
+"示四个应用程序菜单，可以在配置中设置。"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_menus__icon_type__image
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_submenus__icon_type__image
+msgid "Image"
+msgstr "图像"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__image_icon
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__image_icon
+msgid "Image Icon"
+msgstr "图像图标"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Invalid file data"
+msgstr "文件数据无效"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Invalid version number format: %s"
+msgstr "版本号格式无效： %s"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/views/fields/material_icon/material_icon.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/views/fields/material_icon/material_icon.js:0
+msgid "Kanban Material Icon"
+msgstr "看板 Material 图标"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__write_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__write_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__write_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__write_uid
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__write_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_devices__write_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__write_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__write_date
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__write_date
+msgid "Last Updated on"
+msgstr "上次更新日期"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_apps__platform__linux
+msgid "Linux"
+msgstr "Linux"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_apps__platform__macos
+msgid "MacOS"
+msgstr "MacOS"
+
+#. module: eist_multi_platform
+#: model:ir.actions.act_window,name:eist_multi_platform.action_open_multi_platform_menu
+#: model:ir.ui.menu,name:eist_multi_platform.menu_multi_platform_menus_mainmenus
+msgid "Main Menus"
+msgstr "主菜单"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/views/fields/material_icon/material_icon.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/views/fields/material_icon/material_icon.js:0
+msgid "Material Icon"
+msgstr "Material 图标"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_partner__image_medium
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_users__image_medium
+msgid "Medium-sized image"
+msgstr "中型图像"
+
+#. module: eist_multi_platform
+#: model:ir.ui.menu,name:eist_multi_platform.menu_multi_platform_menus
+msgid "Menus"
+msgstr "菜单"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_notification__push_type__message
+msgid "Message"
+msgstr "消息"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__message
+msgid "Message content"
+msgstr "消息内容"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_devices__device_type__mobile
+msgid "Mobile devices"
+msgstr "移动设备"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__res_model_name
+msgid "Model Description"
+msgstr "模型描述"
+
+#. module: eist_multi_platform
+#: model_terms:ir.ui.view,arch_db:eist_multi_platform.res_config_settings_view_form
+msgid "Multi platform"
+msgstr "多平台"
+
+#. module: eist_multi_platform
+#: model:ir.ui.menu,name:eist_multi_platform.menu_multi_platform
+msgid "Multi platform access"
+msgstr "多平台访问"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_multi_platform_menus
+msgid "Multi-platform app menu"
+msgstr "多平台应用菜单"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_multi_platform_apps
+msgid "Multi-platform app publishing"
+msgstr "多平台应用发布"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_multi_platform_submenus
+msgid "Multi-platform app submenu"
+msgstr "多平台应用子菜单"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_multi_platform_devices
+msgid "Multi-platform client device management"
+msgstr "多平台客户端设备管理"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_multi_platform_notification
+msgid "Multi-platform push notifications"
+msgstr "多平台推送通知"
+
+#. module: eist_multi_platform
+#: model:res.multi_platform.menus,name:eist_multi_platform.multi_platform_main_menu_my
+msgid "My"
+msgstr "我的"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__name
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__name
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__name
+msgid "Name"
+msgstr "名称"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_notification__push_type__notice
+msgid "Notice"
+msgstr "通知"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_apps__platform__other
+msgid "Other"
+msgstr "其他"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Overwrite"
+msgstr "覆盖"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__package_name
+msgid "Package name"
+msgstr "包名称"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__parent_ids
+msgid "Parent Menu"
+msgstr "上级菜单"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__platform
+msgid "Platform"
+msgstr "平台"
+
+#. module: eist_multi_platform
+#: model:ir.actions.act_window,name:eist_multi_platform.action_open_multi_platform_publish_app
+#: model:ir.ui.menu,name:eist_multi_platform.menu_multi_platform_publish_apps
+msgid "Publish app"
+msgstr "发布应用"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__is_published
+msgid "Published"
+msgstr "已发布"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__push_type
+msgid "Push type"
+msgstr "推送类型"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__recipient_ids
+msgid "Receive users"
+msgstr "接收用户"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__res_model_id
+msgid "Related Model"
+msgstr "关联模型"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__res_model
+msgid "Related Model Name"
+msgstr "关联型号名称"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__res_id
+msgid "Related Record ID"
+msgstr "关联记录 ID"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__route
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__route
+msgid "Route"
+msgstr "路由"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_notification__state__sent
+msgid "Sent"
+msgstr "已发送"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_menus__sequence
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_submenus__sequence
+msgid "Sequence"
+msgstr "序列"
+
+#. module: eist_multi_platform
+#: model:ir.actions.act_window,name:eist_multi_platform.action_multi_platform_config
+#: model:ir.ui.menu,name:eist_multi_platform.menu_multi_platform_publish_config
+#: model:res.multi_platform.menus,name:eist_multi_platform.multi_platform_main_menu_settings
+msgid "Settings"
+msgstr "设置"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__state
+msgid "Status"
+msgstr "状态"
+
+#. module: eist_multi_platform
+#: model:ir.actions.act_window,name:eist_multi_platform.action_open_multi_platform_submenu
+#: model:ir.ui.menu,name:eist_multi_platform.menu_multi_platform_menus_submenus
+msgid "SubMenus"
+msgstr "子菜单"
+
+#. module: eist_multi_platform
+#: model_terms:ir.ui.view,arch_db:eist_multi_platform.view_multi_platform_submenu_filter
+msgid "Submenus"
+msgstr "子菜单"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Successfully extracted the version number from the file name: %s"
+msgstr "已成功从文件名 %s 中提取版本号"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid "Successfully read the version number from the file resources: %s"
+msgstr "已成功从文件资源中读取版本号：%s"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,help:eist_multi_platform.field_res_multi_platform_apps__version
+msgid ""
+"The application version number, which is automatically read from the "
+"installation file"
+msgstr "应用程序版本号，从安装文件中自动读取"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,help:eist_multi_platform.field_res_multi_platform_apps__build_number
+msgid "The build number, which is automatically read from the installation file"
+msgstr "内部版本号，从安装文件中自动读取"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "The current file size %sMB"
+msgstr "当前文件大小 %sMB"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/utils/win_utils.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/utils/win_utils.py:0
+msgid ""
+"The file %s does not contain version resource information and cannot be "
+"extracted from the file name"
+msgstr "文件 %s 不包含版本资源信息，无法从文件名中提取"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "The file has been moved to: %s"
+msgstr "文件已移至： %s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "The file size is too large! Maximum allowed %sMB"
+msgstr "文件大小太大！允许的最大 %sMB"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "The old version of the file has been deleted:%s"
+msgstr "已删除文件的旧版本：%s"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "The old version record has been deleted, version: %s, build number: %s"
+msgstr "旧版本记录已被删除，版本：%s，内部版本号：%s"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,help:eist_multi_platform.field_res_multi_platform_apps__package_name
+msgid "The package name, which is automatically read from the installation file"
+msgstr "软件包名称，从安装文件中自动读取"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_config_settings__multi_platform_app_max_file_upload_size
+msgid "The size of the multi-platform app upload file(MB)"
+msgstr "多平台应用上传文件大小 （MB）"
+
+#. module: eist_multi_platform
+#: model:ir.model.constraint,message:eist_multi_platform.constraint_res_multi_platform_apps_version_platform_unique
+msgid "The version and platform must be unique."
+msgstr "版本和平台必须是唯一的。"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/views/fields/file_handler.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/views/fields/file_handler.js:0
+msgid "There was a problem while uploading your file."
+msgstr "上传文件时出现问题。"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_notification__name
+msgid "Title"
+msgstr "标题"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__url
+msgid "URL"
+msgstr "URL"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to find version information file (Info.plist)"
+msgstr "找不到版本信息文件 （Info.plist）"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read DEB package information"
+msgstr "无法读取 DEB 包信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read RPM package information"
+msgstr "无法读取 RPM 包信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read application version information"
+msgstr "无法读取应用程序版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read valid version information from APK file"
+msgstr "无法从 APK 文件中读取有效的版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read valid version information from DEB package"
+msgstr "无法从 DEB 包中读取有效的版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read valid version information from RPM package"
+msgstr "无法从 RPM 包中读取有效的版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read valid version information from the file"
+msgstr "无法从文件中读取有效的版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read version information from APK file"
+msgstr "无法从 APK 文件中读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read version information from DEB package"
+msgstr "无法从 DEB 包中读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read version information from RPM package"
+msgstr "无法从 RPM 包中读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read version information from a file"
+msgstr "无法从文件中读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read version information from the application"
+msgstr "无法从应用程序读取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to recognize the application type or get version information"
+msgstr "无法识别应用程序类型或获取版本信息"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unsupported Linux package format"
+msgstr "不支持的 Linux 包格式"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Unsupported file types"
+msgstr "不支持的文件类型"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unsupported platform types"
+msgstr "不支持的平台类型"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Upload cancelled"
+msgstr "上传已取消"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Upload failed"
+msgstr "上传失败"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Upload successful"
+msgstr "上传成功"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.xml:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.xml:0
+msgid "Upload the app file"
+msgstr "上传应用程序文件"
+
+#. module: eist_multi_platform
+#: model:ir.model,name:eist_multi_platform.model_res_users
+#: model:res.groups,name:eist_multi_platform.group_multi_platform_user
+msgid "User"
+msgstr "用户"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields,field_description:eist_multi_platform.field_res_multi_platform_apps__version
+msgid "Version"
+msgstr "版本"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid ""
+"Version %(version)s (build number: %(build)s) already exists. \n"
+"If you want to overwrite an existing version, tick the \"Force Update\" option. "
+msgstr ""
+"版本 %(version)s（内部版本号：%(build)） 已存在。\n"
+"如果要覆盖现有版本，请勾选“强制更新”选项。"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Version %s already exists for platform %s. Do you want to overwrite it?"
+msgstr "平台 %s 的版本 %s 已存在。是否要覆盖它？"
+
+#. module: eist_multi_platform
+#. odoo-javascript
+#: code:addons/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/static/src/components/app_file_uploader/app_file_uploader.js:0
+msgid "Version exists"
+msgstr "版本存在"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_apps__platform__windows
+msgid "Windows"
+msgstr "Windows"
+
+#. module: eist_multi_platform
+#: model:ir.model.fields.selection,name:eist_multi_platform.selection__res_multi_platform_apps__platform__ios
+msgid "iOS"
+msgstr "iOS"
+
+#. module: eist_multi_platform
+#. odoo-python
+#: code:addons/eist_multi_platform/models/res_multi_platform_apps.py:0
+#: code:addons/rhino-data-pipe/eist_multi_platform/models/res_multi_platform_apps.py:0
+msgid "Unable to read version information from the application"
+msgstr "无法从应用程序中读取版本信息"

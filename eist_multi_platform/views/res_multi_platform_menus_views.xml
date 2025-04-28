@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_res_multi_platform_menus_form" model="ir.ui.view">
+        <field name="name">res.multi_platform.menus.form</field>
+        <field name="model">res.multi_platform.menus</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <field name="char_icon" widget="form_material_icon" class="oe_avatar" invisible="icon_type=='image'"/>
+                    <field name="image_icon" widget="image" class="oe_avatar" invisible="icon_type=='chat'"/>
+                    <div class="oe_title">
+                        <label for="icon_type"/>
+                        <field name="icon_type" options="{'horizontal': true}" widget="radio" />
+
+                        <h1>
+                            <label for="name"/>
+                            <div class="d-flex">
+                                <field class="text-break" name="name" options="{'line_breaks': False}" widget="text"/>
+                            </div>
+                        </h1>
+                    </div>
+                    <div name="options">
+                        <span class="d-inline-block">
+                            <label for="active"/>
+                            <field name="active"/>
+                        </span>
+                        <span class="d-inline-block px-2">
+                            <label for="code"/>
+                            <field name="code"/>
+                        </span>
+                    </div>
+                    <group>
+                        <field name="icon_type"/>
+                        <field name="char_icon" invisible="icon_type=='image'" string="Character icon text"/>
+                        <field name="group_ids" options="{'no_open': True, 'no_create_edit': True}"/>
+                        <!-- <field name="child_ids">
+                            <tree>
+                                <field name='sequence' widget='handle'/>
+                                <field name="name"/>
+                                <field name="image_icon" widget="image" options='{"size": [24, 24]}'/>
+                                <field name="char_icon" widget="material_icon"/>
+                                <field name="icon_type"/>
+                                <field name="code"/>
+                                <field name="route"/>
+                            </tree>
+                        </field> -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_multi_platform_menus_kanban" model="ir.ui.view">
+        <field name="name">res.multi_platform.menus.kanban</field>
+        <field name="model">res.multi_platform.menus</field>
+        <field name="arch" type="xml">
+            <kanban sample="1">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="image_icon"/>
+                <field name="char_icon"/>
+                <field name="icon_type"/>
+                <field name="display_in_bottom_app_bar"/>
+
+                <templates>
+                    <t t-name="card" class="flex-row">
+                        <aside class="o_kanban_aside_full">
+                            <div class="o_kanban_image_fill position-relative w-100" t-if="record.icon_type.raw_value=='image'">
+                                <field name="image_icon" class="h-100" widget="image" options="{'img_class': 'object-fit-cover'}"/>
+                            </div>
+                            <t t-else="">
+                                <field name="char_icon" widget="kanbak_material_icon"/>
+                            </t>
+                        </aside>
+                        <main class="ps-2 ps-md-0">
+                            <div class="mb-1">
+                                <field name="name" class="mb-0 fw-bold fs-5"/>
+                            </div>
+                            <field name="code" class="text-truncate"/>
+                            <field name="route" class="text-truncate"/>
+                            <footer>
+                                <div class="d-flex ms-auto">
+                                    <div class="float-end">
+                                        <t t-if="record.display_in_bottom_app_bar.raw_value">
+                                            <i class="fa fa-mobile fa-fw fa-lg text-success" title="Display in the bottom application bar of the mobile application"/>
+                                        </t>
+                                    </div>
+                                </div>
+                            </footer>
+                        </main>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_res_multi_platform_menus_list" model="ir.ui.view">
+        <field name="name">res.multi_platform.menus.list</field>
+        <field name="model">res.multi_platform.menus</field>
+        <field name="arch" type="xml">
+            <list sample="1">
+                <field name="sequence" widget="handle"/>
+                <field name="name" />
+                <field name="code" />
+                <field name="icon_type" />
+                <field name="char_icon" widget="material_icon"/>
+                <field name="image_icon" widget="image" options='{"size": [24, 24]}'/>
+                <field name="route"/>
+                <field name="display_in_bottom_app_bar"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_open_multi_platform_menu" model="ir.actions.act_window">
+        <field name="name">Main Menus</field>
+        <field name="path">multi-platform</field>
+        <field name="res_model">res.multi_platform.menus</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="view_id" eval="False"/>
+    </record>
+
+</odoo>

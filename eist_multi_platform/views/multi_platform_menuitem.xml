@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem name="Multi platform access"
+        id="menu_multi_platform"
+        groups="eist_multi_platform.group_multi_platform_user"
+        web_icon="eist_multi_platform,static/description/icon.png"
+        sequence="499">
+
+        <menuitem
+                id="menu_multi_platform_menus"
+                name="Menus"
+                sequence="1">
+
+
+            <menuitem
+                id="menu_multi_platform_menus_mainmenus"
+                name="Main Menus"
+                action="action_open_multi_platform_menu"
+                sequence="1"/>
+
+            <menuitem
+                id="menu_multi_platform_menus_submenus"
+                name="SubMenus"
+                action="action_open_multi_platform_submenu"
+                sequence="2"/>
+
+        </menuitem>
+
+        <menuitem
+                id="menu_multi_platform_publish_apps"
+                name="Publish app"
+                action="action_open_multi_platform_publish_app"
+                sequence="2"/>
+
+        <menuitem
+                id="menu_multi_platform_publish_config"
+                name="Settings"
+                action="action_multi_platform_config"
+                groups="base.group_system"
+                sequence="99"/>
+
+    </menuitem>
+
+</odoo>

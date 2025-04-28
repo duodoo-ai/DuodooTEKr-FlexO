@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="layout" inherit_id="web.layout" name="IErp Layout">
+        <xpath expr="//title" position="before">
+            <t t-set="title" t-value="'EIST ERP'"/>
+        </xpath>
+    </template>
+
+</odoo>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <function model="project.project.stage" name="write">
+            <value eval="[ref('project.project_project_stage_0')]"/>
+            <value eval="{'active': False}"/>
+        </function>
+
+        <function model="project.project.stage" name="write">
+            <value eval="[ref('project.project_project_stage_1')]"/>
+            <value eval="{'active': False}"/>
+        </function>
+
+        <function model="project.project.stage" name="write">
+            <value eval="[ref('project.project_project_stage_2')]"/>
+            <value eval="{'active': False}"/>
+        </function>
+
+        <function model="project.project.stage" name="write">
+            <value eval="[ref('project.project_project_stage_3')]"/>
+            <value eval="{'active': False}"/>
+        </function>
+
+    </data>
+
+    <data noupdate="1">
+
+        <!-- 前期研究 -->
+        <!-- <record id="project_project_stage_previous_studie" model="project.project.stage">
+            <field name="sequence">1</field>
+            <field name="code">previous_studie</field>
+            <field name="name">Previous Studie</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 规划中 -->
+        <!-- <record id="project_project_stage_planning" model="project.project.stage">
+            <field name="sequence">2</field>
+            <field name="code">planning</field>
+            <field name="name">Planning</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 设计 -->
+        <!-- <record id="project_project_stage_design" model="project.project.stage">
+            <field name="sequence">3</field>
+            <field name="code">design</field>
+            <field name="name">Design</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 立项获批 -->
+        <!-- <record id="project_project_stage_project_approval" model="project.project.stage">
+            <field name="sequence">4</field>
+            <field name="code">project_approval</field>
+            <field name="name">Project approval</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 开工建设 -->
+        <!-- <record id="project_project_stage_construction" model="project.project.stage">
+            <field name="sequence">5</field>
+            <field name="code">construction</field>
+            <field name="name">Construction</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 进行中 -->
+        <!-- <record id="project_project_stage_in_progress" model="project.project.stage">
+            <field name="sequence">6</field>
+            <field name="code">in_progress</field>
+            <field name="name">In Progress</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 变更需求 -->
+        <!-- <record id="project_project_stage_changes_requested" model="project.project.stage">
+            <field name="sequence">7</field>
+            <field name="code">changes_requested</field>
+            <field name="name">Changes Requested</field>
+            <field name="active">True</field>
+        </record> -->
+
+        <!-- 完成 -->
+        <!-- <record id="project_project_stage_done" model="project.project.stage">
+            <field name="sequence">8</field>
+            <field name="code">done</field>
+            <field name="name">Done</field>
+            <field name="active">True</field>
+            <field name="fold" eval="True"/>
+        </record> -->
+
+        <!-- 运行中 -->
+        <record id="project_project_stage_running" model="project.project.stage">
+            <field name="sequence">1</field>
+            <field name="code">running</field>
+            <field name="name">Running</field>
+            <field name="active">True</field>
+            <field name="fold" eval="False"/>
+        </record>
+
+        <!-- 停止运营 -->
+        <record id="project_project_stage_stopped" model="project.project.stage">
+            <field name="sequence">2</field>
+            <field name="code">stopped</field>
+            <field name="name">Stopped</field>
+            <field name="active">True</field>
+            <field name="fold" eval="False"/>
+        </record>
+
+        <!-- 取消 -->
+        <!-- <record id="project_project_stage_canceled" model="project.project.stage">
+            <field name="sequence">11</field>
+            <field name="code">canceled</field>
+            <field name="name">Cancelled</field>
+            <field name="active">True</field>
+            <field name="fold" eval="True"/>
+        </record> -->
+
+    </data>
+</odoo>

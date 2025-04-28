@@ -1,0 +1,10 @@
+.o-theme-systray-class{
+    margin-top: - $o-navbar-padding-v; // cancel navbar padding
+    margin-bottom: - $o-navbar-padding-v; // cancel navbar padding
+    display: flex;
+    align-items: center;
+
+    &:hover, &.show {
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+
+    <div t-name="eist_erp_base.res_config_general_navigation" owl="1">
+        <div id="res_config_general_navigation" class="btn-group ml8 mt8 mb8 res_config_general_navigation" role="group" aria-label="Navigation">
+
+            <a type="button" id="general_nav_invite_users" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#invite_users_setting">
+                <i class="fa fa-users" />
+                <span>Users</span>
+            </a>
+
+            <a type="button" id="general_nav_languages" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#languages">
+                <i class="fa fa-language" />
+                <span>Languages</span>
+            </a>
+
+            <a type="button" id="general_nav_companies" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#companies">
+                <i class="fa fa-building" />
+                <span>Companies</span>
+            </a>
+
+            <a type="button" id="general_nav_emails" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#emails">
+                <i class="fa fa-envelope" />
+                <span>EMail</span>
+            </a>
+
+            <a type="button" id="general_nav_emails" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#user_default_rights">
+                <i class="bi bi-rulers"></i>
+                <span>Permissions</span>
+            </a>
+
+            <a type="button" id="general_nav_emails" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#integration">
+                <i class="fa fa-cubes "></i>
+                <span>Integrations</span>
+            </a>
+
+        </div>
+    </div>
+</template>

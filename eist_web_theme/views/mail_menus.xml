@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <menuitem id="mail.menu_inbox" name="Inbox" parent="mail.menu_root_discuss" sequence="0" action="mail.action_discuss"/>
+    </data>
+</odoo>

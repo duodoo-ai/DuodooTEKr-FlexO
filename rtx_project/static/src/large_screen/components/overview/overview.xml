@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="rtx_project.ProjectLargeScreen.Overview">
+        <div class="data-overview-wrapper">
+            <div class="data-overview-content">
+                <div class="data-overview-content-header">
+                    <span class="data-overview-content-header-title">Project Overview</span>
+                </div>
+                <div class="data-overview-content-body">
+                    <t t-if="state.projects.length > 0">
+                        <table class="table data-overview-content-body-table" t-ref="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pipeline No.</th>
+                                    <th scope="col">Pipeline Name</th>
+                                    <th scope="col">Owner's unit</th>
+                                    <th scope="col">Monthly traffic</th>
+                                    <th scope="col">Seasonal traffic</th>
+                                    <th scope="col">Year traffic</th>
+                                    <th scope="col">Pipeline diameter</th>
+                                    <th scope="col">Total length of pipeline(KM)</th>
+                                    <th scope="col">Real time input traffic</th>
+                                    <th scope="col">Real time output of traffic</th>
+                                    <th scope="col">Activation time</th>
+                                    <th scope="col">Running days</th>
+                                    <th scope="col">Total water supply</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="state.projects" t-as="project" t-key="project.id" t-att-data-id="project.id">
+                                    <td>
+                                        <t t-esc="project.pipeline_no"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.partner_name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.monthly_traffic"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.seasonal_traffic"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.year_traffic"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.pipeline_diameter"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.pipeline_length"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.real_input_traffic"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.real_output_traffic"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.pipeline_activation_time"/>
+                                    </td>
+                                    <td>
+                                        <t t-out="this.getPipelinepRunningTime(project)"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="project.total_traffic"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </t>
+                    <t t-else="">
+                        <div class="data-overview-content-body-nodata">
+                            <span class="data-overview-content-body-nodata-text">No data yet</span>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+
+    </t>
+</templates>

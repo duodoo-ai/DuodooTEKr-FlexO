@@ -1,0 +1,63 @@
+.map_info_card {
+    // background-color: #c7e4b3 !important;
+    // border-color: #adb5bd !important;
+    position: relative !important;
+    overflow: visible !important;
+
+    // 箭头边框
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 9px solid transparent;
+        border-top-color: #adb5bd  !important; // 卡片边框色
+    }
+
+    // 箭头背景
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -16px; // 比边框小2px
+        left: 50%;
+        transform: translateX(-50%);
+        border: 8px solid transparent;
+        border-top-color: #c7e4b3 !important; // 卡片背景色
+        z-index: 1;
+    }
+
+    .card-body{
+        background-color: transparent !important;
+    }
+}
+
+.map_info_warning_card {
+    background-color: #f64939 !important;
+    border-color: #adb5bd !important;
+    position: relative !important;
+    overflow: visible !important;
+
+    // 箭头边框
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 9px solid transparent;
+        border-top-color: #adb5bd  !important; // 卡片边框色
+    }
+
+    // 箭头背景
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -16px; // 比边框小2px
+        left: 50%;
+        transform: translateX(-50%);
+        border: 8px solid transparent;
+        border-top-color: #f64939 !important; // 卡片背景色
+        z-index: 1;
+    }
+}

@@ -1,0 +1,27 @@
+.o_theme_colorlist {
+    button {
+        border: 1px solid $dropdown-bg;
+        box-shadow: 0 0 0 1px $gray-500;
+        width: 22px;
+        height: 17px;
+    }
+
+    .o_colorlist_selected {
+        box-shadow: 0 0 0 2px $o-brand-odoo !important;
+    }
+}
+
+@for $size from 1 through length($o-theme-colors) {
+    .o_theme_colorlist_item_color_#{$size} {
+        $-bg: adjust-color(nth($o-theme-colors, $size), $lightness: 0%, $saturation: 0%);
+        $-color: adjust-color(nth($o-theme-colors, $size), $lightness: -5%, $saturation: -5%);
+        @include o-print-color($-bg, background-color, bg-opacity);
+        @include o-print-color($-color, color, text-opacity);
+    }
+}
+
+// 设置 “no-color”，即白色背景上的红色条
+.o_theme_colorlist_item_color_0 {
+    background: linear-gradient(45deg, rgba($dropdown-bg, 0) 0%, rgba($dropdown-bg, 0) 48%, $danger 48%, $danger 52%, rgba($dropdown-bg, 0) 52%, rgba($dropdown-bg, 0) 100%);
+}
+

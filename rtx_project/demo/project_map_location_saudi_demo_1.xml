@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 一期项目 节点 -->
+        <record id="project_project_saudi_1_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">Riyadh</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_70"/>
+            <field name="city">Riyadh</field>
+            <field name="street"></field>
+            <field name="latitude">24.69</field>
+            <field name="longitude">46.72</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">Jeddah</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_40"/>
+            <field name="city">Jeddah</field>
+            <field name="street"></field>
+            <field name="latitude">21.54</field>
+            <field name="longitude">39.2</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">Makkah</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_54"/>
+            <field name="city">Makkah</field>
+            <field name="street"></field>
+            <field name="latitude">21.43</field>
+            <field name="longitude">39.83</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">Madinah</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_52"/>
+            <field name="city">Madinah</field>
+            <field name="street"></field>
+            <field name="latitude">24.47</field>
+            <field name="longitude">39.61</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">Ad Dammam</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_3"/>
+            <field name="city">Ad Dammam</field>
+            <field name="street"></field>
+            <field name="latitude">26.43</field>
+            <field name="longitude">50.1</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">Hofuf</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_38"/>
+            <field name="city">Hofuf</field>
+            <field name="street"></field>
+            <field name="latitude">25.36</field>
+            <field name="longitude">49.59</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">Jubail</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_46"/>
+            <field name="city">Jubail</field>
+            <field name="street"></field>
+            <field name="latitude">27.02</field>
+            <field name="longitude">49.62</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">Hail</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_35"/>
+            <field name="city">Hail</field>
+            <field name="street"></field>
+            <field name="latitude">27.52</field>
+            <field name="longitude">41.69</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">Buraydah</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_27"/>
+            <field name="city">Buraydah</field>
+            <field name="street"></field>
+            <field name="latitude">26.33</field>
+            <field name="longitude">43.98</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">Abha</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_1"/>
+            <field name="city">Abha</field>
+            <field name="street"></field>
+            <field name="latitude">18.22</field>
+            <field name="longitude">42.51</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">Jazan Economic City</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_39"/>
+            <field name="city">Jazan Economic City</field>
+            <field name="street"></field>
+            <field name="latitude">16.89</field>
+            <field name="longitude">42.55</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">Najran</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_58"/>
+            <field name="city">Najran</field>
+            <field name="street"></field>
+            <field name="latitude">17.49</field>
+            <field name="longitude">44.13</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">Tabuk</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_80"/>
+            <field name="city">Tabuk</field>
+            <field name="street"></field>
+            <field name="latitude">28.4</field>
+            <field name="longitude">36.57</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">Dhahran</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_29"/>
+            <field name="city">Dhahran</field>
+            <field name="street"></field>
+            <field name="latitude">26.29</field>
+            <field name="longitude">50.11</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">Al Khobar</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_13"/>
+            <field name="city">Al Khobar</field>
+            <field name="street"></field>
+            <field name="latitude">27.35</field>
+            <field name="longitude">35.69</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">乌拉</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <!-- <field name="state_id" ref="base.state_sa_13"/> -->
+            <field name="city">乌拉</field>
+            <field name="street"></field>
+            <field name="latitude">26.61</field>
+            <field name="longitude">37.92</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">Al Baha</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_5"/>
+            <field name="city">Al Baha</field>
+            <field name="street"></field>
+            <field name="latitude">20.01</field>
+            <field name="longitude">41.47</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">苏莱伊勒</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <!-- <field name="state_id" ref="base.state_sa_5"/> -->
+            <field name="city">苏莱伊勒</field>
+            <field name="street"></field>
+            <field name="latitude">20.47</field>
+            <field name="longitude">45.57</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">Khamis Mushayt</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_47"/>
+            <field name="city">Khamis Mushayt</field>
+            <field name="street"></field>
+            <field name="latitude">18.3</field>
+            <field name="longitude">42.73</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+        <record id="project_project_saudi_1_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">费萨尔国王国际机场</field>
+            <field name="project_id" ref="rtx_project.project_project_saudi_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_sa_70"/>
+            <field name="city">Riyadh</field>
+            <field name="street"></field>
+            <field name="latitude">26.48</field>
+            <field name="longitude">50.05</field>
+            <field name="country_id" ref="base.sa"/>
+        </record>
+
+
+    </data>
+</odoo>

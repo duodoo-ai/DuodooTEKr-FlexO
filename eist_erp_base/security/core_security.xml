@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="base.module_category_base" model="ir.module.category">
+        <field name="description">Base Modules</field>
+        <field name="sequence">0</field>
+    </record>
+    <record id="base.module_category_base_core" model="ir.module.category">
+        <field name="description">Basic core modules</field>
+        <field name="sequence">0</field>
+    </record>
+
+
+    <data noupdate="1">
+
+    </data>
+</odoo>

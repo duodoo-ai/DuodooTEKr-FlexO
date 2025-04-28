@@ -1,0 +1,60 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.web_map</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='base_geolocalize']" position="after">
+                <setting id="map_view" string="Map Routes" help="Enable the map feature to activate the route and style">
+                    <div class ="content-group">
+                        <div class="row">
+                            <label string="Default Provider" for="map_provider" class="col-lg-4 o_light_label"/>
+                            <field name="map_provider" required="1"/>
+                        </div>
+                    </div>
+                    <div class ="mt8 content-group" invisible="map_provider != 'amap'">
+                        <label for="amap_jsapi_key" class="mr8" string="Amap JSAPI Key:"/>
+                        <div class="mt8">
+                            <field name="amap_jsapi_key" class="w-100" widget="password_char"/>
+                        </div>
+                        <label for="amap_web_services_key" class="mr8" string="Amap Web Services Key:"/>
+                        <div class="mt8">
+                            <field name="amap_web_services_key" class="w-100" widget="password_char"/>
+                        </div>
+                        <div class="text-start" style="position:relative;">
+                            <a class="oe_link" href="https://console.amap.com/dev/id/phone" target="_blank">
+                                <i class="oi oi-arrow-right"/>
+                                Sign up to Amap and create an application.
+                            </a>
+                        </div>
+                    </div>
+                    <div class ="content-group mt-8" invisible="map_provider != 'tencent_map'">
+                        <label for="tencent_map_key" class="mr8" string="Tencent Map Key:"/>
+                        <div class="mt8">
+                            <field name="tencent_map_key" class="w-100" widget="password_char"/>
+                        </div>
+                        <div class="text-start" style="position:relative;">
+                            <a class="oe_link" href="https://lbs.qq.com/" target="_blank">
+                                <i class="oi oi-arrow-right"/>
+                                Sign up to Tencent Map and create an application.
+                            </a>
+                        </div>
+                    </div>
+                    <div class ="content-group  mt-8" invisible="map_provider != 'map_box'">
+                        <label for="map_box_token" class="mr8"  string="Token Map Box:"/>
+                        <div class="mt8">
+                            <field name="map_box_token" class="w-100" widget="password_char"/>
+                        </div>
+                        <div class="text-start" style="position:relative;">
+                            <a class="oe_link"  href="https://account.mapbox.com/auth/signup/" target="_blank">
+                                <i class="oi oi-arrow-right"/>
+                                Sign up to MapBox to get a free token
+                            </a>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

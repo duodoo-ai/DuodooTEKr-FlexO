@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 前期研究 -->
+        <record id="project_stage_previous_studie" model="project.task.type">
+            <field name="sequence">1</field>
+            <field name="name">Previous Studie</field>
+            <!-- <field name="mail_template_id" ref="project.mail_template_data_project_task"/> -->
+            <field name="active">True</field>
+        </record>
+
+        <!-- 规划中 -->
+        <record id="project_stage_planning" model="project.task.type">
+            <field name="sequence">2</field>
+            <field name="name">Planning</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 设计 -->
+        <record id="project_stage_design" model="project.task.type">
+            <field name="sequence">3</field>
+            <field name="name">Design</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 立项获批 -->
+        <record id="project_stage_project_approval" model="project.task.type">
+            <field name="sequence">4</field>
+            <field name="name">Project approval</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 开工建设 -->
+        <record id="project_stage_construction" model="project.task.type">
+            <field name="sequence">5</field>
+            <field name="name">Construction</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 进行中 -->
+        <record id="project_stage_in_progress" model="project.task.type">
+            <field name="sequence">6</field>
+            <field name="name">In Progress</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 变更需求 -->
+        <record id="project_stage_changes_requested" model="project.task.type">
+            <field name="sequence">7</field>
+            <field name="name">Changes Requested</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 完成 -->
+        <record id="project_stage_done" model="project.task.type">
+            <field name="sequence">8</field>
+            <field name="name">Done</field>
+            <field name="active">True</field>
+        </record>
+
+        <!-- 取消 -->
+        <record id="project_stage_canceled" model="project.task.type">
+            <field name="sequence">9</field>
+            <field name="name">Cancelled</field>
+            <field name="active">True</field>
+        </record>
+
+    </data>
+</odoo>

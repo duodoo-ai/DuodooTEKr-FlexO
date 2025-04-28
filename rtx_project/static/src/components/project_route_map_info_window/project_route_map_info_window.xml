@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="project.ProjectRouteMapInfoWindow">
+
+        <div t-attf-class="card map_info_card #{status}" t-att-data-id="geometry_id" t-att-data-status="status" t-attf-style="width: 200px;background-color:#{status_color}">
+            <div class="card-header p-1 d-flex justify-content-between">
+                <b t-esc="title"/>
+                <button type="button" class="btn-close btn btn-light btn-sm bg-transparent border border-0" t-if="showCloseButton" t-on-click="onCloseInfoWindow"/>
+            </div>
+            <div class="card-body p-1">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-1 py-0 bg-transparent border border-0">
+                        Water flow:
+                    </li>
+                    <li class="list-group-item px-1 py-0 bg-transparent border border-0">
+                        Real Input traffic:<t t-esc="real_input_traffic"/>
+                    </li>
+                    <li class="list-group-item px-1 py-0 bg-transparent border border-0">
+                        Real Output traffic:<t t-esc="real_output_traffic"/>
+                    </li>
+                    <li class="list-group-item px-1 py-0 bg-transparent border border-0">
+                        Hydraulic:
+                    </li>
+                    <li class="list-group-item px-1 py-0 bg-transparent border border-0">
+                        Temperature:
+                    </li>
+                    <li class="list-group-item px-1 py-0 bg-transparent border border-0">
+                        Distance(KM):<t t-esc="distance"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </t>
+
+</templates>

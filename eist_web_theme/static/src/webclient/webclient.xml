@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- <t t-name="eist_web_theme.WebClient">
+
+        <t t-if="state.theme.main.app_load_method.default==='1' ">
+            <EistErpSidebarMenu/>
+        </t>
+
+        <t t-if="!state.fullscreen">
+            <EistErpNavBar/>
+        </t>
+
+        <ActionContainer/>
+        <MainComponentsContainer/>
+
+    </t> -->
+
+<!--t-name="eist_web_theme.WebClient" extension -->
+    <t  t-inherit="web.WebClient"  t-inherit-mode="extension">
+        <xpath expr="//NavBar" position="before" >
+            <t t-if="state.theme.main.app_load_method.default==='1' and !state.fullscreen">
+                <EistErpSidebarMenu/>
+            </t>
+        </xpath>
+        <xpath expr="//ActionContainer" position="after" >
+            <t t-if="state.theme.footer.display and !env.isSmall">
+                <EistErpFooter/>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

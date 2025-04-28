@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="template" xml:space="preserve">
+
+    <t t-name="esit_geolocalize.DisplayTencentMapDialog" owl="1">
+        <!-- ["sm", "md", "lg", "xl", "fs", "fullscreen"] -->
+        <Dialog size="'fs'" title="this.constructor.title" bodyClass="'tencent_map_dialog_body'" contentClass="'tencent_map_dialog'">
+            <div class="input-group input-group-lg mb-2">
+                <input type="text" class="form-control" placeholder="Please enter an address" aria-label="Please enter an address" aria-describedby="button-search" t-att-value="state.keyword" t-ref="keywordRef" t-on-keydown.stop="onInputKeydown"/>
+                <button class="btn btn-outline-primary" type="button" id="button-search" t-on-click.stop="onClickSearch">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="map_container w-100 h-100" t-ref="mapRef" />
+            <t t-set-slot="footer">
+                <div class="w-100 d-flex justify-content-between">
+                    <div class="w-50" t-if="state.coordinates_selected">
+                        <button class="btn btn-primary btn-lg" t-on-click="onConfirm">Save</button>
+                    </div>
+                    <div class="alert alert-success w-50" role="alert" t-if="state.coordinates_selected">
+                        The current click coordinates are: <b t-esc="state.latitude"/>,<b t-esc="state.longitude"/>
+                    </div>
+                </div>
+            </t>
+        </Dialog>
+    </t>
+
+</template>

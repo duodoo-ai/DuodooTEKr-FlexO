@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="project.TencentProjectRouteMap">
+        <!-- w-100 h-100 position-relative -->
+
+        <t t-if="props.isLargeScreen">
+            <div t-ref="mapRef" class="tencent_project_route_map" />
+        </t>
+        <t t-else="">
+            <div t-attf-class="tencent_project_route_map position-relative h-100" t-ref="rootRef">
+                <!-- class="h-100" -->
+                <div t-ref="mapRef" class="h-100" />
+                <div class="card position-absolute map_control_panel" style="width: 18rem;">
+                    <div class="card-header p-2">
+                        <i class="bi bi-sliders"></i>
+                        <b class="mx-1">Control Panel</b>
+                    </div>
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item px-2 d-flex justify-content-between" >
+                                <div class="row w-100 g-0">
+                                    <label for="checkboxDisplayList" class="col-sm-8 col-form-label">Display the list</label>
+                                    <div class="col-sm-4 d-flex align-items-center justify-content-end form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="checkboxDisplayList" t-on-change="onChangeDisplayList" t-att-checked="state.displayList"/>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Control the display and hiding of the list view on the left." title="Control the display and hiding of the list view on the left.">
+                                    <i class="bi bi-info-circle-fill"></i>
+                                </button>
+                            </li>
+                            <li class="list-group-item px-2 d-flex justify-content-between">
+                                <div class="row w-100 g-0">
+                                    <label for="selectMapZoomThreshold" class="col-sm-8 col-form-label">Map zoom threshold</label>
+                                    <div class="col-sm-4 d-flex align-items-center justify-content-end">
+                                        <select class="form-select" id="selectMapZoomThreshold" t-on-change="(ev) => this.onChangeMapZoomThreshold(ev)">
+                                            <t t-foreach="state.mapZoomThresholdList" t-as="threshold" t-key="threshold_index">
+                                                <option t-if="threshold==state.mapZoomThreshold" t-att-value="threshold" selected="selected">
+                                                    <t t-esc="threshold"/>
+                                                </option>
+                                                <option t-else="" t-att-value="threshold">
+                                                    <t t-esc="threshold"/>
+                                                </option>
+                                            </t>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="When the map zoom exceeds the threshold, all information windows are displayed." title="When the map zoom exceeds the threshold, all information windows are displayed.">
+                                    <i class="bi bi-info-circle-fill"></i>
+                                </button>
+                            </li>
+                            <!-- <li class="list-group-item px-2">
+                                <div class="row g-0">
+                                    <label for="checkboxEnableCollision" class="col-sm-6 col-form-label">Enable Collision</label>
+                                    <div class="col-sm-6 d-flex align-items-center justify-content-end form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="checkboxEnableCollision" t-on-change="onChangeEnableCollision" t-att-checked="state.enableCollision"/>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li class="list-group-item px-2">
+                                <div class="row g-0">
+                                    <label for="checkboxdisplayDistance" class="col-sm-6 col-form-label">Display Distance</label>
+                                    <div class="col-sm-6 d-flex align-items-center justify-content-end form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="checkboxdisplayDistance" t-on-change="onChangedisplayDistance" t-att-checked="state.displayDistance"/>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </t>
+
+
+
+</templates>

@@ -1,0 +1,27 @@
+.o_switch_lang_menu {
+	display: flex;
+	// margin-top: - $o-navbar-padding-v; // cancel navbar padding
+	// margin-bottom: - $o-navbar-padding-v; // cancel navbar padding
+	height: $o-navbar-height;
+	// padding-top: - $o-navbar-padding-v;
+	// padding-bottom: - $o-navbar-padding-v;
+
+	align-items: center;
+
+
+	.o_switch_lang_menu_flag {
+		height: calc(var(--o-navbar-height) - 20px);
+        max-width: 35px;
+		// height: 26px;
+		// width: 26px;
+		object-fit: fill;
+		// object-fit: cover;
+	}
+}
+.o_switch_lang_menu_items{
+    min-width: 300px;
+    img {
+        height: 2em !important;
+        max-width: 42px;
+    }
+}

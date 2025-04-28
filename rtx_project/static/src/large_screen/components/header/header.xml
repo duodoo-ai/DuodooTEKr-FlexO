@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="rtx_project.ProjectLargeScreen.Header">
+        <div class="data-container-header">
+            <a href="#" class="o_pipeline_large_screen_drawer_menu oi oi-apps me-3 text-dark" t-on-click="() => this.dm.toggle(true)"/>
+            <div class="data-container-header-title">
+                <span class="data-container-header-title-text">
+                    <t t-esc="props.title"/>
+                </span>
+            </div>
+            <div class="data-container-header-timer" t-out="state.currentDateTtime"/>
+        </div>
+
+    </t>
+</templates>

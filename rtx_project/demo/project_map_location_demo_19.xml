@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 19号线 -->
+        <record id="project_project_wuhan_metro_line_19_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">武汉站西广场站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">武汉站西广场站是19号线的起点站，位于武汉火车站西广场区域，为地下两层岛式车站，设3个出入口，设计为一座艺术特色站。 该站设计主题为“楚韵钟声”，整座车站设计充分体现楚文化，为乘客打造出具有楚风韵味的车站环境。车站整体空间提取了湖北省博物馆楚文化馆建筑元素，展现楚地古代音律艺术的巨大成就。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉市</field>
+            <field name="street">武汉地铁19号线武汉站西广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_19_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">武东站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">武东站位于武汉市青山区武东路与武东中路交汇处，是一座地下两层车站，共设4个出入口</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁19号线武东站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_19_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">鼓架山站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">鼓架山站位于严西湖西南侧，是一座地下二层岛式车站，共设4个出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁19号线鼓架山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_19_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">花山新城站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">花山新城站位于花山大道与双谷路交叉路口，为地下二层岛式站，设4个出入口，是一座艺术特色站。 花山新城站以“湖光山色”为主题，车站建筑创造出“无柱”大空间，站内视线宽阔通透，风格美观大气。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁19号线花山新城站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_19_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">花山河站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">花山河站位于希琥路和纹横街交叉口，与花城大道距离约700米，是一座地下二层岛式站，共设4个出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁19号线花山河站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_19_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">光谷五路站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">光谷五路站位于光谷五路与神墩一路交汇处，是一座十字交叉换乘站，与11号线在此换乘，共设4个出入口。。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁19号线光谷五路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_19_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">新月溪公园站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_19"/>
+            <field name="description">新月溪公园站位于高新二路与光谷五路交叉路口，为地下二层岛式车站，共设四个出入</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁19号线新月溪公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+
+
+    </data>
+</odoo>

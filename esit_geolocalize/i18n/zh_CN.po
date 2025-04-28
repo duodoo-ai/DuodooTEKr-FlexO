@@ -1,0 +1,221 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* esit_geolocalize
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-14 11:04+0000\n"
+"PO-Revision-Date: 2025-04-14 19:11+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid ""
+"AMap Open Platform API key is required..\n"
+"Visit https://lbs.amap.com/faq/quota-key/key/ for more information."
+msgstr ""
+"需要AMap开放平台API密钥..\n"
+"有关更多信息，请访问 https://lbs.amap.com/faq/quota-key/key/。"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+msgid "Address:"
+msgstr "地址："
+
+#. module: esit_geolocalize
+#: model:base.geo_provider,name:esit_geolocalize.geoprovider_amap_map
+msgid "Amap"
+msgstr "高德地图"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,field_description:esit_geolocalize.field_res_config_settings__geoloc_provider_amap_jsapi_key
+msgid "Amap JSAPI Key"
+msgstr "高德JSAPI密钥"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,field_description:esit_geolocalize.field_res_config_settings__geoloc_provider_amap_webservices_key
+msgid "Amap Web Services Key"
+msgstr "高德Web服务密钥"
+
+#. module: esit_geolocalize
+#: model:ir.model,name:esit_geolocalize.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
+
+#. module: esit_geolocalize
+#: model:ir.model,name:esit_geolocalize.model_res_partner
+msgid "Contact"
+msgstr "联系人"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+msgid "Error"
+msgstr "错误"
+
+#. module: esit_geolocalize
+#: model:ir.model,name:esit_geolocalize.model_base_geocoder
+msgid "Geo Coder"
+msgstr "地理编码器"
+
+#. module: esit_geolocalize
+#: model:ir.model,name:esit_geolocalize.model_base_geo_provider
+msgid "Geo Provider"
+msgstr "地理提供商"
+
+#. module: esit_geolocalize
+#: model_terms:ir.ui.view,arch_db:esit_geolocalize.res_config_settings_view_form
+msgid "JSAPI Key:"
+msgstr "JSAPI密钥:"
+
+#. module: esit_geolocalize
+#: model_terms:ir.ui.view,arch_db:esit_geolocalize.res_config_settings_view_form
+msgid "Key:"
+msgstr "密钥："
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+msgid "Locate on the Tencent map"
+msgstr "在腾讯地图上定位"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,field_description:esit_geolocalize.field_base_geo_provider__name
+msgid "Name"
+msgstr "名称"
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid "Please contact your administrator to configure the geo provider!"
+msgstr "请联系您的管理员以配置地理提供商！"
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid ""
+"Please contact your administrator to configure the key for the geographic "
+"information provider!"
+msgstr "请联系您的管理员以配置地理信息提供商的密钥！"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.xml:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.xml:0
+msgid "Please enter an address"
+msgstr "请输入地址"
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid "Provider %s is not implemented for geolocation service."
+msgstr "未为地理定位服务实施提供程序 %s。"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+msgid "Refresh"
+msgstr "刷新"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.xml:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.xml:0
+msgid "Save"
+msgstr "保存"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+msgid "Success"
+msgstr "成功"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.js:0
+msgid "Successfully located"
+msgstr "成功定位"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,field_description:esit_geolocalize.field_base_geo_provider__tech_name
+msgid "Technical Name"
+msgstr "技术名称"
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid ""
+"Tencent Location Service API key is required..\n"
+"Visit https://lbs.qq.com/faq/accountQuota/faqKey for more information."
+msgstr ""
+"需要腾讯位置服务API密钥..\n"
+"有关更多信息，请访问 https://lbs.qq.com/faq/accountQuota/faqKey。"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,field_description:esit_geolocalize.field_res_config_settings__geoloc_provider_tencentmap_key
+msgid "Tencent Map API Key"
+msgstr "腾讯地图API密钥"
+
+#. module: esit_geolocalize
+#: model:base.geo_provider,name:esit_geolocalize.geoprovider_tencent_map
+msgid "Tencent Maps"
+msgstr "腾讯地图"
+
+#. module: esit_geolocalize
+#. odoo-javascript
+#: code:addons/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.xml:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/static/src/webclient/actions/display_tencent_map_dialog.xml:0
+msgid "The current click coordinates are:"
+msgstr "当前的点击坐标为："
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid "The geo provider is not configured!"
+msgstr "未配置地理位置提供程序！"
+
+#. module: esit_geolocalize
+#. odoo-python
+#: code:addons/esit_geolocalize/models/base_geocoder.py:0
+#: code:addons/rhino-data-pipe/esit_geolocalize/models/base_geocoder.py:0
+msgid "The key for GEO provider '%s' is not configured!"
+msgstr "未配置地理位置提供商“%s”的密钥！"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,help:esit_geolocalize.field_res_config_settings__geoloc_provider_amap_jsapi_key
+#: model:ir.model.fields,help:esit_geolocalize.field_res_config_settings__geoloc_provider_amap_webservices_key
+msgid "Visit https://console.amap.com/dev/id/phone for more information."
+msgstr "有关更多信息，请访问 https://console.amap.com/dev/id/phone。"
+
+#. module: esit_geolocalize
+#: model:ir.model.fields,help:esit_geolocalize.field_res_config_settings__geoloc_provider_tencentmap_key
+msgid "Visit https://lbs.qq.com/dev/console/home for more information."
+msgstr "有关更多信息，请访问 https://lbs.qq.com/dev/console/home。"
+
+#. module: esit_geolocalize
+#: model_terms:ir.ui.view,arch_db:esit_geolocalize.res_config_settings_view_form
+msgid "Web Services Key:"
+msgstr "Web服务密钥："

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.eist.geoloclaize</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_geolocalize.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='geoloc_provider_id']" position="after">
+                <div class="mt8 content-group d-flex justify-content-between" invisible="geoloc_provider_techname != 'tencentmap'">
+                    <label for="geoloc_provider_tencentmap_key" string="Key:" class="w-25"/>
+                    <field name="geoloc_provider_tencentmap_key" class="w-75" widget="password_char"/>
+                </div>
+                <div class="mt8 content-group d-flex justify-content-between" invisible="geoloc_provider_techname != 'amap'">
+                    <label for="geoloc_provider_amap_jsapi_key" string="JSAPI Key:" class="w-25"/>
+                    <field name="geoloc_provider_amap_jsapi_key" class="w-75" widget="password_char"/>
+                </div>
+                <div class="mt8 content-group d-flex justify-content-between" invisible="geoloc_provider_techname != 'amap'">
+                    <label for="geoloc_provider_amap_webservices_key" string="Web Services Key:" class="w-25"/>
+                    <field name="geoloc_provider_amap_webservices_key" class="w-75" widget="password_char"/>
+                </div>
+            </xpath>
+        </field>
+
+    </record>
+
+    <record id="res_config_settings_view_form_inherit_eist_erp_base" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.eist_erp_base.geoloclaize</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="eist_erp_base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <div id="msg_esit_geolocalize" position="replace"/>
+
+        </field>
+
+    </record>
+
+</odoo>

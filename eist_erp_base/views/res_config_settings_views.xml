@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- <record id="res_config_settings_view_form_inherit_base_setup" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.base.setup.inherit.eist</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <div id="invite_users" position="before">
+                <widget name="res_config_general_navigation" />
+            </div>
+        </field>
+     </record> -->
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">Base Settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="0" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+
+            <!-- <block id="user_default_rights" position="before">
+                <div id="user_default_rights">
+            </block> -->
+            <div id="invite_users" position="before">
+                <widget name="res_config_general_navigation" />
+            </div>
+
+            <xpath expr="//block[@id='user_default_rights']" position="before">
+                <div id="user_default_rights"/>
+            </xpath>
+
+            <xpath expr="//block[@name='integration']" position="before">
+                <div id="integration"/>
+            </xpath>
+
+            <!-- 隐藏一般设置中的 appstore-->
+            <xpath expr="//widget[@name='mobile_apps_funnel']" position="replace"/>
+            <xpath expr="//widget[@name='res_config_edition']" position="replace"/>
+
+            <xpath expr="//form/app[@name='general_settings']" position="before">
+                <app data-string="ERP Settings" string="ERP Settings" name="eist_erp_base">
+
+
+                    <div id="eist_apps">
+                        <block title="Applications" name="eist_applications_settings">
+
+                            <setting id="eist_web_theme_setting" help="Powerful, modern, and configurable to respond to backend themes.">
+                                <field name="module_eist_web_theme" string="Web Theme" />
+                                <div class="content-group" invisible="not module_eist_web_theme" id="msg_eist_web_theme">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+                            </setting>
+
+                            <setting id="eist_web_toolbox_setting" help="Provides the ability for web clients to operate hardware.">
+                                <field name="module_eist_web_toolbox"/>
+                                <div class="content-group" invisible="not module_eist_web_toolbox" id="msg_module_eist_web_toolbox">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+                            </setting>
+
+                            <setting id="eist_report_management_setting" help="It provides the functions of unified report management and online report design.">
+                                <field name="module_eist_report_management" string="Report Management"/>
+                                <div class="content-group" invisible="not module_eist_report_management" id="msg_module_eist_report_management">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+                            </setting>
+
+                        </block>
+                    </div>
+
+                    <div id="eist_solution">
+                        <block title="Solution" name="eist_solution_settings">
+
+
+                            <setting id="eist_pos_setting" help="User-friendly PoS interface for shops and restaurants.">
+                                <field name="module_eist_pos" />
+                                <div class="content-group" invisible="not module_eist_pos" id="msg_eist_pos">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+                            </setting>
+
+
+                            <setting id="eist_social_app_setting" help="Integrate social app instant messaging features, such as social app authentication login, use social app to send notifications, sync social app organizational structure, etc.">
+                                <field name="module_eist_social_app" />
+                                <div class="content-group" invisible="not module_eist_social_app" id="msg_eist_social_app">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+                            </setting>
+
+
+                        </block>
+                    </div>
+
+                    <div id="eist_extended_functionality">
+                        <block title="Extended functionality" name="eist_extended_functionality_settings">
+
+                            <setting id="esit_geolocalize_setting" help="On the basis of the original electronic map provider, the Chinese electronic map provider will be added to enhance the ability to obtain the geographical location of partners.">
+                                <field name="module_esit_geolocalize" />
+                                <div class="content-group" invisible="not module_esit_geolocalize" id="msg_esit_geolocalize">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+
+                            </setting>
+
+                            <setting id="eist_multi_platform_setting" help="Provide multi platform client access functionality.">
+                                <field name="module_eist_multi_platform" />
+                                <div class="content-group" invisible="not module_eist_multi_platform" id="msg_eist_multi_platform">
+                                    <div class="mt16 text-warning">
+                                        <strong>Save</strong> this page and come back here to set up the feature.
+                                    </div>
+                                </div>
+
+                            </setting>
+
+                        </block>
+                    </div>
+
+
+                    <!-- <div id="eist_about">
+                        <block title="About" name="eist_about_settings">
+                            <widget name='eist_edition'/>
+                        </block>
+                    </div> -->
+
+                </app>
+            </xpath>
+
+
+        </field>
+
+    </record>
+
+
+    <record id="action_erp_configuration" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="path">erp-config</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'eist_erp_base', 'bin_size': False}</field>
+    </record>
+
+    <menuitem id="menu_erp_config" name="ERP Settings" parent="base.menu_administration" sequence="-1" action="action_erp_configuration" groups="base.group_system" />
+</odoo>

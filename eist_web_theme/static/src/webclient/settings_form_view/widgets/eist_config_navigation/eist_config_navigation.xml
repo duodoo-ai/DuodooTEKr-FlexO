@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+
+    <t t-inherit="eist_erp_base.res_config_eist_navigation" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//div[@id='res_config_eist_navigation']" position="inside">
+            <a type="button" id="eist_nav_brand" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#brand_settings">
+                <i class="fa fa-building" />
+                <span>Base settings</span>
+            </a>
+
+            <a type="button" id="eist_nav_theme" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#theme_setting">
+                <i class="bi bi-palette" />
+                <span>Theme</span>
+            </a>
+
+            <a type="button" id="eist_nav_signup_and_login" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#signup_and_login_settings">
+                <i class="fa fa-sign-in" />
+                <span>Signup And Login</span>
+            </a>
+
+            <a type="button" id="eist_nav_apps" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#eist_apps">
+                <i class="fa fa-puzzle-piece" />
+                <span>Applications</span>
+            </a>
+
+            <a type="button" id="eist_nav_solution" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#eist_solution">
+                <i class="fa fa-graduation-cap" />
+                <span>Solution</span>
+            </a>
+
+            <a type="button" id="eist_nav_industry_solution" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#eist_industry_solution">
+                <i class="fa fa-graduation-cap" />
+                <span>Industry Solution</span>
+            </a>
+
+            <a type="button" id="eist_nav_extended_functionalityn" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#eist_extended_functionality">
+                <i class="fa fa-cubes" />
+                <span>Extended functionality</span>
+            </a>
+
+            <a type="button" id="eist_nav_about" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#eist_about">
+                <i class="fa fa-info-circle" />
+                <span>About</span>
+            </a>
+        </xpath>
+
+    </t>
+
+</template>

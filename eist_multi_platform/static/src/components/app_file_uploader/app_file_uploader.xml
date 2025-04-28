@@ -1,0 +1,27 @@
+<templates>
+
+    <t t-name="eist_multi_platform.AppFileUploader">
+
+        <FileUploader acceptedFileExtensions="props.acceptedFileExtensions" multiUpload="false" onUploaded.bind="onFileUploaded" resModel="props.resModel">
+            <t t-set-slot="toggler">
+                <span groups="eist_multi_platform.group_multi_platform_admin">
+                    <button class="btn btn-primary">
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        Upload the app file
+                    </button>
+                </span>
+            </t>
+            <t t-slot="default">
+                <div t-if="state.uploading" class="mt-2">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" t-att-style="'width: ' + state.progress + '%'" t-att-aria-valuenow="state.progress" aria-valuemin="0" aria-valuemax="100">
+                            <t t-esc="state.progress + '%'"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </FileUploader>
+
+    </t>
+
+</templates>

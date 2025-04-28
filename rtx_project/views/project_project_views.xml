@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- 项目列表，继承原视图 -->
+    <record model="ir.ui.view" id="view_inherit_project_project_list">
+        <field name="name">inherit.project.project.list</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project"/>
+        <field name="arch" type="xml">
+            <field name="stage_id" position="after">
+                <field name="pipeline_diameter" optional="show"/>
+                <field name="pipeline_length" optional="show"/>
+                <!--                <field name="monthly_traffic" optional="show"/>-->
+                <!--                <field name="seasonal_traffic" optional="show"/>-->
+                <!--                <field name="year_traffic" optional="show"/>-->
+                <!--                <field name="real_input_traffic" optional="show"/>-->
+                <!--                <field name="real_output_traffic" optional="show"/>-->
+                <!--                <field name="total_traffic" optional="show"/>-->
+            </field>
+        </field>
+    </record>
+
+    <!-- 项目form，继承原视图 -->
+    <record id="edit_project" model="ir.ui.view">
+        <field name="name">project.project.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group/group[last()]" position="after">
+                <group string="Pipeline data">
+                    <field name="pipeline_no"/>
+                    <field name="pipeline_diameter"/>
+                    <field name="pipeline_activation_time"/>
+                    <!-- <field name="duration_tracking" widget="jsonb"/> -->
+                    <field name="pipeline_length"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- 项目路线图，右侧显示地图 -->
+    <record model="ir.ui.view" id="view_project_route_map_list">
+        <field name="name">project.project.route_map.list</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <list default_order="sequence" js_class="project_route_map_list" decoration-success="not pipeline_node_has_exception" decoration-danger="pipeline_node_has_exception">
+                <field name="id" column_invisible="True"/>
+                <field name="sequence" column_invisible="True"/>
+                <field name="pipeline_node_has_exception" column_invisible="True"/>
+                <field name="name"/>
+                <field name="pipeline_length"/>
+                <field name="date" />
+                <field name="stage_id" options="{'no_open': True}"/>
+                <field name="monthly_traffic" optional="hide" sum="monthly_traffic"/>
+                <field name="seasonal_traffic" optional="hide" sum="seasonal_traffic"/>
+                <field name="year_traffic" optional="hide" sum="year_traffic"/>
+                <field name="real_input_traffic" optional="hide"/>
+                <field name="real_output_traffic" optional="hide"/>
+                <field name="total_traffic" optional="show" sum="total_traffic"/>
+                <field name="last_update_status" string="Status" nolabel="1" width="20px" widget="project_state_selection"/>
+                <field name="locations" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_view_project_route_map" model="ir.actions.act_window">
+        <field name="name">Route map</field>
+        <!-- <field name="path">project-map</field> -->
+        <field name="res_model">project.project</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="view_mode">list</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_project_route_map_list')})
+        ]"/>
+    </record>
+
+    <!-- <record id="action_projects_large_screen" model="ir.actions.act_url">
+        <field name="name">Monitor the large screen</field>
+        <field name="type">ir.actions.act_url</field>
+        <field name="target">new</field>
+        <field name="url">/project/large_screen</field>
+    </record> -->
+
+    <record id="action_projects_large_screen" model="ir.actions.client">
+        <field name="name">Monitor the large screen</field>
+        <field name="path">pipeline_large_screen</field>
+        <field name="tag">pipeline_large_screen</field>
+        <field name="target">fullscreen</field>
+    </record>
+
+</odoo>

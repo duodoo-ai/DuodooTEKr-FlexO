@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="project_large_screen" name="Project monitor the large screen">
+        <t t-call="web.frontend_layout">
+            <t t-set="head">
+                <t t-call-assets="rtx_project.assets_largescreen" lazy_load="True"/>
+                <script type="text/javascript">
+                    odoo.__session_info__ = <t t-out="json.dumps({
+                        '__session_info__': session_info,
+                        'debug': debug,
+                        'user_context': user_context,
+                        'project': {
+                                'pipeline': {
+                                    'normal_state_color':normal_state_color,
+                                    'exception_state_color':exception_state_color
+                                },
+                                'large_screen':{
+                                    'title':large_screen_title,
+                                    'background_color':large_screen_background_color
+                                }
+                            }
+                    })"/>
+;
+                </script>
+            </t>
+            <t t-set="no_header" t-value="1"/>
+            <t t-set="no_footer" t-value="1"/>
+            <t t-set="no_livechat" t-value="1"/>
+            <t t-set="body_classname" t-value="'o_project_large_screen '"/>
+            <owl-component name="project_large_screen" t-att-props="json.dumps({
+                    'currentLang': current_lang,
+                    'title': large_screen_title,
+                    'provider_info': provider_info,
+                    'projects': projects
+                })"/>
+        </t>
+    </template>
+
+</odoo>

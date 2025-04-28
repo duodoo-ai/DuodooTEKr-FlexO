@@ -1,0 +1,220 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eist_erp_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-15 12:33+0000\n"
+"PO-Revision-Date: 2025-03-15 20:35+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.5\n"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"<strong>Save</strong> this page and come back here to set up the feature."
+msgstr "<strong>保存</strong> 此页面并返回此处以设置该功能。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Applications"
+msgstr "应用"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+#: model:ir.model,name:eist_erp_base.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: eist_erp_base
+#: model:ir.model,name:eist_erp_base.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
+
+#. module: eist_erp_base
+#: model:ir.model,name:eist_erp_base.model_res_partner
+msgid "Contact"
+msgstr "联系人"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_dingding
+msgid "Dingding integration"
+msgstr "钉钉集成"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+msgid "EMail"
+msgstr "电子邮件"
+
+#. module: eist_erp_base
+#: model:ir.actions.act_window,name:eist_erp_base.erp_configurator
+msgid "ERP Configurator"
+msgstr "ERP配置器"
+
+#. module: eist_erp_base
+#: model:ir.ui.menu,name:eist_erp_base.menu_erp_config
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "ERP Settings"
+msgstr "ERP设置"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Extended functionality"
+msgstr "扩展功能"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__fax
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_partner__fax
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_users__fax
+msgid "Fax"
+msgstr "传真"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_feishu
+msgid "Feishu integration"
+msgstr "飞书集成"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__hide_enterprise_app
+msgid "Hide Enterprise App"
+msgstr "隐藏企业版应用"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"Integrate social app instant messaging features, such as social app "
+"authentication login, use social app to send notifications, sync social app "
+"organizational structure, etc."
+msgstr ""
+"集成社交应用即时通讯功能，如社交应用认证登录、使用社交应用发送通知、同步社交"
+"应用组织结构等。"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_app
+msgid "Integrate social app solutions"
+msgstr "集成社交应用解决方案"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+msgid "Integrations"
+msgstr "集成"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"It provides the functions of unified report management and online report "
+"design."
+msgstr "提供报表统一管理和在线设计报表的功能。"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+msgid "Languages"
+msgstr "语言"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/eist_config_navigation/eist_config_navigation.xml:0
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+msgid "Navigation"
+msgstr "导航"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"On the basis of the original electronic map provider, the Chinese "
+"electronic map provider will be added to enhance the ability to obtain the "
+"geographical location of partners."
+msgstr ""
+"在原有电子地图提供商的基础上，将增加中国电子地图提供商，以增强获取合作伙伴地"
+"理位置的能力。"
+
+#. module: eist_erp_base
+#: model:ir.actions.client,name:eist_erp_base.action_open_erp_configurator
+msgid "Open ERP Configurator"
+msgstr "打开ERP配置器"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_esit_geolocalize
+msgid "Partners Geolocation"
+msgstr "合作伙伴地理位置"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+msgid "Permissions"
+msgstr "权限"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Powerful, modern, and configurable to respond to backend themes."
+msgstr "强大，现代，可以配置的响应后端主题。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Provides the ability for web clients to operate hardware."
+msgstr "为 Web 客户端提供操作硬件的能力。"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_report_management
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Report Management"
+msgstr "报表管理"
+
+#. module: eist_erp_base
+#: model:ir.actions.act_window,name:eist_erp_base.action_erp_configuration
+msgid "Settings"
+msgstr "设置"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Solution"
+msgstr "解决方案"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_pos
+msgid "Solutions for stores and restaurants"
+msgstr "商店和餐厅的解决方案"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "User-friendly PoS interface for shops and restaurants."
+msgstr "面向商店和餐馆的用户友好 PoS 界面。"
+
+#. module: eist_erp_base
+#. odoo-javascript
+#: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
+msgid "Users"
+msgstr "用户"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_wechat
+msgid "WeChat integration"
+msgstr "微信集成"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_web_theme
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Web Theme"
+msgstr "后端主题"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_web_toolbox
+msgid "Web ToolBox"
+msgstr "Web 工具箱"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_wecom
+msgid "Wecom integration"
+msgstr "企业微信集成"

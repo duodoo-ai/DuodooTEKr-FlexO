@@ -1,0 +1,48 @@
+.data-container-header {
+    background-size: cover;
+    background-image: url("/rtx_project/static/img/large_screen/header_background.png");
+    background-position: 50%;
+    position: relative;
+    z-index: 1000;
+    pointer-events: all;
+
+    .o_pipeline_large_screen_drawer_menu {
+        position: absolute;
+        z-index: 1001;
+        color: #fff !important;
+        font-size: 24px;
+        top: 10px;
+        left: 10px;
+    }
+
+    &-title {
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        color: transparent;
+        height: 60px;
+        line-height: 46px;
+
+        &-text {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            width: 100%;
+            background: linear-gradient(92deg, #aeebd3, #7ae477 48.8525390625%, #56e7a6);
+            // background: linear-gradient(92deg, #0072ff, #00eaff 48.8525390625%, #01aaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &-timer {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        // color: #00ff00;
+        color: #35eda5;
+    }
+}

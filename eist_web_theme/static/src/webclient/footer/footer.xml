@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="eist_web_theme.Footer" owl="1">
+        <footer class="o_erp_footer">
+            <div class="o_footer_content">
+                <div class="o_footer_content_left">
+                    <a t-if="state.theme.footer.display_support" class="px-2" t-att-href="state.theme.footer.support_url" target="_blank">Technical support</a>
+                    <a t-if="state.theme.footer.display_doc" class="px-2" t-att-href="state.theme.footer.doc_url" target="_blank">Document</a>
+                </div>
+                <div class="o_footer_content_center">
+                    
+                </div>
+                <div class="o_footer_content_right">
+                    <span t-if="state.theme.footer.display_copyright" class="px-2" t-esc="state.theme.footer.copyright"/>
+                    <span t-if="state.theme.footer.display_version" class="px-2" t-esc="state.version"/>
+                </div>
+            </div>
+        </footer>
+    </t>
+</templates>

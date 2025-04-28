@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 7号线 -->
+        <record id="project_project_wuhan_metro_line_8_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">金潭路站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于金潭路与兴业中路交叉路口，沿兴业中路路中布置，车站为地下两层岛侧混合式站台车站，车站长552m，标准段总宽28.65m，车站共设6个出入口和4组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉市</field>
+            <field name="street">武汉地铁8号线金潭路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">宏图大道站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于宏图大道武汉客厅旁，车站为地下一层岛式站台车站，车站总长283m，标准段宽22.1m，车站共设4个出入口和4组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线宏图大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">塔子湖站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于塔子湖东路大道与规划路丁子路口，车站为地下两层岛式站台车站，车站总长257m，标准段宽21.3m，车站共设4个出入口和2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线塔子湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">中一路站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于塔子湖东路与后湖大道路口，沿塔子湖东路路中布置，车站为地下两层岛式站台车站，车站长618m，宽22.3m，车站共设6个标准出入口、6个物业疏散出入口、3个车站紧急疏散口和5组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线中一路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">竹叶山站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于金桥大道与发展路交叉路口以北的田田绿化广场下，车站为地下三层岛式站台车站，车站长223m，标准段外包宽度为23.1m，车站共设,2个出入口和2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线竹叶山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">赵家条站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">位于建设大道与黄埔大街交叉路口西南侧，沿建设大道东西向布置，共设4个出入口与4组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线赵家条站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">黄浦路站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于解放大道与卢沟桥路路口，沿卢沟桥路布置直至解放公园内，车站为地下两层侧式站台车站，车站长380m，宽12.5~32.1m，车站共设7个出入口、1个换乘通道和2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线黄浦路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">徐家棚站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于和平大道原三三七铁路货场内，车站为地下三层侧式站台车站，车站长约575m，宽约13.9～66.7m，车站共设6个出入口和4组高风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线徐家棚站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">徐东站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于友谊大道与徐东大街交叉路口以东，沿徐东大街的南侧布置，车站为地下两层岛式站台车站，车站总长273.77m，标准段宽21.1m，车站共设4个出入口和3组风亭。。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线徐东站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">汪家墩站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于徐东大街和团结大道交叉路口上，跨宏昌路、宏祥路，沿徐东大街的南侧布置，车站为地下两层岛式站台车站，车站总长732m，标准段宽21.75m，车站共设15个出入口（车站出入口5个，物业出入口10个）和7组风亭（车站风井3组，开发风井7组）。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线汪家墩站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">岳家嘴站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于中北路与徐东大街的交叉路口，岳家嘴互通式立交桥匝道内，车站为地下二层岛式车站, 车站全长21m，标准段宽度为29m，车站共设置了 2 个直通地面的出入口（其余8个出入口与4号线共用），设3组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线岳家嘴站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">梨园站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于徐东大街与华电小路交叉路口以东的徐东大街路下，车站为地下两层岛式站台车站，车站长约405.7m，标准段宽度为22.5m，车站共设4个出入口和4组低风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线梨园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">省博湖北日报站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站位于东湖路与黄鹂路交叉路口北侧，沿东湖路南北向敷设。本站为地下二层岛式车站，车站总长255m，标准段宽度23m。车站共设置3个出入口（Ⅱ号出入口预留）、2组风亭、1个公共区紧急疏散口、1个设备区紧急疏散口。车站施工采用半盖挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线省博湖北日报站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">武汉商务区站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">位于王家墩商务区中心区域，商务东路、珠江路、商务西路及范海路形成的地块中。为地下两层侧式站台，主体结构采用盆式开挖结合盖挖逆作法施工。车站共设置12个出入口和4组风亭。车站于2011年7月开工建设。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线武汉商务区站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">中南医院站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">中南医院站为地下二层单柱双跨（局部三跨）框架明挖结构。外包总长度623.80m，标准段宽21.3m，端头井宽29.3m。标准段底板埋深约17.3m，覆土厚度3.5m。车站设置4个出入口，3组风亭，2个安全出入口（兼消防救援），出入口在兴国路两侧布置，风亭分设在车站中部及东部。。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线中南医院站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">水果湖站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">水果湖站为地下二层岛式半盖挖结构。外包总长度287.25m，标准段宽21.3m，端头井宽29.6m。标准段底板埋深约19.7m，覆土厚度4.02m。车站设置4个出入口，2组风亭，2个安全出口（兼消防救援），出入口分设于东湖路与白鹭街交叉口的四个象限，风亭分设车站南北两端。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线水果湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">洪山路站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">洪山路站为8号线二期工程的第四座车站，车站设计为地下两层12m岛式车站。车站主体布置在东一路和洪山路交叉路口下，沿东一路敷设。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线洪山路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">小洪山站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">小洪山站为8号线二期工程第5座车站，设计为地下三层12m岛式车站。车站主体布置在八一路与科技小路交叉路口处，沿八一路东西向呈一字型布置。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线小洪山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">街道口站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">街道口站位8号线二期工程的第6座车站，为2、8号线的换乘车站，该站与已建成运营的2号线车站采用站厅付费区T字型换乘方式。车站位于武珞路以南的珞狮南路下，沿珞狮南路呈南北向布置。车站为地下四层14m分离岛式站台车站，车站外包总长为251.05m,标准段总宽47.3m。车站共设置4个出入口（物业部分另设置6个出入口）、2组风亭。车站采用半铺盖法顺做施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线街道口站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">马房山站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">马房山站位8号线二期工程第7座车站，为地下二层14m岛式车站,车站外包总长333.45m，标准段外包总宽23.3m;车站主体布置在珞狮南路和珞桂路交叉口的北面，沿珞狮南路南北向呈一字型布置，与11号线珞狮南路站呈“L”形换乘；8号线车站共设置4个出入口（1个预留）、2组风亭、3个安全出口（兼消防救援）；车站采用半盖挖法顺做施工</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线马房山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">文治街站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线文治街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">文昌路站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站主体布置在文祥路与文昌路交叉口处，沿文祥路东西向呈一字型布置。为地下两层单柱岛式站台车站。车站外包总长283.05m，标准段外包总宽20.3m，车站共设置4个出入口、2组风亭、1个安全出口（兼消防救援）。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线文昌路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">省农科院站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站主体布置在南湖大道与野芷湖西路交叉口处，沿野芷湖西路南北向布置，为地下三层双柱岛式站台车站（其中地下一层为站厅层、地下二层为设备层、地下三层为站台层）。车站外包总长214.18m，标准段外包总宽23.50m，车站共设置4个出入口、2组风亭、3个消防疏出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线省农科院站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_24" model="project.map.location">
+            <field name="sequence">24</field>
+            <field name="active">True</field>
+            <field name="name">马湖站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">车站主体布置在野芷湖西路与马湖路交叉口处，沿野芷湖西路南北向布置；为地下二层单柱岛式站台车站（其中地下一层为站厅层、地下二层为站台层），车站总长554.06m，标准段外包总宽21.3m，站台长度为186米，站台宽度12m。车站共设置4个出入口、2组风亭、1个安全出口（兼消防救援）。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线马湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_25" model="project.map.location">
+            <field name="sequence">25</field>
+            <field name="active">True</field>
+            <field name="name">野芷湖站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">位于珞狮南路、野芷湖大桥、武大铁路南环线、三环线所围合的区域内。7号线一期野芷湖站为地面一层站厅，地下一层为岛式站台，与8号线一期“T”型换乘。近期共设置6个出入口(含2个7、8号线共用出入口和1个8号线地下出入口)、5组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线野芷湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_26" model="project.map.location">
+            <field name="sequence">26</field>
+            <field name="active">True</field>
+            <field name="name">黄家湖地铁小镇站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">黄家湖地铁小镇站位于黄家湖大道与柏木岭街交叉口西南象限地块内，车站沿黄家湖大道方向布置，与规划远期17号线L型通道换乘。车站为地下一层岛式站台车站，站台宽度12m；站厅位于地上一层，地上二层为地铁配套用房。车站主体结构外包总长327.1m，地面厅总长155.4m，宽32.25m。本站主体采用明挖顺作法施工，共设4个出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线黄家湖地铁小镇站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_8_station_27" model="project.map.location">
+            <field name="sequence">27</field>
+            <field name="active">True</field>
+            <field name="name">军运村站</field>
+            <field name="project_id" ref="rtx_project.project_project_wuhan_metro_line_8"/>
+            <field name="description">军运村站位于黄家湖大道与强军路交叉口的西南象限军运村地块内，车站沿黄家湖大道方向布置。车站为地下一层岛式车站，站台宽度12m；站厅位于地上一层。车站主体结构外包总长664.05m，地面厅总长137.2m，宽33.3m。本站主体采用明挖顺作法施工，共设4个出入口、3组风亭</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁8号线军运村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+
+    </data>
+</odoo>

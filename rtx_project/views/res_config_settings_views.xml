@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="project.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <block name="analytic" position="after">
+
+                <block title="Electronic map of water supply pipelines" name="water_supply_pipeline_emap">
+                    <setting string="E-map">
+                        <div class ="content-group">
+                            <div class="row">
+                                <label string="Default Provider" for="map_provider" class="col-lg-4 o_light_label"/>
+                                <field name="map_provider" required="1"/>
+                            </div>
+                        </div>
+                        <div class ="mt8 content-group" invisible="map_provider != 'amap'">
+                            <label for="amap_jsapi_key" class="mr8" string="Amap JSAPI Key:"/>
+                            <div class="mt8">
+                                <field name="amap_jsapi_key" class="w-100" widget="password_char"/>
+                            </div>
+                            <label for="amap_web_services_key" class="mr8" string="Amap Web Services Key:"/>
+                            <div class="mt8">
+                                <field name="amap_web_services_key" class="w-100" widget="password_char"/>
+                            </div>
+                            <div class="text-start" style="position:relative;">
+                                <a class="oe_link" href="https://console.amap.com/dev/id/phone" target="_blank">
+                                    <i class="oi oi-arrow-right"/>
+                                    Sign up to Amap and create an application.
+                                </a>
+                            </div>
+                        </div>
+                        <div class ="content-group mt-8" invisible="map_provider != 'tencent_map'">
+                            <label for="tencent_map_key" class="mr8" string="Tencent Map Key:"/>
+                            <div class="mt8">
+                                <field name="tencent_map_key" class="w-100" widget="password_char"/>
+                            </div>
+                            <div class="text-start" style="position:relative;">
+                                <a class="oe_link" href="https://lbs.qq.com/" target="_blank">
+                                    <i class="oi oi-arrow-right"/>
+                                    Sign up to Tencent Map and create an application.
+                                </a>
+                            </div>
+                        </div>
+                        <div class ="content-group  mt-8" invisible="map_provider != 'map_box'">
+                            <label for="map_box_token" class="mr8" string="Token Map Box:"/>
+                            <div class="mt8">
+                                <field name="map_box_token" class="w-100" widget="password_char"/>
+                            </div>
+                            <div class="text-start" style="position:relative;">
+                                <a class="oe_link" href="https://account.mapbox.com/auth/signup/" target="_blank">
+                                    <i class="oi oi-arrow-right"/>
+                                    Sign up to MapBox to get a free token
+                                </a>
+                            </div>
+                        </div>
+                    </setting>
+
+                    <setting string="Amap Map Style">
+                        <div class="content-group">
+                            <label for="amap_map_style" class="mr8" string="Amap Map Style:"/>
+                            <field name="amap_map_style" required="map_provider == 'amap'"/>
+                        </div>
+                    </setting>
+
+                    <setting id="water_supply_pipeline_normal_state_color_setting" help="Display the normal colors in the electronic map pipeline">
+                        <field name="water_supply_pipeline_normal_state_color" widget="color"/>
+                    </setting>
+                    <setting id="water_supply_pipeline_exception_state_color_setting" help="Abnormal colors displayed in the electronic map pipeline">
+                        <field name="water_supply_pipeline_exception_state_color" widget="color"/>
+                    </setting>
+                </block>
+
+                <block title="Monitor the large screen" name="large_screen">
+                    <setting id="water_supply_pipeline_large_screen_title" help="Monitor the title text on the big screen">
+                        <field name="water_supply_pipeline_large_screen_title" string="Title" class="w-100"/>
+                    </setting>
+                    <setting id="water_supply_pipeline_large_screen_background_color" help="Monitor the background color of the large screen">
+                        <field name="water_supply_pipeline_large_screen_background_color" string="Background color" widget="color"/>
+                    </setting>
+                </block>
+
+            </block>
+        </field>
+
+    </record>
+
+
+</odoo>

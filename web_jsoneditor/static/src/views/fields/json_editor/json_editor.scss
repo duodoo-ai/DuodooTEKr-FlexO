@@ -1,0 +1,43 @@
+.o_field_jsone_editor {
+    width: 100% !important;
+    min-height: 600px !important;
+
+    .jsoneditor {
+        .jsoneditor-menu {
+            span.jsoneditor-renderMode {
+                font-size: 8pt;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 10px;
+            }
+
+            .jsoneditor-search {
+                .jsoneditor-frame {
+                    display: flex !important;
+                }
+            }
+        }
+
+        .jsoneditor-outer {
+            min-height: 530px !important;
+
+            .jsoneditor-text {
+                min-height: 530px !important;
+            }
+
+            .ace-jsoneditor {
+                min-height: 530px !important;
+            }
+
+            // .jsoneditor-tree {
+            //     min-height: 530px !important;
+            // }
+            .jsoneditor-preview {
+                min-height: 530px !important;
+            }
+        }
+    }
+
+
+}

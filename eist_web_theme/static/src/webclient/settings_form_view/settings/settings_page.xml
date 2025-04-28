@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.SettingsPage" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('settings')]" position="inside">
+            <ScrollTopButton t-if="displayScrollTopButton" target="settingsRef" show="state.show"/>
+        </xpath>
+    </t>
+
+</templates>

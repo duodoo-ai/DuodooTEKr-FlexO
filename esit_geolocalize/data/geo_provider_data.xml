@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="geoprovider_tencent_map" model="base.geo_provider">
+        <field name="tech_name">tencentmap</field>
+        <field name="name">Tencent Maps</field>
+    </record>
+    <record id="geoprovider_amap_map" model="base.geo_provider">
+        <field name="tech_name">amap</field>
+        <field name="name">Amap</field>
+    </record>
+
+</odoo>

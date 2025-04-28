@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="eist_web_theme.ThemeMenu" owl="1">
+
+        <div class="o-theme-systray-class o-dropdown dropdown o-dropdown--no-caret">
+            <button class="dropdown-toggle o-no-caret btn btn-light" type="button" hotkey="t" accesskey="t" data-bs-toggle="offcanvas" data-bs-target="#o_theme_panel" aria-controls="o_theme_panel" t-on-click.stop.prevent="() => this.openThemePanel()">
+                <i class="oi oi-settings-adjust"></i>
+            </button>
+            <ThemePanel  />
+        </div>
+
+    </t>
+
+</templates>

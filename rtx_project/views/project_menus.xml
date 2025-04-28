@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+    <menuitem name="Projects Map" id="menu_projects_map" parent="project.menu_main_pm" sequence="1">
+
+        <menuitem name="Route Map" id="menu_projects_project_route_map" sequence="1" action="action_view_project_route_map"/>
+
+
+        <menuitem name="Project Stage" id="menu_projects_project_group_stage" sequence="3" action="project.open_view_project_all_group_stage" groups="project.group_project_stages"/>
+
+        <menuitem name="Project Map Locations" id="menu_projects_project_map_location" sequence="4" action="action_project_map_location"/>
+
+    </menuitem>
+
+
+    <menuitem name="Monitor the large screen" id="menu_projects_large_screen" sequence="70" action="action_projects_large_screen" web_icon="rtx_project,static/description/large_screen.png" groups="project.group_project_manager,project.group_project_user" />
+
+
+
+
+</odoo>

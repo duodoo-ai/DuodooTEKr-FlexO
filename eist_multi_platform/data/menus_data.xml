@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Icons.SPEED -->
+        <record id="multi_platform_main_menu_dashboard" model="res.multi_platform.menus">
+            <field name="name">Dashboard</field>
+            <field name="code">home</field>
+            <field name="route">/home</field>
+            <field name="icon_type">character</field>
+            <field name="char_icon">dashboard</field>
+            <field name="image_icon" type="base64" file="eist_multi_platform/static/imgs/dashboard.png"/>
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="display_in_bottom_app_bar">True</field>
+        </record>
+
+        <record id="multi_platform_main_menu_my" model="res.multi_platform.menus">
+            <field name="name">My</field>
+            <field name="code">my</field>
+            <field name="route">/my</field>
+            <field name="icon_type">character</field>
+            <field name="char_icon">person</field>
+            <field name="image_icon" type="base64" file="eist_multi_platform/static/imgs/my.png"/>
+            <field name="sequence">99</field>
+            <field name="active">True</field>
+            <field name="display_in_bottom_app_bar">True</field>
+        </record>
+
+        <record id="multi_platform_main_menu_settings" model="res.multi_platform.menus">
+            <field name="name">Settings</field>
+            <field name="code">settings</field>
+            <field name="route">/settings</field>
+            <field name="icon_type">character</field>
+            <field name="char_icon">settings</field>
+            <field name="image_icon" type="base64" file="eist_multi_platform/static/imgs/settings.png"/>
+            <field name="sequence">100</field>
+            <field name="active">True</field>
+            <field name="display_in_bottom_app_bar">False</field>
+        </record>
+
+
+    </data>
+</odoo>

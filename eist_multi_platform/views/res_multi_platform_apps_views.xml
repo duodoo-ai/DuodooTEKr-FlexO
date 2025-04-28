@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_res_multi_platform_apps_from" model="ir.ui.view">
+        <field name="name">res.multi_platform.apps.form</field>
+        <field name="model">res.multi_platform.apps</field>
+        <field name="arch" type="xml">
+            <form create="False">
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <group>
+                        <field name="name" />
+                        <field name="platform" />
+                        <field name="version" />
+                        <field name="app_filename" />
+                        <field name="app_file_path"  />
+                        <field name="app_file_size" />
+                        <field name="build_number" />
+                        <field name="package_name" />
+                        <field name="url" widget="CopyClipboardURL" />
+                        <field name="description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_multi_platform_apps_list" model="ir.ui.view">
+        <field name="name">res.multi_platform.apps.list</field>
+        <field name="model">res.multi_platform.apps</field>
+        <field name="arch" type="xml">
+            <list sample="1" decoration-muted="not is_published" decoration-success="is_published" js_class="multi_platform_apps_list_view" create="False">
+                <field name="name" />
+                <field name="platform" />
+                <field name="version" />
+                <field name="is_published" />
+            </list>
+        </field>
+    </record>
+
+    <record id="action_open_multi_platform_publish_app" model="ir.actions.act_window">
+        <field name="name">Publish app</field>
+        <field name="res_model">res.multi_platform.apps</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" eval="False"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,459 @@
+.o_web_client {
+
+    &[data-sidebar-default-minimize='true'] {
+        .o_sidebar_menu {
+            width: $o-sidebar-menu-collapse-width !important;
+
+            .o_sidebar_menu_brand {
+                .o_sidebar_menu_brand_logo {
+                    .sidebar-logo-default {
+                        display: none;
+                    }
+                    .sidebar-logo-minimize {
+                        display: inherit;
+                    }
+                }
+            }
+
+            .o_sidebar_menu_accordion {
+                .o_sidebar_menu_accordion_item {
+                    .o_sidebar_menu_accordion_item_app {
+                        .accordion-header {
+                            width: 100% !important;
+
+                            .o_sidebar_menu_accordion_button_app {
+                                width: 100% !important;
+                                display: flex;
+                                justify-content: center;
+
+                                .menu-icon {
+                                    height: auto;
+                                    width: 30px;
+                                }
+
+                                &.no_submenus {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                &::after {
+                                    display: none;
+                                }
+
+                                .o_sidebar_menu_accordion_button_app_lable {
+                                    display: none !important;
+
+                                    .menu-lable {
+                                        display: inherit !important;
+                                    }
+
+                                    .menu-badge {
+                                        display: inherit;
+                                    }
+
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            &.sidebar-maximize {
+                width: $o-sidebar-menu-width !important;
+                transition: width 0.3s ease;
+                z-index: 101;
+
+                .o_sidebar_menu_brand {
+                    width: $o-sidebar-menu-width !important;
+
+                    .o_sidebar_menu_brand_logo {
+                        .sidebar-logo-default {
+                            display: inherit;
+                        }
+
+                        .sidebar-logo-minimize {
+                            display: none;
+                        }
+                    }
+                }
+
+                .o_sidebar_menu_accordion {
+                    // width: $o-sidebar-menu-width !important;
+
+                    .o_sidebar_menu_accordion_item {
+                        // width: $o-sidebar-menu-width !important;
+
+                        .o_sidebar_menu_accordion_item_app {
+                            width: $o-sidebar-menu-width !important;
+
+                            .accordion-header {
+                                width: 100% !important;
+
+                                .o_sidebar_menu_accordion_button_app {
+                                    width: 100% !important;
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .menu-icon {
+                                        height: 24px;
+                                        width: 24px;
+                                        margin-right: 0.5rem;
+                                    }
+
+                                    .menu-lable {
+                                        display: inherit !important;
+                                    }
+
+                                    .menu-badge {
+                                        display: inherit;
+                                    }
+
+                                    &.no_submenus {
+                                        &::after {
+                                            opacity: 0;
+                                            display: none;
+                                            // background-image: none;
+                                        }
+                                    }
+
+                                    .o_sidebar_menu_accordion_button_app_lable {
+                                        width: 100% !important;
+                                        display: inherit !important;
+
+                                        .menu-lable {
+                                            display: inherit !important;
+                                        }
+
+                                        .menu-badge {
+                                            display: inherit;
+                                        }
+
+                                        &.no_submenus {
+                                            &::after {
+                                                display: none;
+                                                // background-image: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &[data-sidebar-default-minimize='true']{
+        &[data-sidebar-is-minimized='true']{
+            .o_sidebar_menu {
+                width: $o-sidebar-menu-collapse-width !important;
+                .o_sidebar_menu_brand {
+                    .o_sidebar_menu_brand_logo {
+                        .sidebar-logo-default {
+                            display: none;
+                        }
+                        .sidebar-logo-minimize {
+                            display: inherit;
+                        }
+                    }
+                }
+
+                .o_sidebar_menu_accordion {
+                    .o_sidebar_menu_accordion_item {
+                        .o_sidebar_menu_accordion_item_app {
+                            .accordion-header {
+                                width: 100% !important;
+
+                                .o_sidebar_menu_accordion_button_app {
+                                    width: 100% !important;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .menu-icon {
+                                        height: auto;
+                                        width: 30px;
+                                    }
+
+                                    &.no_submenus {
+                                        &::after {
+                                            display: none;
+                                        }
+                                    }
+
+                                    &::after {
+                                        display: none;
+                                    }
+
+                                    .o_sidebar_menu_accordion_button_app_lable {
+                                        display: none !important;
+
+                                        .menu-lable {
+                                            display: inherit !important;
+                                        }
+
+                                        .menu-badge {
+                                            display: inherit;
+                                        }
+
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+                &.sidebar-maximize {
+                    width: $o-sidebar-menu-width !important;
+                    transition: width 0.3s ease;
+                    z-index: 101;
+
+                    .o_sidebar_menu_brand {
+                        width: $o-sidebar-menu-width !important;
+
+                        .o_sidebar_menu_brand_logo {
+                            .sidebar-logo-default {
+                                display: inherit;
+                            }
+
+                            .sidebar-logo-minimize {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .o_sidebar_menu_accordion {
+                        // width: $o-sidebar-menu-width !important;
+
+                        .o_sidebar_menu_accordion_item {
+                            // width: $o-sidebar-menu-width !important;
+
+                            .o_sidebar_menu_accordion_item_app {
+                                width: $o-sidebar-menu-width !important;
+
+                                .accordion-header {
+                                    width: 100% !important;
+
+                                    .o_sidebar_menu_accordion_button_app {
+                                        width: 100% !important;
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        .menu-icon {
+                                            height: 24px;
+                                            width: 24px;
+                                            margin-right: 0.5rem;
+                                        }
+
+                                        .menu-lable {
+                                            display: inherit !important;
+                                        }
+
+                                        .menu-badge {
+                                            display: inherit;
+                                        }
+
+                                        &.no_submenus {
+                                            &::after {
+                                                opacity: 0;
+                                                display: none;
+                                                // background-image: none;
+                                            }
+                                        }
+
+                                        .o_sidebar_menu_accordion_button_app_lable {
+                                            width: 100% !important;
+                                            display: inherit !important;
+
+                                            .menu-lable {
+                                                display: inherit !important;
+                                            }
+
+                                            .menu-badge {
+                                                display: inherit;
+                                            }
+
+                                            &.no_submenus {
+                                                &::after {
+                                                    display: none;
+                                                    // background-image: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &[data-sidebar-is-minimized='false']{
+            .o_sidebar_menu {
+                width: $o-sidebar-menu-width !important;
+            }
+        }
+    }
+
+    &[data-sidebar-default-minimize='false'] {
+        .o_sidebar_menu {
+            width: $o-sidebar-menu-width !important;
+        }
+        &[data-sidebar-is-minimized='true']{
+            .o_sidebar_menu {
+                width: $o-sidebar-menu-collapse-width !important;
+                .o_sidebar_menu_brand {
+                    .o_sidebar_menu_brand_logo {
+                        .sidebar-logo-default {
+                            display: none;
+                        }
+                        .sidebar-logo-minimize {
+                            display: inherit;
+                        }
+                    }
+                }
+
+                .o_sidebar_menu_accordion {
+                    .o_sidebar_menu_accordion_item {
+                        .o_sidebar_menu_accordion_item_app {
+                            .accordion-header {
+                                width: 100% !important;
+
+                                .o_sidebar_menu_accordion_button_app {
+                                    width: 100% !important;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .menu-icon {
+                                        height: auto;
+                                        width: 30px;
+                                    }
+
+                                    &.no_submenus {
+                                        &::after {
+                                            display: none;
+                                        }
+                                    }
+
+                                    &::after {
+                                        display: none;
+                                    }
+
+                                    .o_sidebar_menu_accordion_button_app_lable {
+                                        display: none !important;
+
+                                        .menu-lable {
+                                            display: inherit !important;
+                                        }
+
+                                        .menu-badge {
+                                            display: inherit;
+                                        }
+
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+                &.sidebar-maximize {
+                    width: $o-sidebar-menu-width !important;
+                    transition: width 0.3s ease;
+                    z-index: 101;
+
+                    .o_sidebar_menu_brand {
+                        width: $o-sidebar-menu-width !important;
+
+                        .o_sidebar_menu_brand_logo {
+                            .sidebar-logo-default {
+                                display: inherit;
+                            }
+
+                            .sidebar-logo-minimize {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .o_sidebar_menu_accordion {
+                        // width: $o-sidebar-menu-width !important;
+
+                        .o_sidebar_menu_accordion_item {
+                            // width: $o-sidebar-menu-width !important;
+
+                            .o_sidebar_menu_accordion_item_app {
+                                width: $o-sidebar-menu-width !important;
+
+                                .accordion-header {
+                                    width: 100% !important;
+
+                                    .o_sidebar_menu_accordion_button_app {
+                                        width: 100% !important;
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        .menu-icon {
+                                            height: 24px;
+                                            width: 24px;
+                                            margin-right: 0.5rem;
+                                        }
+
+                                        .menu-lable {
+                                            display: inherit !important;
+                                        }
+
+                                        .menu-badge {
+                                            display: inherit;
+                                        }
+
+                                        &.no_submenus {
+                                            &::after {
+                                                opacity: 0;
+                                                display: none;
+                                                // background-image: none;
+                                            }
+                                        }
+
+                                        .o_sidebar_menu_accordion_button_app_lable {
+                                            width: 100% !important;
+                                            display: inherit !important;
+
+                                            .menu-lable {
+                                                display: inherit !important;
+                                            }
+
+                                            .menu-badge {
+                                                display: inherit;
+                                            }
+
+                                            &.no_submenus {
+                                                &::after {
+                                                    display: none;
+                                                    // background-image: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &[data-sidebar-is-minimized='false']{
+            .o_sidebar_menu {
+                width: $o-sidebar-menu-width !important;
+            }
+        }
+    }
+
+}

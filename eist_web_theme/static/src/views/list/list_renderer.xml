@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.ListRenderer" t-inherit-mode="extension">
+        <xpath expr="//table" position="after">
+            <ScrollTopButton target="rootRef" show="state.showScrollTopButton"/>
+        </xpath>
+    </t>
+
+</templates>

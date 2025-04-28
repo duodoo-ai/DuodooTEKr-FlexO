@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="rtx_project.ProjectLargeScreen.Dashboard">
+        <div class="data-dashboard">
+            <div class="data-dashboard-wrapper">
+                <div class="data-dashboard-content">
+                    <div class="data-dashboard-content-header">
+                        <span class="data-dashboard-content-header-title">Dashboard</span>
+                    </div>
+                    <div class="data-dashboard-content-body">
+                        <div class="data-dashboard-content-body-data">
+                            <div class="row gx-2">
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline_pump.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Total traffic(m³)</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="format(state.pipeline_data['total_traffic'])"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline_pump.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Monthly traffic(m³)</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="format(state.pipeline_data['monthly_traffic'])"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline_pump.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Seasonal traffic(m³)</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="format(state.pipeline_data['seasonal_traffic'])"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline_pump.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Year traffic(m³)</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="format(state.pipeline_data['year_traffic'])"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row gx-2">
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Total number of pipelines</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="state.pipeline_data['total_pipeline_qty']"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Number of pipelines in operation</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="state.pipeline_data['running_pipeline_qty']"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm data-dashboard-content-body-card">
+                                    <div class="card-body m-0 p-1 bg-transparent">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img class="data-dashboard-content-body-card-icon" src="/rtx_project/static/img/large_screen/pipeline.svg"/>
+                                            </div>
+                                            <div class="col">
+                                                <div class="data-dashboard-content-body-card-title">Number of stopped pipelines</div>
+                                                <div class="data-dashboard-content-body-card-value">
+                                                    <t t-esc="state.pipeline_data['stopped_pipeline_qty']"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="data-dashboard-content-body-logo">
+                            <img class="w-auto" src="/rtx_project/static/img/large_screen/logo.png"/>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </t>
+</templates>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="eist_multi_platform.MultiPlatformAppsListController.Buttons" t-inherit="web.ListView.Buttons" t-inherit-mode="primary" owl="1">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <AppFileUploader  t-if="props.resModel == 'res.multi_platform.apps'" resModel="props.resModel"/>
+        </xpath>
+    </t>
+
+</templates>

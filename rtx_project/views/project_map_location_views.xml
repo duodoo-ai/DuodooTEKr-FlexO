@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_project_map_location_filter" model="ir.ui.view">
+        <field name="name">project.map.location.search</field>
+        <field name="model">project.map.location</field>
+        <field name="arch" type="xml">
+            <search string="Map">
+                <searchpanel>
+                    <field name="project_id" icon="fa-cubes" enable_counters="1"/>
+                </searchpanel>
+                <group expand="1" string="Group By">
+                    <filter string="Project" name="group_by_project" context="{'group_by': 'project_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_project_map_location_list" model="ir.ui.view">
+        <field name="name">project.map.location.list</field>
+        <field name="model">project.map.location</field>
+        <field name="arch" type="xml">
+            <list string="Map" sample="1" expand="1" default_order="sequence" decoration-success="status == 'normal'" decoration-danger="status == 'exception'">
+                <header>
+
+                </header>
+                <field name="sequence" widget="handle"/>
+                <field name="country_id" optional="hide"/>
+                <field name="state_id" optional="hide"/>
+                <field name="city" optional="hide"/>
+                <field name="name"/>
+                <field name="project_id" string="Project"/>
+                <field name="stage_id" string="Stage"/>
+                <field name="street" />
+                <field name="imei"/>
+                <field name="real_input_traffic"/>
+                <field name="real_output_traffic"/>
+                <field name="latitude" />
+                <field name="longitude" />
+                <field name="distance" />
+                <field name="length" />
+                <field name="status" />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_project_map_location_form" model="ir.ui.view">
+        <field name="name">project.map.location.form</field>
+        <field name="model">project.map.location</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title mb24">
+                        <h1>
+                            <field name="name" placeholder="Please enter a name for the location"/>
+                        </h1>
+                        <h2>
+                            <label for="project_id" string="Project"/>
+                            <field name="project_id" string="Project" placeholder="Please select an project"/>
+                        </h2>
+                    </div>
+                    <group>
+                        <group string="Address information">
+                            <div class="o_address_format">
+                                <field name="street" placeholder="Street..." class="o_address_street"/>
+                                <field name="city" placeholder="City" class="o_address_city"/>
+                                <field name="state_id" class="o_address_state" placeholder="State" options="{'no_open': True, 'no_quick_create': True}" context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"/>
+                                <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                <div name="partner_address_country" class="d-flex justify-content-between">
+                                    <field name="country_id" placeholder="Country" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
+                                </div>
+                            </div>
+                        </group>
+                        <group string="Device information">
+                             <field name="sequence" invisible="1" />
+                             <field name="distance" />
+                             <field name="length" />
+                             <field name="status" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Equipment Running Monitor">
+                            <field name="equipment_ids"
+                                   context="{'default_location_id': id}"
+                                   domain="[('location_id', '=', id)]">
+                                <list editable="bottom" options="{'no_create': True}" create="0" edit="0" delete="0">
+                                    <field name="name" string="Equipment Name" optional="hide"/>
+                                    <field name="location_id" string="Project Map Location"/>
+                                    <field name="serial_no" string="Equipment Serial No"/>
+                                    <field name="latest_gsm_longitude" string="Gsm Longitude"/>
+                                    <field name="latest_gsm_latitude" string="Gsm Latitude"/>
+                                    <field name="latest_pressure" string="Latest Pressure"/>
+                                    <field name="latest_flow_rate" string="Latest Flow Rate"/>
+                                    <field name="latest_liquid_level" string="Latest Liquid Level"/>
+                                    <field name="equipment_state" string="Equipment State"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_project_map_location" model="ir.actions.act_window">
+        <field name="name">Project Map Locations</field>
+        <field name="res_model">project.map.location</field>
+        <field name="path">project-location</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{'search_default_group_by_project': 1}</field>
+        <field name="search_view_id" ref="view_project_map_location_filter"/>
+    </record>
+
+</odoo>

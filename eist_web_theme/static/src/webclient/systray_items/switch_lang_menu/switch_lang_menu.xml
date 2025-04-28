@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="web.SwitchLangMenu" owl="1">
+        <div class="o_switch_lang_menu d-none d-md-block pe-0">
+            <Dropdown position="'bottom-end'">
+                <button class="py-1 py-lg-0">
+                    <img class="rounded o_switch_lang_menu_flag" t-att-src="currentLanguage['flag_image_url']"/>
+                </button>
+                <t t-set-slot="content">
+                    <div class="list-group" t-if="allLanguages.length > 1" t-foreach="Object.values(allLanguages)" t-as="lang" t-key="lang.id">
+                        <t t-call="web.SwitchLangItem">
+                            <t t-set="lang" t-value="lang" />
+                        </t>
+                    </div>
+                </t>
+            </Dropdown>
+        </div>
+    </t>
+
+    <t t-name="web.SwitchLangItem" owl="1">
+        <t t-set="isCurrent" t-value="lang.id === currentLanguage.id"/>
+
+        <div class="o_switch_lang_menu_items list-group-item list-group-item-action p-2 cursor-pointer d-flex justify-content-between" data-menu="lang" t-att-data-lang-id="lang.id" t-on-click.stop="() => this.toggleLanguage(lang)" t-attf-class="{{isCurrent ? 'active' : ''}}">
+            <div class="border-end text-center">
+                <img class="o_lang_flag" t-att-src="lang['flag_image_url']"/>
+            </div>
+            <div class="flex-grow overflow-hidden">
+                 <div class="d-flex px-2" t-out="lang.name"/>
+            </div>
+        </div>
+    </t>
+
+</templates>

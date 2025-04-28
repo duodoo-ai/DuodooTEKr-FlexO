@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form_inherit_eist_multi_platform" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.eist_multi_platform</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="eist_erp_base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <div id="msg_eist_multi_platform" position="replace"/>
+
+        </field>
+
+    </record>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">Base Settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="0" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Multi platform" string="Multi platform" name="eist_multi_platform" groups="eist_multi_platform.group_multi_platform_admin">
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="action_multi_platform_config" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'eist_multi_platform', 'bin_size': False}</field>
+    </record>
+
+</odoo>

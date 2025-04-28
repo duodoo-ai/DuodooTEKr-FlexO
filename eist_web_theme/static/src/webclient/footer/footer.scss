@@ -1,0 +1,31 @@
+.o_erp_footer {
+    height: $o-erp-footer-height;
+    display: flex;
+    align-items: center !important;
+    border-top: $o-erp-footer-border-top;
+
+    .o_footer_content {
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100%;
+
+        .o_footer_content_left {
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .o_footer_content_center {
+            flex: 1 1 auto;
+            min-width: 0;
+            margin: 0 10px;
+            display: flex;
+            justify-content: center !important;
+        }
+
+        .o_footer_content_right {
+            width: auto;
+            flex-shrink: 0;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@for $size from 1 through length($o-theme-colors) {
+    [data-theme-color="#{$size}"] {
+        .o_navbar {
+            .o_main_navbar {
+                background-color: nth($o-theme-colors, $size) !important; // 背景颜色
+            }
+        }
+
+        .o_sidebar_menu {
+            background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+
+            .o_sidebar_menu_brand {
+                background-color: nth($o-theme-colors, $size) !important; // 背景颜色
+            }
+
+            .o_sidebar_menu_accordion {
+                background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+            }
+
+            .o_sidebar_menu_accordion_item {
+                background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+            }
+
+            .o_sidebar_menu_accordion_button_app {
+                background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+            }
+
+            .o_sidebar_menu_accordion_button_menu {
+                background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+            }
+
+            .accordion-body {
+                background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+            }
+
+            .accordion-item{
+                border: 0 !important;
+            }
+        }
+        .o_erp_footer{
+            background-color: adjust-color(nth($o-theme-colors, $size), $lightness: 10%, $saturation: 10%) !important; // 背景颜色
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="layout" inherit_id="web.layout" name="EistErp Theme Layout">
+        <xpath expr="//t[@t-set='title']" position="after">
+            <t t-set="full_system_name" t-value="request.env['ir.config_parameter'].sudo().get_param('eist_erp.full_system_name') or 'Odoo'"/>
+            <t t-set="title">
+                <t t-esc="full_system_name"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="login_layout" inherit_id="web.login_layout" name="EistErp Theme Login Layout">
+
+        <xpath expr="//img/parent::div" position="attributes">
+            <attribute name="t-att-style">'' if request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_display_logo') == 'True' else 'display: None;'</attribute>
+        </xpath>
+
+        <xpath expr="//a[@href='/web/database/manager']" position="attributes">
+            <attribute name="t-att-style">'' if request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_db_management') == 'True' else 'display: None;'</attribute>
+        </xpath>
+
+        <xpath expr="//a[@href='https://www.odoo.com?utm_source=db&amp;utm_medium=auth']" position="replace">
+            <t t-if="request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_support') == 'True'">
+                <t t-set="support_txet" t-value="request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_support_txet') or 'Odoo'"/>
+                <t t-set="support">Powered by %s</t>
+                <a t-att-href="request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_support_url')" target="_blank">
+                    <span t-out="support % (support_txet)"/>
+                </a>
+            </t>
+            <t t-else="">
+                <a href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" target="_blank">Powered by <span>Odoo</span>
+                </a>
+            </t>
+        </xpath>
+
+    </template>
+
+
+    <template id="login" inherit_id="web.login" name="EistErp Theme Login">
+
+        <xpath expr="//label[@for='login']" position="replace">
+            <t t-if="request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_support') == 'True'">
+                <label for="login" class="form-label">Username</label>
+            </t>
+            <t t-else="">
+                <label for="login" class="form-label">Email</label>
+            </t>
+        </xpath>
+
+        <xpath expr="//input[@name='login']" position="replace">
+            <t t-if="request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_page_support') == 'True'">
+                <input type="text" placeholder="Username" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="username" autofocus="autofocus" autocapitalize="off"/>
+            </t>
+            <t t-else="">
+                <input type="text" placeholder="Email" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="username" autofocus="autofocus" autocapitalize="off"/>
+            </t>
+        </xpath>
+
+        <xpath expr="//button[@name='redirect']" position="attributes">
+            <attribute name="t-att-class">'btn btn-link btn-sm' if request.env['ir.config_parameter'].sudo().get_param('eist_erp.login_as_superuser_button') == 'True' else 'd-none'</attribute>
+        </xpath>
+
+    </template>
+
+    <template id="webclient_login" inherit_id="web.login_layout">
+        <xpath expr="//t[@t-call='web.frontend_layout']/t[last()]" position="after">
+            <t t-set="body_classname" t-value="'o_drawer_menu_background'"/>
+            <t t-set="login_card_classes" t-value="'rounded-0 shadow-sm bg-white'"/>
+        </xpath>
+    </template>
+
+    <template id="webclient_bootstrap" inherit_id="web.webclient_bootstrap">
+        <xpath expr="//meta[@name='theme-color']" position="replace">
+            <meta name="theme-color" t-att-content="'#242733' if request.cookies.get('color_scheme') == 'dark' else '#714B67'"/>
+        </xpath>
+    </template>
+</odoo>
