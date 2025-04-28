@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--定期去获得PhoenixAPI平台各项静态/动态数据-->
+    <!--定期去获得PhoenixAPI平台各项静态/动态数据-->
+    <!--定期去获得PhoenixAPI平台各项静态/动态数据-->
+    <data noupdate="0">
+        <record id="cron_phoenix_token" model="ir.cron">
+            <field name="interval_type">minutes</field>
+            <field name="name">【自动任务】SKF@ptidude01-获得PhoenixAPI平台访问TOKEN（密钥）</field>
+            <field name="priority">60</field>
+            <field name="active">True</field>
+            <field name="interval_number">20</field>
+            <field name="model_id" ref="odoo_phoenix_connector.model_phoenix_token"/>
+            <field name="state">code</field>
+            <field name="code">model.action_token_from_phoenix()</field>
+        </record>
+        <record id="cron_maintenance_equipment_from_phoenix" model="ir.cron">
+            <field name="interval_type">minutes</field>
+            <field name="name">【自动任务】SKF@ptidude02-获得PhoenixAPI平台设备目录树</field>
+            <field name="priority">60</field>
+            <field name="active">True</field>
+            <field name="interval_number">20</field>
+            <field name="model_id" ref="maintenance.model_maintenance_equipment"/>
+            <field name="state">code</field>
+            <field name="code">model.action_equipment_from_phoenix()</field>
+        </record>
+        <record id="cron_dynamic_from_phoenix" model="ir.cron">
+            <field name="interval_type">minutes</field>
+            <field name="name">【自动任务】SKF@ptidude03-获得PhoenixAPI平台设备动态数据</field>
+            <field name="priority">5</field>
+            <field name="active">True</field>
+            <field name="interval_number">5</field>
+            <field name="model_id" ref="model_phoenix_dynamic_measurements"/>
+            <field name="state">code</field>
+            <field name="code">model.action_dynamic_from_phoenix()</field>
+        </record>
+        <record id="cron_check_monitor_data" model="ir.cron">
+            <field name="interval_type">minutes</field>
+            <field name="name">【自动任务】SKF@ptidude04-计算数采动态异常数据->异常告警清单</field>
+            <field name="priority">5</field>
+            <field name="active">True</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="model_phoenix_dynamic_measurements"/>
+            <field name="state">code</field>
+            <field name="code">model.check_monitor_data()</field>
+        </record>
+        <record id="cron_check_temperature_monitor_data" model="ir.cron">
+            <field name="interval_type">minutes</field>
+            <field name="name">【自动任务】SKF@ptidude05-计算温升系数结果->异常告警清单</field>
+            <field name="priority">5</field>
+            <field name="active">True</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="model_phoenix_dynamic_measurements"/>
+            <field name="state">code</field>
+            <field name="code">model.check_temperature_monitor_data()</field>
+        </record>
+        <record id="ir_cron_collect_autovacuum" model="ir.cron">
+            <field name='interval_type'>days</field>
+            <field name='name'>【自动任务】SKF@ptidude06-定期删除动态数据</field>
+            <field name="priority">60</field>
+            <field name="active">True</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="odoo_phoenix_connector.model_collect_autovacuum"/>
+            <field name="state">code</field>
+            <field name="code">model.autovacuum(90)</field>
+        </record>
+    </data>
+</odoo>

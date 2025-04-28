@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem
+            id="phoenix_configurator_meu"
+            name="参数配置"
+            action='action_phoenix_configurator'
+            parent="odoo_phoenix_maintenance.menu_maintenance_configuration_meu"
+            groups="maintenance.group_equipment_manager,base.group_user"
+            sequence="1"/>
+        <menuitem
+            id="phoenix_token_meu"
+            name="凤凰接口配置"
+            action='action_phoenix_token'
+            parent="odoo_phoenix_maintenance.menu_maintenance_configuration_meu"
+            groups="maintenance.group_equipment_manager"
+            sequence="1000"/>
+</odoo>

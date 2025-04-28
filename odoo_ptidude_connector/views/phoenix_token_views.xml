@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_phoenix_token_tree" model="ir.ui.view">
+        <field name='name'>获取PhoenixAPI网关接口调用token</field>
+        <field name="model">phoenix.token</field>
+        <field name="arch" type="xml">
+            <list string="获取PhoenixAPI网关接口调用token">
+                <button name="action_token_from_phoenix" string="刷新密钥" type="object" icon="fa-search-plus"/>
+                <field name="name" optional="show"/>
+                <field name="grant_type" optional="show"/>
+                <field name="username" optional="show"/>
+                <field name="password" optional="show"/>
+                <field name="url" optional="show"/>
+                <field name="port" optional="show"/>
+                <field name="msg" optional="show"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_phoenix_token_form" model="ir.ui.view">
+        <field name='name'>获取PhoenixAPI网关接口调用token</field>
+        <field name="model">phoenix.token</field>
+        <field name="arch" type="xml">
+            <form string="获取PhoenixAPI网关接口调用token">
+                <header>
+                    <button name="action_token_from_phoenix" string="刷新密钥" type="object" icon="fa-search-plus"/>
+                </header>
+                <sheet>
+                    <group string="请求信息">
+                        <field name="name" readonly="1"/>
+                        <field name="grant_type" readonly="1"/>
+                        <field name="username"/>
+                        <field name="password"/>
+                        <field name="url"/>
+                        <field name="port"/>
+                    </group>
+                    <group string="请求返回信息" readonly="1">
+                        <field name="access_token" readonly="1"/>
+                        <field name="token_type" readonly="1"/>
+                        <field name="expires_in" readonly="1"/>
+                        <field name="refresh_token" readonly="1"/>
+                        <field name="msg" readonly="1"/>
+                        <field name="description" readonly="1"/>
+                        <field name="company_id" readonly="1"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_phoenix_token" model="ir.actions.act_window">
+        <field name="name">凤凰接口配置</field>
+        <field name="res_model">phoenix.token</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{}</field>
+        <field name="search_view_id" ref=""/>
+        <field name="view_ids"
+               eval="[(5, 0, 0),
+                      (0, 0, {'view_mode': 'list', 'view_id': ref('view_phoenix_token_tree')}),
+                      (0, 0, {'view_mode': 'form', 'view_id': ref('view_phoenix_token_form')}),
+                      ]"/>
+         <field name="help" type="html">
+            <p>
+               凤凰接口配置
+            </p>
+        </field>
+    </record>
+</odoo>

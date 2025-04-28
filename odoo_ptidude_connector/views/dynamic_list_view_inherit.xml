@@ -1,0 +1,13 @@
+<odoo>
+    <record id="phoenix_dynamic_measurements_tree_view_inherit" model="ir.ui.view">
+        <field name="name">product.product.list.view.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="odoo_phoenix_maintenance.phoenix_dynamic_measurements_tree"/>
+        <!-- 请将 product.product_tree_view 替换为实际的列表视图 ID -->
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='dropdown-divider']" position="after">
+                <button name="action_open_pivot_view" string="Open Pivot View" type="object" class="btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="data_phoenix_token" model="phoenix.token">
+            <field name="name">获取PhoenixAPI网关接口调用token</field>
+            <field name="grant_type">password</field>
+            <field name="username">admin</field>
+            <field name="password">admin</field>
+            <field name="url">http://10.0.0.1</field>
+            <field name="port">14050</field>
+        </record>
+
+
+        <record id="data_phoenix_configurator01" model="phoenix.configurator">
+            <field name="name">间隔样本数</field>
+            <field name="value">10</field>
+            <field name="active">True</field>
+            <field name="note">由系统创建</field>
+        </record>
+        <record id="data_phoenix_configurator02" model="phoenix.configurator">
+            <field name="name">温升系数</field>
+            <field name="value">1.2</field>
+            <field name="active">True</field>
+            <field name="note">由系统创建</field>
+        </record>
+    </data>
+</odoo>

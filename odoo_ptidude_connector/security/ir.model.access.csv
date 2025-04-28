@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_phoenix_token,access.phoenix_token,model_phoenix_token,,1,1,1,1
+access_phoenix_configurator,access.phoenix_configurator,model_phoenix_configurator,,1,1,1,1
+access_collect_autovacuum,access.collect_autovacuum,model_collect_autovacuum,,1,1,1,1
