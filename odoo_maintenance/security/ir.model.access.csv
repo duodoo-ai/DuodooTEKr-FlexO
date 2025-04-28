@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_maintenance_equipment_spec,access.maintenance_equipment_spec,model_maintenance_equipment_spec,,1,1,1,1
-access_maintenance_alert_rule,access.maintenance_alert_rule,model_maintenance_alert_rule,,1,1,1,1
-access_equipment_inspection,access.equipment_inspection,model_equipment_inspection,,1,1,1,1
-access_monitoring_data,access.monitoring_data,model_equipment_monitoring_data,,1,1,1,1
-
-access_inspection,maintenance.inspection,model_maintenance_inspection,base.group_user,1,1,1,0
-access_checklist_line,inspection.checklist.line,model_inspection_checklist_line,base.group_user,1,1,1,0
