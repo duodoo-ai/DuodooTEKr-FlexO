@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <!--隐藏原生Odoo设备模块菜单-->
-    <record id="maintenance.menu_maintenance_title" model="ir.ui.menu">
-        <field name="active" eval="False"/>
-    </record>
-</odoo>
