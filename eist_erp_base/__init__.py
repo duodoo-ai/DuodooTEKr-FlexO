@@ -35,23 +35,21 @@ def post_init_hook(env):
     # # ”w"代表着每次运行都覆盖内容
     # with file_open(file_path, "w") as f:
     #     f.write(apps_name)
-   
+
 
 def uninstall_hook(env):
     """
     !卸载模块时，执行：
-    ~ 1. 恢复显示隐藏企业版应用
-    ~ 2. 更新模块列表
+    ~ 1. 删除所有有关 EIST ERP 的设置
+    ~ 2. 恢复显示隐藏企业版应用
+    ~ 3. 更新模块列表
     """
+    parameters = env["ir.config_parameter"].sudo().search([("key", "=like", "eist_erp%")], limit=None)
 
-    # with file_open(file_path, "r") as f:
-    #     apps_text = f.read()  # 读取文件
-    #     print("已恢复以下应用：{}".format(apps_text))
-    #     apps = apps_text.split(",")
-    #     for app in apps:
-    #         ent_app = env["ir.module.module"].search([("name", "=", app)])
-    #         if ent_app:
-    #             ent_app.write({"application": True})
+    if parameters:
+        for parameter in parameters:
+            parameter.unlink()
+
     ent_modules = env["ir.module.module"].search(
         [("to_buy", "=", True)]
     )

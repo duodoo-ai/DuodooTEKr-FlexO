@@ -18,19 +18,13 @@ def post_init_hook(env):
     theme_companies = companies.search([("theme_id", "=", False)])
     menuitem_companies = companies.search([("menuitem_id", "=", False)])
 
-    users = env["res.users"].search(
-        domain + [("theme_id", "=", False), ("groups_id", "=", 1)]
-    )
+    users = env["res.users"].search(domain + [("theme_id", "=", False), ("groups_id", "=", 1)])
 
     for company in theme_companies:
-        company.theme_id = (
-            env["res.theme"].sudo()._get_or_create_theme(company.id, "company")
-        )
+        company.theme_id = env["res.theme"].sudo()._get_or_create_theme(company.id, "company")
 
     for company in menuitem_companies:
-        company.menuitem_id = (
-            env["res.user.menuitems"].sudo()._get_or_create_menuitems(company.id)
-        )
+        company.menuitem_id = env["res.user.menuitems"].sudo()._get_or_create_menuitems(company.id)
     for user in users:
         user.theme_id = env["res.theme"].sudo()._get_or_create_theme(user.id, "user")
 
@@ -43,15 +37,9 @@ def uninstall_hook(env):
     """
     卸载模块时，删除所有有关主题的设置
     """
-    parameters = (
-        env["ir.config_parameter"]
-        .sudo()
-        .search([("key", "=like", "eist_erp%")], limit=None)
-    )
+    parameters = env["ir.config_parameter"].sudo().search([("key", "=like", "eist_erp_theme%")], limit=None)
 
     if parameters:
         for parameter in parameters:
             parameter.unlink()
-    # env["res.company"].clear_caches()
-    # env["res.users"].clear_caches()
-    # env["ir.asset"].registry.clear_cache()
+    

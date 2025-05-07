@@ -232,15 +232,6 @@ msgstr "基础设置"
 msgid "Base settings"
 msgstr "基础设置"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Blue"
-msgstr "蓝色"
 
 #. module: eist_web_theme
 #: model:ir.model.fields.selection,name:eist_web_theme.selection__res_theme__form_chatter_position__2
@@ -519,7 +510,7 @@ msgstr "显示数据库管理"
 #. module: eist_web_theme
 #: model_terms:ir.ui.view,arch_db:eist_web_theme.res_config_settings_view_form
 msgid "Displays logo"
-msgstr "显示徽标"
+msgstr "显示Logo"
 
 #. module: eist_web_theme
 #: model_terms:ir.ui.view,arch_db:eist_web_theme.res_config_settings_view_form
@@ -640,25 +631,8 @@ msgstr "表单聊天位置"
 msgid "Full System Name"
 msgstr "完整的系统名称"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Green"
-msgstr "绿色"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Grey"
-msgstr "灰色"
+
 
 #. module: eist_web_theme
 #: model:ir.model,name:eist_web_theme.model_ir_http
@@ -712,15 +686,7 @@ msgid ""
 "                                    global theme can be used."
 msgstr "如果选中，则用户将无法设置主题，只能使用全局主题。"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Indigo"
-msgstr "靛蓝"
+
 
 #. module: eist_web_theme
 #. odoo-javascript
@@ -748,25 +714,9 @@ msgstr "最后更新人"
 msgid "Last Updated on"
 msgstr "最后更新时间"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Lavender"
-msgstr "淡紫色"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Light"
-msgstr "浅色"
+
+
 
 #. module: eist_web_theme
 #. odoo-javascript
@@ -851,15 +801,6 @@ msgstr "主菜单显示箭头"
 msgid "Main menu display icon"
 msgstr "主菜单显示图标"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Mauve"
-msgstr "淡紫红色"
 
 #. module: eist_web_theme
 #: model:ir.model,name:eist_web_theme.model_ir_ui_menu
@@ -912,15 +853,6 @@ msgstr "新手入门"
 msgid "Open action in tabs"
 msgstr "在标签页中打开动作"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Orange"
-msgstr "橙色"
 
 #. module: eist_web_theme
 #: model_terms:ir.ui.view,arch_db:eist_web_theme.login_layout
@@ -946,15 +878,7 @@ msgstr "以前的视图"
 msgid "Primary Color"
 msgstr "主要颜色"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Red"
-msgstr "红色"
+
 
 #. module: eist_web_theme
 #: model:ir.model.fields.selection,name:eist_web_theme.selection__res_theme__form_chatter_position__1
@@ -1324,17 +1248,9 @@ msgstr "选中后，注册页面上的电子邮件地址是必需的。否则，
 #. module: eist_web_theme
 #: model_terms:ir.ui.view,arch_db:eist_web_theme.res_config_settings_view_form
 msgid "When checked, the logo is displayed on the login page. Otherwise, it is not displayed."
-msgstr "选中后，徽标将显示在登录页面上。否则，不会显示它。"
+msgstr "选中后，Logo将显示在登录页面上。否则，不会显示它。"
 
-#. module: eist_web_theme
-#. odoo-javascript
-#. odoo-python
-#: code:addons/eist_web_theme/models/ir_http.py:0
-#: code:addons/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-#: code:addons/rhino-data-pipe/eist_web_theme/models/ir_http.py:0
-#: code:addons/rhino-data-pipe/eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js:0
-msgid "Yellow"
-msgstr "黄色"
+
 
 #. module: eist_web_theme
 #. odoo-javascript

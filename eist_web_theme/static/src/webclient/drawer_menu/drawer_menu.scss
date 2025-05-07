@@ -1,15 +1,13 @@
 .o_drawer_menu_background {
-    // 'Home menu background' design is shared with enterprise login
-    // screens and it's located in './home_menu_background.scss'
+    // 'Drawer menu background' design is shared with enterprise login
+    // screens and it's located in './drawer_menu_background.scss'
 
-    // When applied on webclient (note: we do not specify the webclient class
-    // here to avoid breaking studio custom style)
     &:not(.o_drawer_menu_background_custom):not(.o_in_studio) .o_main_navbar {
         background: transparent;
         border-bottom-color: transparent;
 
         .o_dropdown_active,
-        > ul > li.show > a {
+        >ul>li.show>a {
             outline: none;
         }
     }
@@ -32,20 +30,20 @@
 
     .container {
         @include media-breakpoint-up(md) {
-            max-width: $o-home-menu-container-size !important;
+            max-width: $o-drawer-menu-container-size !important;
         }
     }
 
     .o_app {
         .o_app_icon {
-            width: $o-home-menu-app-icon-max-width;
+            width: $o-drawer-menu-app-icon-max-width;
             aspect-ratio: 1;
             padding: 10px;
             background-color: var(--AppSwitcherIcon-background, rgba(#fff, 1));
             object-fit: cover;
             transform-origin: center bottom;
             transition: box-shadow ease-in 0.1s, transform ease-in 0.1s;
-            box-shadow: var(--AppSwitcherIcon-inset-shadow, inset 0 0 0 1px rgba(0,0,0, .2)),
+            box-shadow: var(--AppSwitcherIcon-inset-shadow, inset 0 0 0 1px rgba(0, 0, 0, .2)),
                 0 1px 1px rgba(#000, .02),
                 0 2px 2px rgba(#000, .02),
                 0 4px 4px rgba(#000, .02),
@@ -53,12 +51,12 @@
                 0 16px 16px rgba(#000, .02);
 
             .fa {
-                font-size: $o-home-menu-app-icon-max-width * 0.5;
+                font-size: $o-drawer-menu-app-icon-max-width * 0.5;
             }
         }
 
         &:hover .o_app_icon {
-            box-shadow: var(--AppSwitcherIcon-inset-shadow, inset 0 0 0 1px rgba(0,0,0, .2)),
+            box-shadow: var(--AppSwitcherIcon-inset-shadow, inset 0 0 0 1px rgba(0, 0, 0, .2)),
                 0 2px 2px rgba(#000, .03),
                 0 4px 4px rgba(#000, .03),
                 0 8px 8px rgba(#000, .03),
@@ -73,8 +71,8 @@
         }
 
         .o_caption {
-            color: var(--homeMenuCaption-color, #{$o-home-menu-caption-color});
-            text-shadow: $o-home-menu-caption-shadow;
+            color: var(--drawerMenuCaption-color, #{$o-drawer-menu-caption-color});
+            text-shadow: $o-drawer-menu-caption-shadow;
         }
 
         &.o_focused {
@@ -87,6 +85,7 @@
     .o_dragged_app {
         transition: transform 0.5s;
         transform: rotate(6deg);
+
         .o_app_icon {
             box-shadow: 0 8px 15px -10px black;
             transform: translateY(-1px);
@@ -98,11 +97,12 @@
         &.o_ios_app {
             .o_apps {
                 flex-direction: column;
-                font-size: $o-home-menu-font-size-base * 1.25;
+                font-size: $o-drawer-menu-font-size-base * 1.25;
                 margin-top: map-get($spacers, 1);
                 padding: 0 map-get($spacers, 2);
 
-                > *, .o_app {
+                >*,
+                .o_app {
                     width: 100%;
                 }
             }
@@ -115,8 +115,8 @@
             }
 
             .o_app_icon {
-                width: $o-home-menu-app-icon-max-width * 0.75;
-                height: $o-home-menu-app-icon-max-width * 0.75;
+                width: $o-drawer-menu-app-icon-max-width * 0.75;
+                height: $o-drawer-menu-app-icon-max-width * 0.75;
                 margin-right: map-get($spacers, 4);
             }
 
@@ -134,7 +134,7 @@
 
 .o_drawer_menu_background {
     .o_drawer_menu .o_app .o_caption {
-        color: $o-home-menu-custom-caption-color;
-        text-shadow: $o-home-menu-custom-caption-shadow;
+        color: $o-drawer-menu-custom-caption-color;
+        text-shadow: $o-drawer-menu-custom-caption-shadow;
     }
 }

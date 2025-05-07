@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+
+    <div t-name="eist_website.res_config_website_navigation" owl="1">
+        <div id="res_config_website_navigation" class="btn-group ml8 mt8 mb8 res_config_website_navigation" role="group" aria-label="Navigation">
+            <a type="button" id="nav_website_info_settings" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#website_info_settings">
+                <i class="fa fa-info-circle"></i>
+                <span>Website Info</span>
+            </a>
+            <a type="button" id="nav_website_email_marketing" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#website_email_marketing">
+                <i class="fa fa-envelope"></i>
+                <span>Email &amp; Marketing</span>
+            </a>
+            <a type="button" id="nav_website_privacy_settings" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#website_privacy_settings">
+                <i class="bi bi-shield-lock"></i>
+                <span>Privacy</span>
+            </a>
+            <a type="button" id="nav_website_seo_settings" role="button" class="btn btn-outline-secondary eist_jump_anchor" href="#website_seo_settings">
+                <i class="bi bi-graph-up"></i>
+                <span>SEO</span>
+            </a>
+
+        </div>
+    </div>
+
+</template>

@@ -13,7 +13,7 @@
                             <img alt="Logo" t-attf-src="/web/binary/company_square_logo?company={{current_cid}}" t-attf-class="sidebar-logo-minimize {{state.theme.sidebar.is_minimized  ? '':'o_hidden'}}" t-on-mouseenter="(ev) => this._showToggleSideMenuButton(ev.target)" />
                         </a>
 
-                        <button t-if="state.theme.sidebar.show_minimize_button" t-attf-class="o_sidebar_menu_toggler navbar-toggler align-self-center {{state.theme.sidebar.is_minimized  ? 'o_hidden':''}}" type="button" accesskey="s" t-attf-title="{{state.theme.sidebar.is_minimized  ? 'Expand the sidebar menu':'Collapse sidebar menu'}}" t-on-click="(ev) => this._toggleSideMenu(ev.target,state.theme.sidebar.is_minimized )"  t-on-mouseleave="(ev) => this._hideToggleSideMenuButton(ev.target)">
+                        <button t-if="state.theme.sidebar.show_minimize_button" t-attf-class="o_sidebar_menu_toggler navbar-toggler align-self-center {{state.theme.sidebar.is_minimized  ? 'o_hidden':''}}" type="button" accesskey="s" t-attf-title="{{state.theme.sidebar.is_minimized  ? 'Expand the sidebar menu':'Collapse sidebar menu'}}" t-on-click="(ev) => this._toggleSideMenu(ev.target,state.theme.sidebar.is_minimized )" t-on-mouseleave="(ev) => this._hideToggleSideMenuButton(ev.target)">
                             <i t-attf-class="fa-lg bi bi-chevron-double-{{state.theme.sidebar.is_minimized  ? 'right':'left'}}"></i>
                         </button>
                     </div>
@@ -43,7 +43,7 @@
                                     <img class="menu-icon" src="/base/static/description/icon.png" data-toggle="tooltip" data-placement="right" t-attf-title="{{ app.name}}" t-else=""/>
                                 </t>
                                 <div class="d-flex justify-content-between align-items-center w-100 o_sidebar_menu_accordion_button_app_lable">
-                                    <span class="menu-lable text-truncate">
+                                    <span class="menu-label text-truncate">
                                         <t t-esc="app.name"/>
                                     </span>
                                     <span t-if="state.theme.sidebar.display_number_of_submenus and !env.isSmall" class="badge rounded-pill menu-badge" t-esc="app.children.length" t-attf-title="{{app.name}} has {{app.children.length}} submenus" />
@@ -52,13 +52,13 @@
                         </t>
 
                         <t t-else="">
-                            <a class="no_submenus" t-attf-class="accordion-button o_sidebar_menu_accordion_button_app  {{app.currentAppId==state.currentActionID ? 'active':''}}" type="button" data-bs-toggle="collapse" t-attf-data-bs-target="#menu-collapse-{{app.id}}" t-attf-aria-controls="menu-collapse-{{app.id}}" t-att-href="href" t-attf-id="menu-link-{{app.id}}" t-att-data-id="app.id" t-att-data-action="app.actionID" t-att-data-path="app.actionPath" t-att-data-menu="app.id" t-att-data-xmlid="app.xmlid" t-on-click="(ev) => this._openMenu(ev,app)">
+                            <a class="no_submenus" t-attf-class="accordion-button o_sidebar_menu_accordion_button_app {{app.currentAppId==state.currentActionID ? 'active':''}}" type="button" data-bs-toggle="collapse" t-attf-data-bs-target="#menu-collapse-{{app.id}}" t-attf-aria-controls="menu-collapse-{{app.id}}" t-att-href="href" t-attf-id="menu-link-{{app.id}}" t-att-data-id="app.id" t-att-data-action="app.actionID" t-att-data-path="app.actionPath" t-att-data-menu="app.id" t-att-data-xmlid="app.xmlid" t-on-click="(ev) => this._openMenu(ev,app)">
                                 <t t-if="state.theme.sidebar.main_menu.display_icon">
                                     <img class="menu-icon" t-attf-src="/{{app.webIcon.split(',')[0]}}/{{app.webIcon.split(',')[1]}}" data-toggle="tooltip" data-placement="right" t-attf-title="{{ app.name}}" t-if="app.webIcon"/>
                                     <img class="menu-icon" src="/base/static/description/icon.png" data-toggle="tooltip" data-placement="right" t-attf-title="{{ app.name}}" t-else=""/>
                                 </t>
                                 <div class="d-flex justify-content-between align-items-center w-100 o_sidebar_menu_accordion_button_app_lable">
-                                    <span class="menu-lable text-truncate">
+                                    <span class="menu-label text-truncate">
                                         <t t-esc="app.name"/>
                                     </span>
                                 </div>
@@ -106,7 +106,7 @@
     <t t-name="eist_web_theme.SidebarMenu.SubMenuItem" owl="1">
 
         <t t-set="show_child" t-value="'False'"/>
-        <t t-foreach="children_ids" t-as="c"  t-key="c_index">
+        <t t-foreach="children_ids" t-as="c" t-key="c_index">
             <t t-if="c==state.currentMenuId">
                 <t t-set="show_child" t-value="'True'"/>
             </t>
@@ -154,8 +154,8 @@
                 <span class="menu-icon" t-if="state.theme.sidebar.submenu.display_icon">
                     <i t-attf-class="#{getMenuItemIcon(level)}" />
                 </span>
-                <span t-if="env.isSmall" class="menu-lable text-truncate" t-esc="menu.name" />
-                <span t-else="" class="menu-lable text-truncate" t-attf-style="width:{{ 192- 12 * level }}px;" >
+                <span t-if="env.isSmall" class="menu-label text-truncate" t-esc="menu.name" />
+                <span t-else="" class="menu-label text-truncate" t-attf-style="width:{{ 192- 12 * level }}px;">
                     <t t-esc="menu.name"/>
                 </span>
                 <span t-if="state.theme.sidebar.display_number_of_submenus and !env.isSmall" t-attf-class="badge rounded-pill menu-badge" t-esc="menu.children.length" t-attf-title="{{menu.name}} has {{menu.children.length}} submenus" />
@@ -166,7 +166,7 @@
                 <span class="menu-icon" t-if="state.theme.sidebar.submenu.display_icon">
                     <i class="fa fa-link" />
                 </span>
-                <span class="menu-lable text-truncate">
+                <span class="menu-label text-truncate">
                     <t t-esc="menu.name"/>
                 </span>
             </a>

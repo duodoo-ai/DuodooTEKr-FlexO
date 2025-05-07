@@ -16,16 +16,12 @@ This module modifies web plugins to provide excellent design and responsiveness.
     "excludes": [
         "web_enterprise",
     ],
-    "auto_install": ["eist_erp_base"],
     "data": [
         "security/ir.model.access.csv",
+        "data/ir_config_parameter_data.xml",
         "views/mail_menus.xml",
-        # "data/ir_config_parameter.xml",
-        # "data/res_theme_data.xml",
-        # "data/res_company_data.xml",
         "views/res_config_settings_views.xml",
         "views/webclient_templates.xml",
-        # "views/auth_signup_templates.xml",
     ],
     "assets": {
         "web.report_assets_common": [
@@ -58,25 +54,23 @@ This module modifies web plugins to provide excellent design and responsiveness.
             ),
         ],
         "web.assets_frontend": [
-            "eist_web_theme/static/src/webclient/drawer_menu/drawer_menu_background.scss",  # used by login page
+            "eist_web_theme/static/src/webclient/drawer_menu/drawer_menu_background.scss",
             "eist_web_theme/static/src/webclient/navbar/navbar.scss",
         ],
         "web.assets_backend": [
+            # 主题样式文件
+            "eist_web_theme/static/src/webclient/webclient_theme.scss",
+            # 其他资源
             "eist_web_theme/static/src/model/**/*",
             "eist_web_theme/static/src/webclient/**/*.scss",
             "eist_web_theme/static/src/views/**/*.scss",
             "eist_web_theme/static/src/core/**/*",
             "eist_web_theme/static/src/webclient/**/*.js",
-            (
-                "after",
-                "web/static/src/views/list/list_renderer.xml",
-                "eist_web_theme/static/src/views/list/list_renderer_desktop.xml",
-            ),
             "eist_web_theme/static/src/webclient/**/*.xml",
             "eist_web_theme/static/src/views/**/*.js",
             "eist_web_theme/static/src/views/**/*.xml",
             ("remove", "eist_web_theme/static/src/views/pivot/**"),
-            # Don't include dark mode files in light mode
+            # 不要在浅色模式中包含深色模式文件
             ("remove", "eist_web_theme/static/src/**/*.dark.scss"),
             "eist_web_theme/static/src/chatter/**/*",
             "eist_web_theme/static/src/components/**/*",
@@ -138,10 +132,11 @@ This module modifies web plugins to provide excellent design and responsiveness.
             "eist_web_theme/static/src/**/*.dark.scss",
         ],
     },
-    "post_init_hook": "post_init_hook",  # 安装后执行的方法
-    "uninstall_hook": "uninstall_hook",  # 卸载后执行的方法
+    "post_init_hook": "post_init_hook",
+    "uninstall_hook": "uninstall_hook",
     "license": "Other proprietary",
-    "bootstrap": True,  # 加载登录屏幕的翻译，
+    "bootstrap": True,
     "application": True,
     "installable": True,
+    "auto_install": ["eist_erp_base"],
 }

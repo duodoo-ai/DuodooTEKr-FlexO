@@ -2,7 +2,8 @@
     height: $o-erp-footer-height;
     display: flex;
     align-items: center !important;
-    border-top: $o-erp-footer-border-top;
+    // border-top: $o-erp-footer-border-top;
+    background-color: transparent !important;
 
     .o_footer_content {
         display: flex;
@@ -26,6 +27,40 @@
         .o_footer_content_right {
             width: auto;
             flex-shrink: 0;
+        }
+    }
+}
+
+@for $i from 1 through length($o-theme-colors) {
+    $color: nth($o-theme-colors, $i);
+
+    .o_web_client_theme_colore_#{$i} {
+        &.o_drawer_menu_background,
+        &.o_web_client.o_drawer_menu_background{
+            .o_erp_footer {
+                display: none;
+            }
+        }
+        .o_erp_footer {
+            color: if(lightness($color) > 60, #222, #fff);
+
+            .o_footer_content {
+                .o_footer_content_left {
+                    color: if(lightness($color) > 60, #222, #fff);
+
+                    a {
+                        color: var(--eist-link-color);
+                    }
+                }
+
+                .o_footer_content_center {
+                    color: if(lightness($color) > 60, #222, #fff);
+                }
+
+                .o_footer_content_right {
+                    color: if(lightness($color) > 60, #222, #fff);
+                }
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ import { useService } from "@web/core/utils/hooks";
 import { patch } from "@web/core/utils/patch";
 import { session } from "@web/session";
 import { onMounted, useRef, useState } from "@odoo/owl";
-import { ScrollTopButton } from '@eist_web_theme/components/scroll_top_button/scroll_top_button';
+// import { ScrollTopButton } from '@eist_web_theme/components/scroll_top_button/scroll_top_button';
 
 patch(FormRenderer.prototype, {
     setup() {

@@ -1,9 +1,30 @@
 // Shared with web client and login screen
-.o_drawer_menu_background, .o_web_client.o_drawer_menu_background {
+.o_drawer_menu_background,
+.o_web_client.o_drawer_menu_background {
     background: {
         size: cover;
         attachment: fixed;
-        color: var(--homeMenu-bg-color, #{$o-gray-200});
-        image: var(--homeMenu-bg-image, url("/eist_web_theme/static/img/background-light.svg"));
+        color: var(--drawerMenu-bg-color, #{$o-gray-200});
+        image: var(--drawerMenu-bg-image, url("/eist_web_theme/static/img/background-light.svg"));
+    }
+}
+
+@for $size from 1 through length($o-theme-colors) {
+    $color: nth($o-theme-colors, $size);
+
+    .o_web_client_theme_colore_#{$size} {
+
+        &.o_drawer_menu_background {
+            $-body-bg-start-color: adjust-color($color, $lightness: -5%, $saturation: -5%);
+            $-body-bg-end-color: adjust-color($color, $lightness: 15%, $saturation: 0%);
+
+            background: linear-gradient(135deg, $-body-bg-start-color 0%, $-body-bg-end-color 100%) !important;
+
+            .o_drawer_menu {
+                background-size: cover;
+                background-attachment: fixed;
+                background-image: url("/eist_web_theme/static/img/background-light.svg");
+            }
+        }
     }
 }

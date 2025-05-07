@@ -41,6 +41,140 @@
             <xpath expr="//form/app[@name='general_settings']" position="before">
                 <app data-string="ERP Settings" string="ERP Settings" name="eist_erp_base">
 
+                    <field name="company_id" invisible="1" />
+                    <setting type="header" string="Companies">
+                        <field name="company_id" options="{'no_open': True, 'no_create': True}" title="Settings on this page will apply to this company." class="w-100"/>
+                    </setting>
+
+                    <div id="brand_settings">
+                        <block title="Base Settings" name="eisterp_brand_setting_container">
+                            <div class="col-12 col-lg-6 o_setting_box" id="system_name_setting">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-header" role="img" aria-label="Browser Window Title Name" title="Browser Window Title Name"></i>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="system_name" />
+                                    <div class="text-muted">
+                                    The title name displayed on the title bar or status bar of the
+                                    browser window. Similarly, when a document is added to the
+                                    user's link list or favorite or bookmark list, the title name
+                                    will become the default name of the document link.
+                                    </div>
+                                    <div class="content-group mt8">
+                                        <field name="system_name" class="fw-bold w-100" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="display_company_name" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="display_company_name" />
+                                    <div class="text-muted">
+                                    Displays the company name in the title bar of the browser window
+                                    or in the title name on the status bar.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-copyright" role="img" aria-label="Copyright information" title="Copyright information"></i>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="copyright" class="o_light_label" />
+                                    <div class="o_row">
+                                        <field name="copyright" />
+                                    </div>
+                                    <div class="text-muted">
+                                    Copyright information displayed in user menu items and footers.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-link" role="img" aria-label="Documentation URL" title="Documentation URL"></i>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="doc_url" />
+                                    <div class="o_row">
+                                        <field name="doc_url" />
+                                    </div>
+                                    <div class="text-muted">
+                                    The document URL displayed in the user menu item and footer.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-link" role="img" aria-label="Support URL" title="Support URL"></i>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="support_url" />
+                                    <div class="o_row">
+                                        <field name="support_url" />
+                                    </div>
+                                    <div class="text-muted">
+                                    The technical support URL displayed in the user menu item and
+                                    footer.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-picture-o" aria-label="Web Favorites Icon" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="favicon" string="Favorites Icon" />
+                                    <div class="text-muted">
+                                    An icon that appears in the title bar or favorites of the
+                                    browser window.
+                                    </div>
+                                    <div class="content-group mt8">
+                                        <field name="favicon" widget="image" class="float-start oe_avatar" options='{"size": [48, 48]}'/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-picture-o" aria-label="Company Logo" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="logo" />
+                                    <div class="text-muted">
+                                    Company logo, which is used to display the website brand.
+                                    </div>
+                                    <div class="content-group mt8">
+                                        <field name="logo" widget="image" class="float-start oe_avatar" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <i class="fa fa-picture-o" aria-label="Company Square Logo" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="square_logo" />
+                                    <div class="text-muted">
+                                    Company Square Logo, It is used to display the website brand when the sidebar collapses.
+                                    </div>
+                                    <div class="content-group mt8">
+                                        <field name="square_logo" widget="image" class="float-start oe_avatar" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </block>
+
+                    </div>
+
 
                     <div id="eist_apps">
                         <block title="Applications" name="eist_applications_settings">

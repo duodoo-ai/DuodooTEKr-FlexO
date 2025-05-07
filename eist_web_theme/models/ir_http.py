@@ -29,20 +29,6 @@ class Http(models.AbstractModel):
         session_info = super(Http, self).session_info()
 
         # -------------------------------------------------------
-        # 品牌
-        # -------------------------------------------------------
-        system_name = ICP.get_param("eist_erp.system_name", default="EIST ERP")
-        display_company_name = ICP.get_param("eist_erp.display_company_name", default=False)
-
-        if type(display_company_name) == str:
-            display_company_name = bool(ast.literal_eval(display_company_name))
-
-        session_info["brand"] = {
-            "system_name": system_name,
-            "display_company_name": display_company_name,
-        }
-
-        # -------------------------------------------------------
         # 语言
         # -------------------------------------------------------
         session_info["user_langs"] = {}
@@ -136,16 +122,13 @@ class Http(models.AbstractModel):
         # 主题 3. Theme color
         # -------------------------------------------------------
         theme_color_list = [
-            {"id": 0, "name": _("Light")},
-            {"id": 1, "name": _("Red")},
-            {"id": 2, "name": _("Orange")},
-            {"id": 3, "name": _("Yellow")},
-            {"id": 4, "name": _("Green")},
-            {"id": 5, "name": _("Blue")},
-            {"id": 6, "name": _("Indigo")},
-            {"id": 7, "name": _("Lavender")},
-            {"id": 8, "name": _("Mauve")},
-            {"id": 9, "name": _("Grey")},
+            {"id": 0, "name": _("Default")}, # 默认
+            {"id": 1, "name": _("Sky")}, # 晴空
+            {"id": 2, "name": _("Bamboo")}, # 青竹
+            {"id": 3, "name": _("Turquoise")}, # 松石
+            {"id": 4, "name": _("Sakura")}, # 花火
+            {"id": 5, "name": _("Ink")}, # 沉墨
+            {"id": 6, "name": _("Lavender")}, # 菖蒲
         ]
 
         # 主题 6. Views

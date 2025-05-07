@@ -10,9 +10,7 @@ class ResUsers(models.Model):
 
     lock_screen = fields.Boolean(string="Lock Screen", default=False)
 
-    theme_id = fields.Many2one(
-        "res.theme", string="Theme", store=True, domain="[('user_id', '=', id)]"
-    )
+    theme_id = fields.Many2one("res.theme", string="Theme", store=True, domain="[('user_id', '=', id)]")
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -43,17 +41,11 @@ class ResUsers(models.Model):
         # print(theme,type(theme))
         self.theme_id.sudo().write(theme)
 
-    # @api.model
-    # def signup(self, values, token=None):
-    #     """
-    #     注册用户，以便：
-    #         - 创建一个新用户（无令牌），或
-    #         - 为合作伙伴创建用户（使用令牌，但没有合作伙伴的用户），或
-    #         - 更改用户的密码（使用令牌和现有用户）。
-    #         :param values:一个字典，其中包含写入用户的字段值
-    #         :param token:注册令牌（可选）
-    #         :return: (dbname, login, password) 对于已注册的用户
-    #     """
-    #     res = super(ResUsers, self).signup(values, token)
-    #     print(values)
-    #     return res
+    @api.model
+    def get_user_theme_color(self):
+        """
+        获取用户主题颜色
+        """
+        return self.theme_id.sudo().theme_color
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <function model="ir.config_parameter" name="set_param" eval="('eist_erp_theme.login_page_display_logo', 'True')"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,178 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eist_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-05 09:09+0000\n"
+"PO-Revision-Date: 2025-05-05 17:11+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: eist_website
+#: model:ir.model.fields,help:eist_website.field_res_config_settings__support_info_logo
+#: model:ir.model.fields,help:eist_website.field_website__support_info_logo
+msgid "A tiny logo for customizing technical support information"
+msgstr "用于自定义技术支持信息的小Logo"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid ""
+"Allows you to customize technical support information in the footer of your "
+"website."
+msgstr "允许您在网站页脚中自定义技术支持信息。"
+
+#. module: eist_website
+#: model:ir.model,name:eist_website.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.brand_promotion
+msgid "Create a"
+msgstr "创建"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "Customize Support Information"
+msgstr "自定义支持信息"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_res_config_settings__customize_support_info
+#: model:ir.model.fields,field_description:eist_website.field_website__customize_support_info
+msgid "Customize support information"
+msgstr "自定义支持信息"
+
+#. module: eist_website
+#. odoo-javascript
+#: code:addons/eist/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+#: code:addons/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+msgid "Email & Marketing"
+msgstr "电子邮件与市场营销"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:eist_website.snippet_options_filing
+msgid "Filing"
+msgstr "备案"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "Filing information applicable to websites in Chinese mainland."
+msgstr "适用于中国大陆网站的备案信息。"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "ICP Filing Number"
+msgstr "ICP备案号"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_res_config_settings__website_cn_icp_number
+msgid "ICP Filing Number/License Number"
+msgstr "ICP备案号/许可证好"
+
+#. module: eist_website
+#: model:ir.model.fields,help:eist_website.field_res_config_settings__customize_support_info
+#: model:ir.model.fields,help:eist_website.field_website__customize_support_info
+msgid "If True, the support information will be customized"
+msgstr "如果为 True，则将自定义支持信息"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_website__cn_icp_number
+msgid "Internet Content Provider Filing Number/License Number"
+msgstr "互联网内容提供商申请号/许可证号"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "Logo"
+msgstr "Logo"
+
+#. module: eist_website
+#. odoo-javascript
+#: code:addons/eist/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+#: code:addons/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+msgid "Navigation"
+msgstr "导航"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.brand_promotion_message
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_res_config_settings__website_cn_psb_number
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "PSB Filing Number"
+msgstr "公安备案号"
+
+#. module: eist_website
+#. odoo-javascript
+#: code:addons/eist/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+#: code:addons/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+msgid "Privacy"
+msgstr "隐私"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_website__cn_psb_number
+msgid "Public Security Bureau (PSB) Internet Filing Number"
+msgstr "公安局(PSB)互联网备案号"
+
+#. module: eist_website
+#. odoo-javascript
+#: code:addons/eist/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+#: code:addons/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+msgid "SEO"
+msgstr "搜索引擎优化"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_res_config_settings__support_info_url
+#: model:ir.model.fields,field_description:eist_website.field_website__support_info_url
+msgid "Technical support URL"
+msgstr "技术支持 URL"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_res_config_settings__support_info_text
+#: model:ir.model.fields,field_description:eist_website.field_website__support_info_text
+msgid "Technical support text"
+msgstr "技术支持文本"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "Text"
+msgstr "文本"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.res_config_settings_view_form
+msgid "URL"
+msgstr "URL"
+
+#. module: eist_website
+#: model:ir.model,name:eist_website.model_website
+msgid "Website"
+msgstr "网站"
+
+#. module: eist_website
+#. odoo-javascript
+#: code:addons/eist/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+#: code:addons/eist_website/static/src/webclient/website_config_navigation/website_config_navigation.xml:0
+msgid "Website Info"
+msgstr "网站信息"
+
+#. module: eist_website
+#: model:ir.model.fields,field_description:eist_website.field_res_config_settings__support_info_logo
+#: model:ir.model.fields,field_description:eist_website.field_website__support_info_logo
+msgid "Website Support Logo"
+msgstr "网站支持Logo"
+
+#. module: eist_website
+#: model_terms:ir.ui.view,arch_db:eist_website.brand_promotion
+msgid "free website"
+msgstr "免费的网站"

@@ -18,6 +18,7 @@
     "auto_install": False,
     "data": [
         "security/core_security.xml",
+        "data/ir_config_parameter_data.xml",
         "views/res_partner_views.xml",
         "views/res_company_views.xml",
         "views/webclient_templates.xml",
@@ -26,7 +27,7 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "eist_erp_base/static/libs/bootstrap-icons/font/bootstrap-icons.min.css",
+            "eist_erp_base/static/libs/bootstrap-icons/bootstrap-icons.min.css",
             "eist_erp_base/static/src/views/**/*",
             "eist_erp_base/static/src/webclient/**/*",
             # "https://pyscript.net/latest/pyscript.css",

@@ -1,30 +1,11 @@
 ///
-/// This file regroups the variables that style odoo components.
-/// They are available in every asset bundle.
+/// 此文件对 odoo 组件样式的变量进行重新分组。
+/// 它们在每个 asset bundle 中都可用。
 ///
-
-// 主题颜色
-// https://tailwindcss.com/docs/colors#using-custom-colors
-$o-theme-colors:
-    // #F9FAFD,   // 0.浅色
-    #fb2c36,    // 1.红色
-    #ff6900,    // 2.橙色
-    #f0b100,    // 3.黄色
-    #00c950,    // 4.绿色
-    #2b7fff,    // 5.蓝色
-    #615fff,    // 6.靛色
-    #71639e,    // 7.紫色,社区版颜色
-    #714B67,    // 8.深紫色，企业版颜色
-    #6a7282     // 9.灰色
-     !default;
 
 // Colors
 $o-white: #FFF !default;
 $o-black: #000 !default;
-$o-default-color: #3975c6 !default;
-$o-community-color: #71639e !default;
-$o-enterprise-color: #714B67 !default;
-$o-enterprise-action-color: #017e84 !default;
 
 $o-gray-100: #F9FAFB !default;
 $o-gray-200: #e7e9ed !default;
@@ -37,22 +18,65 @@ $o-gray-800: #1F2937 !default;
 $o-gray-900: #111827 !default;
 
 
+// 主题颜色变量
+$o-theme-colors: // #e6edf5, // 0 Default 默认主题
+    #315cd2, // 1 Sky 晴空主题
+    #687d56, // 2 Bamboo 青竹主题
+    #40bda5, // 3 Turquoise 松石主题
+    #eb8499, // 4 Sakura 花火主题
+    #3e465d, // 5 Ink 沉墨主题
+    #5a3f54 // 6 Lavender 薰衣草主题
+    !default;
+
+// 默认品牌色
+
+
+// 遍历生成主题 class
+@for $size from 1 through length($o-theme-colors) {
+    $color-base: nth($o-theme-colors, $size);
+    $color-dark: darken($color-base, 10%);
+    $color-light: lighten($color-base, 15%);
+
+    $eist-primary-color: #{$color-base};
+    $eist-primary-color-dark: #{$color-dark};
+    $eist-primary-color-light: #{$color-light};
+
+    .o_web_client_theme_colore_#{$size} {
+        $-body-bg-start-color: adjust-color($color-base, $lightness: -5%, $saturation: -5%);
+        $-body-bg-end-color: adjust-color($color-base, $lightness: 15%, $saturation: 0%);
+
+        // body 背景色
+        background: linear-gradient(135deg, $-body-bg-start-color 0%, $-body-bg-end-color 100%);
+
+        // dropdown
+
+
+        // 按钮 使用主题色
+        .btn-primary {
+            background: $eist-primary-color;
+        }
+    }
+}
+
+$o-eist-color: darken(#e6edf5, 20%) !default;
+$o-eist-action-color: #000000 !default;
 
 $o-opacity-disabled: .5 !default;
 $o-opacity-muted: .76 !default;
 
-$o-brand-odoo: $o-enterprise-color !default;
+// 品牌色使用主题色
+$o-brand-odoo: $o-eist-color !default;
 $o-brand-primary: $o-brand-odoo !default;
 $o-brand-secondary: #8f8f8f !default;
 $o-brand-lightsecondary: $o-gray-100 !default;
 
-$o-action: $o-enterprise-action-color !default;
+$o-action: $o-eist-action-color !default;
 $o-main-text-color: $o-gray-700 !default;
-$o-main-link-color: $o-enterprise-action-color !default;
+$o-main-link-color: $o-eist-action-color !default;
 $o-main-color-muted: rgba($o-main-text-color, $o-opacity-muted) !default;
 
 // Components
-$o-component-active-color:  $o-gray-900 !default;
+$o-component-active-color: $o-gray-900 !default;
 $o-component-active-bg: mix($o-action, $o-white, 10%) !default;
 $o-component-active-border: $o-action !default;
 
@@ -72,54 +96,51 @@ $o-input-border-required: $o-gray-900 !default;
 // Badges
 $o-badge-min-width: 2.7ch !default !default;
 
-// Buttons
-// Map of customized values for each button. If a button's design is defined
-// here, the relative values will take priority over default BS ones.
-// Notice: each map's entry is passed directly to the Bootstrap mixin, meaning
-// that all states must be defined, there can't be omissions.
-$o-btns-bs-override: () !default;
-$o-btns-bs-override: map-merge((
-    "primary": (
-        background: $o-brand-primary,
-        border: $o-brand-primary,
-        color: $o-white,
+// 按钮
+// 每个按钮的自定义值的映射。如果此处定义了按钮的设计，则相对值将优先于默认的 BS 值。
+// 注意：每个 map 的条目都直接传递给 Bootstrap mixin，这意味着必须定义所有状态，不能有遗漏。
+$o-btns-bs-override: (
+    ) !default;
+$o-btns-bs-override: map-merge(("primary": (background: $o-brand-primary,
+                border: $o-brand-primary,
+                color: $o-white,
 
-        hover-background: darken($o-brand-primary, 10%),
-        hover-border: darken($o-brand-primary, 10%),
-        hover-color: $o-white,
+                hover-background: darken($o-brand-primary, 10%),
+                hover-border: darken($o-brand-primary, 10%),
+                hover-color: $o-white,
 
-        active-background: mix($o-brand-primary, $o-white, 10%),
-        active-border:  $o-brand-primary,
-        active-color:$o-brand-primary,
-    ),
-    "secondary": (
-        background: $o-gray-200,
-        border: $o-gray-200,
-        color: $o-gray-700,
+                active-background: mix($o-brand-primary, $o-white, 10%),
+                active-border: $o-brand-primary,
+                active-color:$o-brand-primary,
+            ),
+            "secondary": (background: $o-gray-200,
+                border: $o-gray-200,
+                color: $o-gray-700,
 
-        hover-background: $o-gray-300,
-        hover-border: $o-gray-300,
-        hover-color: $o-gray-800,
+                hover-background: $o-gray-300,
+                hover-border: $o-gray-300,
+                hover-color: $o-gray-800,
 
-        active-background: $o-component-active-bg,
-        active-border:  $o-component-active-border,
-        active-color: $o-component-active-color,
-    ),
-), $o-btns-bs-override);
+                active-background: $o-component-active-bg,
+                active-border: $o-component-active-border,
+                active-color: $o-component-active-color,
+            ),
+        ), $o-btns-bs-override
+);
 
-$o-btns-bs-outline-override: () !default;
-$o-btns-bs-outline-override: map-merge((
-    "secondary": (
-        background: transparent,
-        border: $o-gray-300,
-        color: $o-gray-700,
+$o-btns-bs-outline-override: (
+    ) !default;
+$o-btns-bs-outline-override: map-merge(("secondary": (background: transparent,
+                border: $o-gray-300,
+                color: $o-gray-700,
 
-        hover-background: $o-gray-200,
-        hover-border: $o-gray-300,
-        hover-color: $o-gray-800,
+                hover-background: $o-gray-200,
+                hover-border: $o-gray-300,
+                hover-color: $o-gray-800,
 
-        active-background: mix($o-enterprise-action-color, $o-white, 10%),
-        active-border:  $o-enterprise-action-color,
-        active-color: $o-gray-900,
-    ),
-), $o-btns-bs-outline-override);
+                active-background: mix($o-eist-action-color, $o-white, 10%),
+                active-border: $o-eist-action-color,
+                active-color: $o-gray-900,
+            ),
+        ), $o-btns-bs-outline-override
+);

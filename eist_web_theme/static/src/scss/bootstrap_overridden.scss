@@ -25,7 +25,7 @@ $enable-shadows: true !default;
 // Define common padding and border radius sizes and more.
 
 $component-active-color: unset !default;
-$component-active-bg: mix($o-enterprise-action-color, $o-white, 10%) !default;
+$component-active-bg: mix($o-eist-action-color, $o-white, 10%) !default;
 
 $nav-tabs-border-radius: 0 !default;
 $nav-pills-border-radius: 0 !default;
@@ -72,11 +72,11 @@ $input-box-shadow: 0 !default;
 
 $input-focus-bg: $o-white !default;
 $input-focus-box-shadow: 0 !default;
-$input-focus-border-color: mix($o-enterprise-action-color, $o-gray-200) !default;
+$input-focus-border-color: mix($o-eist-action-color, $o-gray-200) !default;
 
 $form-check-input-checked-color: $o-white !default;
-$form-check-input-checked-border-color: $o-enterprise-action-color !default;
-$form-check-input-checked-bg-color: $o-enterprise-action-color !default;
+$form-check-input-checked-border-color: $o-eist-action-color !default;
+$form-check-input-checked-bg-color: $o-eist-action-color !default;
 
 $form-select-focus-box-shadow: 0 !default;
 
@@ -120,9 +120,9 @@ $progress-box-shadow: 0 !default;
 
 // List group
 
-$list-group-active-color: $o-enterprise-action-color !default;
+$list-group-active-color: $o-eist-action-color !default;
 $list-group-active-bg: $component-active-bg !default;
-$list-group-active-border-color: $o-enterprise-action-color !default;
+$list-group-active-border-color: $o-eist-action-color !default;
 
 
 // Image thumbnails

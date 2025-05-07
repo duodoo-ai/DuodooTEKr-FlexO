@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- 自定义技术支持信息 -->
+    <template id="brand_promotion_message" inherit_id="web.brand_promotion_message" name="Customize support information">
+        <xpath expr="//t[@t-set='odoo_logo']" position="replace">
+            <t t-if="website.customize_support_info">
+                <t t-set="odoo_logo">
+                    <a target="_blank" t-att-href="website.support_info_url" class="badge text-bg-light">
+                        <img t-att-alt="website.support_info_text" t-att-src="image_data_uri(website.support_info_logo)" height="20" style="width: auto; height: 1em; vertical-align: baseline;"/>
+                    </a>
+                </t>
+            </t>
+            <t t-else="">
+                <t t-set="odoo_logo">
+                    <a target="_blank" t-attf-href="http://www.odoo.com?utm_source=db&amp;utm_medium=#{_utm_medium}" class="badge text-bg-light">
+                        <img alt="Odoo" src="/web/static/img/odoo_logo_tiny.png" width="62" height="20" style="width: auto; height: 1em; vertical-align: baseline;"/>
+                    </a>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="brand_promotion" inherit_id="website.brand_promotion" name="Customize support information">
+        <xpath expr="//t[@t-set='_message']" position="replace">
+            <t t-if="website.customize_support_info">
+                <t t-set="_message"><t t-esc="website.support_info_text"/></t>
+            </t>
+            <t t-else="">
+                <t t-set="_message">
+                Create a <a target="_blank" href="http://www.odoo.com/app/website?utm_source=db&amp;utm_medium=website">free website</a>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+
+    <!--
+        备案号默认显示方案：
+        1. 本视图 footer_filing 默认 active="True"，在版权信息后插入备案号内容。
+        2. 通过 t-if="not no_filing"，配合隐藏视图控制显示/隐藏。
+        3. snippets 选项勾选时，启用 footer_no_filing 视图，设置 no_filing=True，从而隐藏备案号。
+    -->
+    <template id="footer_filing" inherit_id="website.layout" name="Footer show ICP filing and PSB filing" active="True">
+        <!-- 给footer添加no_filing缓存变量，便于后续控制备案号显示 -->
+        <xpath expr="//footer[@t-cache]" position="attributes">
+            <attribute name="t-cache" add="no_filing" separator=","/>
+        </xpath>
+
+        <!-- 在版权信息后插入备案号内容，t-if="not no_filing" 控制显示 -->
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="after">
+            <div t-if="not no_filing" class="o_footer_filing d-flex align-items-center justify-content-center" data-name="Filing">
+                <div class="container py-1 d-flex align-items-center justify-content-center">
+                    <span t-if="website.cn_icp_number" t-attf-class="o_footer_icp_filing {{'me-3' if website.cn_psb_number else ''}}">
+                        <a href="https://beian.miit.gov.cn" target="_blank">
+                            <t t-esc="website.cn_icp_number" />
+                        </a>
+                    </span>
+                    <span t-if="website.cn_psb_number" t-attf-class="o_footer_psb_filing {{'ms-3' if website.cn_icp_number else ''}}">
+                        <a href="https://beian.gov.cn/" target="_blank" class="d-flex align-items-center">
+                            <img src="/eist_website/static/src/img/psb.png" style="height: 16px;" role="img"/>
+                            <t t-esc="website.cn_psb_number" />
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+
+
+    <!--
+        隐藏备案号内容的视图：
+        1. 默认 active="False"，只有在 snippets 选项勾选时才启用。
+        2. 通过 t-set no_filing=True，配合主视图的 t-if="not no_filing" 实现隐藏备案号。
+        3. snippets 里 data-customize-website-views="eist_website.footer_no_filing|" 控制本视图的启用/禁用。
+    -->
+    <template id="footer_no_filing" inherit_id="website.layout" name="Footer hide ICP filing and PSB filing" active="False">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="before">
+            <t t-set="no_filing" t-value="True"/>
+        </xpath>
+    </template>
+
+
+</odoo>

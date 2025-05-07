@@ -1,3 +1,39 @@
+@for $size from 1 through length($o-theme-colors) {
+    $color: nth($o-theme-colors, $size);
+
+    .o_web_client_theme_colore_#{$size} {
+        .o_theme_panel {
+            .o_theme_panel_header {
+                color: $o-white !important;
+                background: $color !important;
+                border: 0 !important;
+
+                .o_theme_panel_title {
+                    color: $o-white !important;
+                }
+
+                .btn-close {
+                    color: $o-white !important;
+                }
+            }
+
+            .o_theme_panel_body {
+                .nav {
+                    .nav-link {
+                        color: $color !important;
+
+                        &.active {
+                            color: darken($color, 10%) !important;
+                            background: lighten($color, 10%) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 .o_theme_panel {
 
     border-left: none !important;
@@ -84,9 +120,9 @@
                 .theme-colors {
                     padding-bottom: 8px;
 
-                    .o_theme_colorlist_item_color_0{
-                        i{
-                            color: $green!important;
+                    .o_theme_colorlist_item_color_0 {
+                        i {
+                            color: $green !important;
                         }
                     }
 

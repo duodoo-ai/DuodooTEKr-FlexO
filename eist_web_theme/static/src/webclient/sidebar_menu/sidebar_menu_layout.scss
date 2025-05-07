@@ -9,6 +9,7 @@
                     .sidebar-logo-default {
                         display: none;
                     }
+
                     .sidebar-logo-minimize {
                         display: inherit;
                     }
@@ -44,7 +45,7 @@
                                 .o_sidebar_menu_accordion_button_app_lable {
                                     display: none !important;
 
-                                    .menu-lable {
+                                    .menu-label {
                                         display: inherit !important;
                                     }
 
@@ -65,6 +66,7 @@
                 width: $o-sidebar-menu-width !important;
                 transition: width 0.3s ease;
                 z-index: 101;
+
 
                 .o_sidebar_menu_brand {
                     width: $o-sidebar-menu-width !important;
@@ -103,7 +105,7 @@
                                         margin-right: 0.5rem;
                                     }
 
-                                    .menu-lable {
+                                    .menu-label {
                                         display: inherit !important;
                                     }
 
@@ -123,7 +125,7 @@
                                         width: 100% !important;
                                         display: inherit !important;
 
-                                        .menu-lable {
+                                        .menu-label {
                                             display: inherit !important;
                                         }
 
@@ -147,15 +149,17 @@
         }
     }
 
-    &[data-sidebar-default-minimize='true']{
-        &[data-sidebar-is-minimized='true']{
+    &[data-sidebar-default-minimize='true'] {
+        &[data-sidebar-is-minimized='true'] {
             .o_sidebar_menu {
                 width: $o-sidebar-menu-collapse-width !important;
+
                 .o_sidebar_menu_brand {
                     .o_sidebar_menu_brand_logo {
                         .sidebar-logo-default {
                             display: none;
                         }
+
                         .sidebar-logo-minimize {
                             display: inherit;
                         }
@@ -191,7 +195,7 @@
                                     .o_sidebar_menu_accordion_button_app_lable {
                                         display: none !important;
 
-                                        .menu-lable {
+                                        .menu-label {
                                             display: inherit !important;
                                         }
 
@@ -250,7 +254,7 @@
                                             margin-right: 0.5rem;
                                         }
 
-                                        .menu-lable {
+                                        .menu-label {
                                             display: inherit !important;
                                         }
 
@@ -270,7 +274,7 @@
                                             width: 100% !important;
                                             display: inherit !important;
 
-                                            .menu-lable {
+                                            .menu-label {
                                                 display: inherit !important;
                                             }
 
@@ -293,7 +297,8 @@
                 }
             }
         }
-        &[data-sidebar-is-minimized='false']{
+
+        &[data-sidebar-is-minimized='false'] {
             .o_sidebar_menu {
                 width: $o-sidebar-menu-width !important;
             }
@@ -304,14 +309,17 @@
         .o_sidebar_menu {
             width: $o-sidebar-menu-width !important;
         }
-        &[data-sidebar-is-minimized='true']{
+
+        &[data-sidebar-is-minimized='true'] {
             .o_sidebar_menu {
                 width: $o-sidebar-menu-collapse-width !important;
+
                 .o_sidebar_menu_brand {
                     .o_sidebar_menu_brand_logo {
                         .sidebar-logo-default {
                             display: none;
                         }
+
                         .sidebar-logo-minimize {
                             display: inherit;
                         }
@@ -347,7 +355,7 @@
                                     .o_sidebar_menu_accordion_button_app_lable {
                                         display: none !important;
 
-                                        .menu-lable {
+                                        .menu-label {
                                             display: inherit !important;
                                         }
 
@@ -406,7 +414,7 @@
                                             margin-right: 0.5rem;
                                         }
 
-                                        .menu-lable {
+                                        .menu-label {
                                             display: inherit !important;
                                         }
 
@@ -426,7 +434,7 @@
                                             width: 100% !important;
                                             display: inherit !important;
 
-                                            .menu-lable {
+                                            .menu-label {
                                                 display: inherit !important;
                                             }
 
@@ -449,7 +457,8 @@
                 }
             }
         }
-        &[data-sidebar-is-minimized='false']{
+
+        &[data-sidebar-is-minimized='false'] {
             .o_sidebar_menu {
                 width: $o-sidebar-menu-width !important;
             }

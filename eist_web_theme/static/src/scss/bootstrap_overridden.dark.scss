@@ -61,6 +61,7 @@ $component-active-bg: $o-gray-300 !default;
 
 // == Typography
 $mark-bg: #ffdebc !default;
+$mark-color: shift-color($mark-bg, -75%) !default;
 
 // == Tables
 $table-bg: $o-view-background-color !default;

@@ -1,22 +1,86 @@
 // = Main Navbar
 // ============================================================================
-.o_main_navbar {
-    --NavBar-entry-color--active: #{$o-component-active-color};
-    --NavBar-entry-borderColor-active: #{$o-component-active-border};
-    --NavBar-entry-backgroundColor--active: #{$o-component-active-bg};
-    --NavBar-entry-backgroundColor--hover: #{$o-gray-200};
-    --NavBar-entry-backgroundColor--focus: #{$o-gray-200};
+.o_web_client_theme_colore_0 {
+    .o_main_navbar {
+        --NavBar-entry-color--active: #{$o-component-active-color};
+        --NavBar-entry-borderColor-active: #{$o-component-active-border};
+        --NavBar-entry-backgroundColor--active: #{$o-component-active-bg};
+        --NavBar-entry-backgroundColor--hover: #{$o-gray-200};
+        --NavBar-entry-backgroundColor--focus: #{$o-gray-200};
 
-    --Dropdown_menu-margin-y: #{map-get($spacers, 1)};
+        --Dropdown_menu-margin-y: #{map-get($spacers, 1)};
+        border-bottom: none !important;
+        background-color: transparent !important;
 
-    .o_menu_toggle {
-        color: var(--NavBar-menuToggle-color, #{$o-brand-odoo});
+        .o_menu_toggle {
+            color: var(--NavBar-menuToggle-color, #{$o-brand-odoo});
+        }
+    }
+
+    body.o_is_superuser .o_menu_systray {
+        border-image-outset: map-get($border-widths, 5);
     }
 }
 
-// Ensuring SuperUser Design menu is not compressed in Enterprise
-// ============================================================================
-body.o_is_superuser .o_menu_systray {
-    border-image-outset: map-get($border-widths, 5);
-}
 
+@for $size from 1 through length($o-theme-colors) {
+    $color: nth($o-theme-colors, $size);
+
+    .o_web_client_theme_colore_#{$size} {
+
+        
+
+        .o_main_navbar {
+            background-color: transparent !important;
+            // border-bottom: 1px solid darken($color, 10%);
+            border-bottom: none !important;
+            color: if(lightness($color) > 60, #222, #fff);
+
+            .o_menu_toggle {
+                .o_menu_toggle_icon {
+                    color: if(lightness($color) > 60, #222, #fff);
+                }
+            }
+
+            .dropdown-item:hover {
+                background: lighten($color, 10%) !important;
+            }
+
+            .o_menu_brand {
+                color: if(lightness($color) > 60, #222, #fff);
+            }
+
+            .o_menu_sections {
+
+                .o_nav_entry,
+                .dropdown-toggle {
+                    background: darken($color, 10%) !important;
+                    color: darken($o-white, 10%) !important;
+                }
+            }
+
+            .o_menu_systray {
+                color: $o-white !important;
+
+                .dropdown.dropdown-toggle {
+                    color: $o-white !important;
+                }
+
+                .o-theme-systray-class {
+                    button {
+                        color: $o-white !important;
+
+                        &:hover,
+                        &.show {
+                            color: darken($o-white, 10%) !important;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+}

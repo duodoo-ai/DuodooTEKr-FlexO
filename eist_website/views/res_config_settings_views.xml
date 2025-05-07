@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.eist_website</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//app[@name='website']/setting[@type='header']" position="before">
+                <widget name="res_config_website_navigation" />
+            </xpath>
+
+            <!-- 给设置节点添加锚点id -->
+            <xpath expr="//block[@id='website_info_settings']" position="before">
+                <div id="website_info_settings" />
+            </xpath>
+            <xpath expr="//block[@id='website_email_marketing']" position="before">
+                <div id="website_email_marketing" />
+            </xpath>
+            <xpath expr="(//block[@id='website_settings'])[1]" position="before">
+                <div id="website_privacy_settings" />
+            </xpath>
+            <xpath expr="(//block[@id='website_settings'])[2]" position="before">
+                <div id="website_seo_settings" />
+            </xpath>
+
+
+            <!-- 中国网站备案 -->
+            <xpath expr="//block[@id='website_info_settings']/setting[last()]" position="after">
+                <setting string="Filing" help="Filing information applicable to websites in Chinese mainland.">
+                    <div class="content-group">
+                        <div class="row mt8">
+                            <label class="col-lg-4" string="ICP Filing Number" for="website_cn_icp_number"/>
+                            <field name="website_cn_icp_number" />
+                        </div>
+                        <div class="row mt8">
+                            <label class="col-lg-4" string="PSB Filing Number" for="website_cn_psb_number"/>
+                            <field name="website_cn_psb_number" />
+                        </div>
+                    </div>
+                </setting>
+
+                <setting string="Customize Support Information" help="Allows you to customize technical support information in the footer of your website.">
+                    <field name="customize_support_info"/>
+                    <div class="content-group" invisible="not customize_support_info">
+                        <div class="row mt8">
+                            <label class="col-lg-3" string="Logo" for="support_info_logo"/>
+                            <field name="support_info_logo" widget="image" class="float-start oe_avatar" options='{"size": [20, 20]}' required="customize_support_info"/>
+                        </div>
+                        <div class="row mt8">
+                            <label class="col-lg-3" string="Text" for="support_info_text"/>
+                            <field name="support_info_text" class="col-lg-9 w-75" required="customize_support_info"/>
+                        </div>
+                        <div class="row mt8">
+                            <label class="col-lg-3" string="URL" for="support_info_url"/>
+                            <field name="support_info_url" class="col-lg-9 w-75" required="customize_support_info"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

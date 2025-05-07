@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-15 12:33+0000\n"
-"PO-Revision-Date: 2025-03-15 20:35+0800\n"
+"POT-Creation-Date: 2025-05-05 04:56+0000\n"
+"PO-Revision-Date: 2025-05-05 13:03+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -15,13 +15,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid ""
-"<strong>Save</strong> this page and come back here to set up the feature."
+"<i class=\"fa fa-copyright\" role=\"img\" aria-label=\"Copyright information\" "
+"title=\"Copyright information\"/>"
+msgstr ""
+"<i class=\"fa fa-copyright\" role=\"img\" aria-label=\"版权信息\" title=\"版权信息\"/>"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-header\" role=\"img\" aria-label=\"Browser Window Title Name\" "
+"title=\"Browser Window Title Name\"/>"
+msgstr ""
+"<i class=\"fa fa-header\" role=\"img\" aria-label=\"浏览器窗口标题名称\" title=\"浏览"
+"器窗口标题名称\"/>"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-link\" role=\"img\" aria-label=\"Documentation URL\" "
+"title=\"Documentation URL\"/>"
+msgstr "<i class=\"fa fa-link\" role=\"img\" aria-label=\"文档URL\" title=\"文档URL\"/>"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-link\" role=\"img\" aria-label=\"Support URL\" title=\"Support URL\"/"
+">"
+msgstr ""
+"<i class=\"fa fa-link\" role=\"img\" aria-label=\"技术支持URL\" title=\"技术支持URL\"/"
+">"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "<i class=\"fa fa-picture-o\" aria-label=\"Company Logo\"/>"
+msgstr "<i class=\"fa fa-picture-o\" aria-label=\"公司Logo\"/>"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "<i class=\"fa fa-picture-o\" aria-label=\"Company Square Logo\"/>"
+msgstr "<i class=\"fa fa-picture-o\" aria-label=\"公司方形Logo\"/>"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "<i class=\"fa fa-picture-o\" aria-label=\"Web Favorites Icon\"/>"
+msgstr "<i class=\"fa fa-picture-o\" aria-label=\"网页收藏夹图标\"/>"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "<strong>Save</strong> this page and come back here to set up the feature."
 msgstr "<strong>保存</strong> 此页面并返回此处以设置该功能。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"An icon that appears in the title bar or favorites of the\n"
+"                                    browser window."
+msgstr "出现在浏览器窗口的标题栏或收藏夹中的图标。"
 
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
@@ -29,11 +83,46 @@ msgid "Applications"
 msgstr "应用"
 
 #. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Base Settings"
+msgstr "基础设置"
+
+#. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: model:ir.model,name:eist_erp_base.model_res_company
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid "Companies"
 msgstr "公司"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__favicon
+msgid "Company Favicon"
+msgstr "公司图标"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__logo
+msgid "Company Logo"
+msgstr "公司Logo"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__square_logo
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__square_logo
+msgid "Company Square Logo"
+msgstr "公司方形Logo"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"Company Square Logo, It is used to display the website brand when the sidebar "
+"collapses."
+msgstr "公司方形标志，用于在侧边栏折叠时显示网站品牌。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Company logo, which is used to display the website brand."
+msgstr "公司Logo，用于显示网站品牌。"
 
 #. module: eist_erp_base
 #: model:ir.model,name:eist_erp_base.model_res_config_settings
@@ -46,12 +135,42 @@ msgid "Contact"
 msgstr "联系人"
 
 #. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__copyright
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__copyright
+msgid "Copyright"
+msgstr "版权"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Copyright information displayed in user menu items and footers."
+msgstr "显示在用户菜单项和页脚中的版权信息。"
+
+#. module: eist_erp_base
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_dingding
 msgid "Dingding integration"
 msgstr "钉钉集成"
 
 #. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__display_company_name
+msgid "Display Company Name"
+msgstr "显示公司名称"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"Displays the company name in the title bar of the browser window\n"
+"                                    or in the title name on the status bar."
+msgstr "在浏览器窗口的标题栏或状态栏上的标题栏中显示公司名称。"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__doc_url
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__doc_url
+msgid "Documentation URL"
+msgstr "文档URL"
+
+#. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 msgid "EMail"
 msgstr "电子邮件"
@@ -73,6 +192,16 @@ msgid "Extended functionality"
 msgstr "扩展功能"
 
 #. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__favicon
+msgid "Favicon"
+msgstr "图标"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Favorites Icon"
+msgstr "收藏夹图标"
+
+#. module: eist_erp_base
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_company__fax
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_partner__fax
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_users__fax
@@ -85,6 +214,11 @@ msgid "Feishu integration"
 msgstr "飞书集成"
 
 #. module: eist_erp_base
+#: model:ir.model,name:eist_erp_base.model_ir_http
+msgid "HTTP Routing"
+msgstr "HTTP 路由"
+
+#. module: eist_erp_base
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__hide_enterprise_app
 msgid "Hide Enterprise App"
 msgstr "隐藏企业版应用"
@@ -92,12 +226,12 @@ msgstr "隐藏企业版应用"
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid ""
-"Integrate social app instant messaging features, such as social app "
-"authentication login, use social app to send notifications, sync social app "
-"organizational structure, etc."
+"Integrate social app instant messaging features, such as social app authentication "
+"login, use social app to send notifications, sync social app organizational "
+"structure, etc."
 msgstr ""
-"集成社交应用即时通讯功能，如社交应用认证登录、使用社交应用发送通知、同步社交"
-"应用组织结构等。"
+"集成社交应用即时通讯功能，如社交应用认证登录、使用社交应用发送通知、同步社交应用组织结"
+"构等。"
 
 #. module: eist_erp_base
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_app
@@ -106,25 +240,32 @@ msgstr "集成社交应用解决方案"
 
 #. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 msgid "Integrations"
 msgstr "集成"
 
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
-msgid ""
-"It provides the functions of unified report management and online report "
-"design."
+msgid "It provides the functions of unified report management and online report design."
 msgstr "提供报表统一管理和在线设计报表的功能。"
 
 #. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 msgid "Languages"
 msgstr "语言"
 
 #. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_multi_platform
+msgid "Multi platform access"
+msgstr "多平台访问"
+
+#. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/eist_config_navigation/eist_config_navigation.xml:0
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/eist_config_navigation/eist_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 msgid "Navigation"
@@ -133,12 +274,12 @@ msgstr "导航"
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid ""
-"On the basis of the original electronic map provider, the Chinese "
-"electronic map provider will be added to enhance the ability to obtain the "
-"geographical location of partners."
+"On the basis of the original electronic map provider, the Chinese electronic map "
+"provider will be added to enhance the ability to obtain the geographical location of "
+"partners."
 msgstr ""
-"在原有电子地图提供商的基础上，将增加中国电子地图提供商，以增强获取合作伙伴地"
-"理位置的能力。"
+"在原有电子地图提供商的基础上，将增加中国电子地图提供商，以增强获取合作伙伴地理位置的能"
+"力。"
 
 #. module: eist_erp_base
 #: model:ir.actions.client,name:eist_erp_base.action_open_erp_configurator
@@ -152,6 +293,7 @@ msgstr "合作伙伴地理位置"
 
 #. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 msgid "Permissions"
 msgstr "权限"
@@ -160,6 +302,11 @@ msgstr "权限"
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid "Powerful, modern, and configurable to respond to backend themes."
 msgstr "强大，现代，可以配置的响应后端主题。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Provide multi platform client access functionality."
+msgstr "提供多平台客户端访问功能。"
 
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
@@ -179,6 +326,11 @@ msgstr "设置"
 
 #. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "Settings on this page will apply to this company."
+msgstr "此页面上的设置将应用于此公司。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid "Solution"
 msgstr "解决方案"
 
@@ -188,15 +340,68 @@ msgid "Solutions for stores and restaurants"
 msgstr "商店和餐厅的解决方案"
 
 #. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__square_logo_web
+msgid "Square Logo Web"
+msgstr "方形Web Logo"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_company__support_url
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__support_url
+msgid "Support URL"
+msgstr "技术支持URL"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__system_name
+msgid "System Name"
+msgstr "系统名称"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid "The document URL displayed in the user menu item and footer."
+msgstr "显示在用户菜单项和页脚中的文档URL。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"The technical support URL displayed in the user menu item and\n"
+"                                    footer."
+msgstr "显示在用户菜单项和页脚中的技术支持URL。"
+
+#. module: eist_erp_base
+#: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
+msgid ""
+"The title name displayed on the title bar or status bar of the\n"
+"                                    browser window. Similarly, when a document is "
+"added to the\n"
+"                                    user's link list or favorite or bookmark list, "
+"the title name\n"
+"                                    will become the default name of the document link."
+msgstr ""
+"浏览器窗口标题栏或状态栏上显示的标题名称。类似地，当文档添加到用户的链接列表或收藏夹或"
+"书签列表时，标题名称将成为文档链接的默认名称。"
+
+#. module: eist_erp_base
+#: model:ir.model.fields,help:eist_erp_base.field_res_company__favicon
+#: model:ir.model.fields,help:eist_erp_base.field_res_config_settings__favicon
+msgid "This field holds the image used to display a favicon for a given company."
+msgstr "该字段保存用于在网站上显示图标的图像。"
+
+#. module: eist_erp_base
 #: model_terms:ir.ui.view,arch_db:eist_erp_base.res_config_settings_view_form
 msgid "User-friendly PoS interface for shops and restaurants."
 msgstr "面向商店和餐馆的用户友好 PoS 界面。"
 
 #. module: eist_erp_base
 #. odoo-javascript
+#: code:addons/eist/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 #: code:addons/eist_erp_base/static/src/webclient/settings_form_view/general_config_navigation/general_config_navigation.xml:0
 msgid "Users"
 msgstr "用户"
+
+#. module: eist_erp_base
+#: model:ir.model,name:eist_erp_base.model_ir_ui_view
+msgid "View"
+msgstr "视图"
 
 #. module: eist_erp_base
 #: model:ir.model.fields,field_description:eist_erp_base.field_res_config_settings__module_eist_social_wechat

@@ -7,8 +7,6 @@ import { onMounted, useState } from "@odoo/owl";
 import { ScrollTopButton } from '@eist_web_theme/components/scroll_top_button/scroll_top_button';
 
 
-
-
 patch(ListRenderer.prototype, {
     setup() {
         super.setup(...arguments);

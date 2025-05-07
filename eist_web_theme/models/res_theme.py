@@ -141,13 +141,13 @@ class ResTheme(models.Model):
         string="Display Footer Support", default=True, help="Show support link in footer"
     )
     display_footer_copyright = fields.Boolean(
-        string="Display Footer Copyright", default=False, help="Show copyright in footer"
+        string="Display Footer Copyright", default=True, help="Show copyright in footer"
     )
     display_footer_doc = fields.Boolean(
-        string="Display Footer Documentation", default=False, help="Show Documentation in footer"
+        string="Display Footer Documentation", default=True, help="Show Documentation in footer"
     )
     display_footer_version = fields.Boolean(
-        string="Display Footer Version", default=False, help="Show Version in footer"
+        string="Display Footer Version", default=True, help="Show Version in footer"
     )
 
     @api.depends("company_id", "user_id", "type")

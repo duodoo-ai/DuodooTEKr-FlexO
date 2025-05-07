@@ -1,19 +1,15 @@
 import { _t } from "@web/core/l10n/translation";
-
-import { Component, useRef, useState, useExternalListener } from "@odoo/owl";
+import { Component, useRef, useState, useExternalListener, onWillStart } from "@odoo/owl";
 
 export class ThemeColorList extends Component {
     static COLORS = [
-        _t("Light"),            // 0.浅色
-        _t("Red"),              // 1.红色
-        _t("Orange"),           // 2.橙色
-        _t("Yellow"),           // 3.黄色
-        _t("Green"),            // 4.绿色
-        _t("Blue"),             // 5.蓝色
-        _t("Indigo"),           // 6.靛色
-        _t("Lavender"),         // 7.偏指淡蓝紫色，也就是薰衣草的颜色
-        _t("Mauve"),            // 8.指淡紫红色、淡紫色，颜色相对柔和淡雅
-        _t("Grey"),             // 9.灰色
+        _t("Default"),             // 0.默认 #e6edf5
+        _t("Sky"),                 // 1.晴空 #315cd2
+        _t("Bamboo"),              // 2.青竹 #687d56
+        _t("Turquoise"),           // 3.松石 #40bda5
+        _t("Sakura"),              // 4.花火 #eb8499
+        _t("Ink"),                 // 5.沉墨 #3e465d
+        _t("Lavender"),            // 6.菖蒲 #5a3f54
     ];
     static template = "eist_web_theme.ThemeColorList";
     static defaultProps = {
@@ -36,6 +32,7 @@ export class ThemeColorList extends Component {
     }
     get colors() {
         return this.constructor.COLORS;
+        // return session.theme.color.list;
     }
     onColorSelected(id) {
         this.props.onColorSelected(id);

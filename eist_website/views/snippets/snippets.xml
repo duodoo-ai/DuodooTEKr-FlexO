@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--
+        备案号显示控制选项：
+        1. 通过 we-checkbox 控件，允许网站设计师在前端切换备案号的显示/隐藏。
+        2. data-customize-website-views="eist_website.footer_no_filing|" 控制 footer_no_filing 视图的启用/禁用。
+        3. data-checked="true" 让checkbox默认勾选（即默认显示备案号）。
+        4. 取消勾选时，footer_no_filing 视图启用，备案号被隐藏。
+    -->
+    <template id="snippet_options_filing" inherit_id="website.snippet_options">
+
+        <xpath expr="//we-checkbox[@data-name='footer_copyright_opt']" position="after">
+            <!-- 备案号显示/隐藏控制checkbox -->
+            <we-checkbox string="Filing" data-name="footer_filing_opt" data-customize-website-views="eist_website.footer_no_filing|" data-checked="true" data-no-check="true" data-no-preview="true" data-reload="/"/>
+        </xpath>
+
+
+    </template>
+
+</odoo>
