@@ -1,0 +1,9 @@
+@for $size from 0 through length($o-theme-colors) {
+    [data-theme-color="#{$size}"] {
+        .o_erp_footer {
+            @if $size !=0 {
+
+            }
+        }
+    }
+}
