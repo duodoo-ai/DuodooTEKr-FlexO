@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 新疆线路2 -->
+        <record id="project_project_xj_2_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">1号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865697</field>
+            <field name="latitude">44.790681306440774</field>
+            <field name="longitude">88.73260152550421</field>
+        </record>
+
+        <record id="project_project_xj_2_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">2号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865698</field>
+            <field name="latitude">44.81192981387763</field>
+            <field name="longitude">88.65454926275152</field>
+        </record>
+
+        <record id="project_project_xj_2_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">3号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865699</field>
+            <field name="latitude">44.81044439943603</field>
+            <field name="longitude">88.59751882391673</field>
+        </record>
+
+        <record id="project_project_xj_2_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">4号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865700</field>
+            <field name="latitude">44.83068065385595</field>
+            <field name="longitude">88.49543634870612</field>
+        </record>
+
+        <record id="project_project_xj_2_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">5号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865701</field>
+            <field name="latitude">44.83068065385595</field>
+            <field name="longitude">88.43025749018396</field>
+        </record>
+
+        <record id="project_project_xj_2_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">6号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865702</field>
+            <field name="latitude">44.87880037993573</field>
+            <field name="longitude">88.37583523265567</field>
+        </record>
+
+        <record id="project_project_xj_2_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">7号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865703</field>
+            <field name="latitude">44.89635950898175</field>
+            <field name="longitude">88.31853707246961</field>
+        </record>
+
+        <record id="project_project_xj_2_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">8号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865704</field>
+            <field name="latitude">44.90664977756289</field>
+            <field name="longitude">88.22712196504943</field>
+        </record>
+
+        <record id="project_project_xj_2_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">9号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">5</field>
+            <field name="latitude">44.908329942405125</field>
+            <field name="longitude">88.13170097588925</field>
+        </record>
+
+        <record id="project_project_xj_2_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">10号泵站</field>
+            <field name="project_id" ref="odoo_project.project_project_xj_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_XJ"/>
+            <field name="city"></field>
+            <field name="street"></field>
+            <field name="country_id" ref="base.cn"/>
+            <field name="imei">863482067865706</field>
+            <field name="latitude">44.89872979646673</field>
+            <field name="longitude">88.06449992301356</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 21号线 -->
+        <record id="project_project_wuhan_metro_line_21_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">后湖大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于江岸区后湖大道与建设大道交叉口东侧，沿后湖大道东西方向布设，为地下三层岛式车站，共设8个出入口，3组风亭，与轨道交通3号线后湖大道站换乘。采用明挖法施工，车站主体长度为416m，标准宽度23.5m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉市</field>
+            <field name="street">武汉地铁21号线后湖大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">百步亭花园路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于后湖大道与百步亭花园路交叉路口，沿后湖大道东西方向布设，为地下二层岛式车站，共设4个出入口，2组风亭，与远期14号线换乘。采用明挖法施工，车站主体长度为206m，标准段宽度为23.3m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线百步亭花园路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">新荣站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">该站位于解放大道东侧，车站中心里程EK5+735。主建筑西北侧有堤角公园；百步亭花园；附近有长江航运科学研究所、新马五金工具商场、工商银行堤角储蓄所。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线新荣站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">幸福湾站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于幸福湾小区旁，规划孙家岗路与游湖一路交叉口，沿游湖一路南北方向布设，为地下二层岛式车站，共设4个出入口，2组风亭。车站采用明挖顺作法施工，车站主体长度为306.5m，标准段宽度为21.1m，标准段深度17.5m，端头井深度18.5m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线幸福湾站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">朱家河站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于兴盛路与旺盛街路口，沿旺盛街东西方向布设，为地下二层岛式车站，共设4个出入口，2组风亭。该站采用明挖顺作法施工，车站主体长度为172.9m，基坑标准段宽度为33.75m，标准段深度17.5m，最深处18.5m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线朱家河站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">谌家矶站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">谌家矶站位于旺盛街与兴盛路交叉路口东侧，沿旺盛街布置。车站为地下两层岛式站台车站，地下一层为站厅层、地下二层为站台层。车站主体建筑面积12201.8㎡，附属建筑面积5800㎡，采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线谌家矶站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">青龙站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于梅教街和规划创新路交叉十字路口的西侧，为高架三层侧式站台车站,其中二层为站厅层、三层为站台层。车站总长142.8m，车站总宽23m，车站建筑高度22.85m（相对高度）。主体结构采用纯框架结构的建-桥合一的结构型式，预应力混凝土悬臂梁最大悬臂长度8m，纵向主要柱距12m，横向柱距7m。车站主体建筑面积7158.63m2，附属面积1759.69m2。车站施工采用碗扣式满堂支架施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线青龙站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">高车站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">高车站为阳逻线（21号线）工程的第8个车站，位于规划道路和梅教街交叉路口的西侧，规划道路的路中绿化带内。本站主体为路中高架三层侧式站台车站,其中二层。本站主体为路中高架三层侧式站台车站,其中二层为站厅层、三层为站台层。车站中心里程：右DK23+619.800,车站总长142.8m，车站总宽23m。主体结构采用纯框架结构的建-桥合一的结构型式，预应力混凝土悬臂梁最大悬臂长度8m，纵向主要柱距12m，横向柱距7m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线高车站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">武湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于汉施公路北侧和阳逻电厂专用铁路线（新港铁路）南侧的地块内，与北侧武湖控制中心相距6.5m。车站为高架三层侧式站台车站,其中二层为站厅层、三层为站台层。车站总长160.9m，车站总宽21.8m，车站建筑高度23.593m（相对高度）。主体结构采用纯框架结构的建-桥合一的结构型式，预应力混凝土悬臂梁最大悬臂长度8m，纵向主要柱距12m，横向柱距7m。车站主体建筑面积11664.34m2。车站施工采用碗扣式满堂支架施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线武湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">沙口站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于汉施公路和南北向规划道路十字交叉路口东侧，站位东北侧为胡家墩居民区，为高架三层侧式站台车站,其中二层为站厅层、三层为站台层。车站总长142.8m，车站总宽23m，车站建筑高度23.9m（相对高度）。主体结构采用纯框架结构的建-桥合一的结构型式，预应力混凝土悬臂梁最大悬臂长度8m，纵向主要柱距12m，横向柱距7m。车站主体建筑面积7184.55m2，附属面积1794.97m2。车站施工采用碗扣式满堂支架施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线沙口站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">军民村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站位于汉施公路和西港路交叉丁字路口的东侧，为高架三层侧式站台车站,其中二层为站厅层、三层为站台层。车站总长142.8m，车站总宽23.6m，车站建筑高度23.9m（相对高度）。主体结构采用纯框架结构的建-桥合一的结构型式，预应力混凝土悬臂梁最大悬臂长度8m，纵向主要柱距12m，横向柱距7m。车站主体建筑面积7325.38m2，附属面积1794.97m2。车站施工采用碗扣式满堂支架施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线军民村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">武生院站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">车站为高架标准站，车站主体位于汉施公路北侧，紧临武汉生物工程学院。武生站站长142.8m，宽24m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线武生院站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">阳逻站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">阳逻站位于平江路口西侧，汉施公路北侧。车站站长142.8m，宽24m，内设三层局部二层独立的附属用房，通过天桥与主体连通。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线阳逻站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">阳逻开发区站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">阳逻开发区站位于汉施公路上，汉施公路与余泊北路交叉路口西侧规划绿化带内。车站主体总长142.8m，宽23m，本站主体为路中高架三层侧式站台车站,其中一层为架空层、二层为站厅层、三层为站台层，主体结构采用建、桥合一的结构型式。汉施公路南侧的拟征用地内设独立的附属站务用房，北侧亦布置有车站出入口，通过天桥与主体连通，共有4个出入口。车站主体建筑面积7325m2，附属建筑面积为5501m2。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线阳逻开发区站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">施岗站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">施岗站位于汉施公路上，七架山水库西侧。车站主体总长141.6m，宽24.6m，本站主体为路中高架三层侧式站台车站,其中一层为架空层、二层为站厅层、三层为站台层，主体结构采用建、桥合一的结构型式。汉施公路北侧的拟征用地内设独立的附属站务用房，南侧亦布置有车站出入口，通过天桥与主体连通，共有4个出入口。车站主体建筑面积6780m2，附属建筑面积为4947m2。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线施岗站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_21_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">金台站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_21"/>
+            <field name="description">金台站位于汉新公路和规划施岗大道交叉十字路口西北象限地块内，靠近金台镇。车站主体总长145.2m，宽20.8m，为路中高架三层岛式站台，其中一层为设备管理用房，二层为站厅层，三层为站台层，主体结构采用建、桥合一的结构型式。车站主体南侧布置有出入口平台及3个天桥，通过天桥连接主体的站厅与汉新公路，车站总建筑面积为9457m2。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁21号线金台站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+
+    </data>
+</odoo>

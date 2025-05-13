@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+
+        <!-- 2号线 -->
+        <record id="project_project_wuhan_metro_line_2_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">天河机场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于机场交通中心下方，与交通中心合建，一部分位于道路下方，与城际车站并行。车站长422.1m，宽22.9m，为地下二层14m岛式站台车站，车站总建筑面积为22097m2。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线天河机场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">航空总部站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于黄陂区盘龙城，外包总长为161.5m，标准段宽度19.7m，车站为路中高架三层岛式车站，基础为6桩承台，桥墩均采用双柱，柱上部分为“开”型盖梁，为预应力钢筋混凝土结构。车站设置4个出入口天桥及一座附属用房，附属用房长36m，宽16.5m，为地面四层，地下一层钢筋混凝土框架结构，结构总高18.3m，车站主体结构Ⅳ号出入口天桥一端搭在附属用房上，附属用房采用筏板基础基础板厚500mm。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线航空总部站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">宋家岗站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于黄陂区盘龙城，外包总长为161.5m，标准段最大宽度19.7m，基坑深度约4.0m。车站为路中高架三层岛式车站，车站总高约23.680m。车站有效站台总长158m（内净），净宽10.8m（标准段）。桥墩均采用双柱，柱上部分为“开”型盖梁，为预应力钢筋混凝土结构。站台层通过支承在“开”型盖梁上立柱形成钢筋混凝土框架结构。站厅层位于“开”型盖梁的中间层。车站设置4个出入口天桥(其中1号出入口预留)。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线宋家岗站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">巨龙大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">巨龙大道站为地下三层的岛式车站，车站明挖段389m，暗挖段（停车线）长345m，车站共设置4个出入口及一个预留出入口，3组风亭。车站总建筑面积为42557㎡，其中，主体建筑面积为29792㎡（含夹层3814㎡），附属建筑面积为9047㎡，配线段暗挖面积3718㎡。明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线巨龙大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">盘龙城站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于盘龙大道和汤云海路交叉路口，车站全长292m，标准段宽度19.7m，车站设置四个出入口，其中Ⅰ、Ⅱ、Ⅲ号出入口位于盘龙大道西侧，Ⅳ号出入口位于盘龙大道东侧与盘龙遗址公园地下停车场连通。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线盘龙城站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">宏图大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于宏图大道武汉客厅旁，车站为地下一层岛式站台车站，车站总长283m，标准段宽22.1m，车站共设4个出入口和4组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线宏图大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">常青城站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线常青城站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">金银潭站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于金银潭大道（原马池路）南北侧，为地下一层岛式站台集中联锁控制站，轨道交通2号线终点站。站台有效长度120m，建筑面积13429.7㎡。设有南北两个站厅，共有A1、A2、B1、B2四个出口。在北站厅外设有停车场，南厅付费区内设有公共卫生间及残障垂直电梯。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线金银潭站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">常青花园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">该车站为6号线与2号线的换乘车站，位于公园环路与常青花园中路交叉路口西侧，东西向设置于常青花园中路下。车站南北两侧现状为空地，西侧为地铁二号线常青花园站，东侧为常青医院。该车站为地下三层14m岛式站台车站，总长180.98m，宽23.3m，总建筑面积21196.25m2。地下一层为站厅层，地下二层为设备层，地下三层为站台层。与2号线常青花园站实现通道换乘。该车站于2013年6月完成招标，2013年10月开工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线常青花园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">长港路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">长港路车站位于金雅二路中段，东侧是正在建设中的长港路C区，西侧是湖北移动公司。车站总长454.2m，主体建筑面积为16998㎡，出入口通道面积为1357㎡。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线长港路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">汉口火车站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">汉口火车站位于常青一路与金墩街交叉口西南象限，沿常青一路斜交叉敷设，大里程段部分位于常青一路下。车站为地下双柱三跨三层岛式车站，车站外包总长189m，标准段宽度23.7m，标准段基坑深度31.1m。车站采用明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线汉口火车站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">范湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">范湖车站位于青年路与常青路交叉路口南侧路下，沿青年路布置。西侧现为空、绿地，规划为王家墩商业开发用地（CBD），沿街为绿地；南侧为万景国际；北侧为葛洲坝广场</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线范湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">王家墩东站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">该站与2号线一期王家墩东站“T”型换乘，为地下三层钢筋砼矩形结构。共设置3个出入口、3个消防疏散口和2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线王家墩东站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">青年路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">青年路站位于青年路客运站旁，东侧万松园横路，南侧为华美达天禄酒店，西侧为居民区，北侧新一佳超市。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线青年路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">中山公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">中山公园站位于武汉市江汉区解放大道中山公园旁，站位东侧武汉国际会展中心，南侧武汉卫视传播中心，西侧中山公园，北侧协和医院。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线中山公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">循礼门站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">该站主体建筑位于京汉大道中央绿化带上方，为二号线换乘站，车站中心里程DK6+788m。循礼门站主体建筑南侧为“跨世纪”房地产开发的八层及二十八层商住楼。以南有江汉路步行街。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线循礼门站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">江汉路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">位于中山大道和交通路、前进五路交叉路口，沿中山大道方向设置。车站总长282m，宽22.3m，深16.9m，设有4个出入口，2组风亭，一个冷却塔，车站与2号线江汉路车站换乘。有效站台长140m，宽度为13m，车站覆土厚度2m。车站总建筑面积16437.3m2，其中主体结构12872.0m2。
+车站为地下两层：地下一层为站厅层，地下二层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线江汉路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">积玉桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">积玉桥站位于和平大道与四马路交叉路口。车站主体为地下两层岛式车站。其中地下一层为设备层及公共区，地下二层为站台层。车站总长315m,车站标准段外包宽度21.3m。采用盖挖逆作法施工。车站共设置4个出入口（均与2号线共用），3个疏散口，2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线积玉桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">螃蟹岬站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">螃蟹岬站位于武汉市武昌区友谊大道与中山路及公正路的交叉路口处，站位西北侧为武昌区政府办公大楼，西南侧为凤凰大厦，东端为长江广场。车站东端线路下穿武九铁路。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线螃蟹岬站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">小龟山站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">小龟山站位于武昌区，螃蟹岬以东，公正路以南，体育南路与紫沙路十字路口下，东西向布置。车站总长294米，宽18.5米。设四个地面出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线小龟山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">洪山广场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">洪山广场站位于洪山广场西广场下，广场环路连接来自6个方向的放射性城市主干道，其中西北连接---体育馆路；西南连接---民主路；南接---中南路；北连---中北路；东南接---八一路；东北与洪山路相通。与中南路与中北路在中心广场下部相连通即形成广场下下穿道路。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线洪山广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">中南路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">中南路地铁站为地下两层岛式站台非联锁集中站，是2、4号线的换乘站。中南路站位于武昌区中南路地下，在中南路与中南一路丁字路口，南北走向，南与武珞路丁字相接，北往洪山广场中北路。中南路站周边主要道路和建筑有如下：A出入口位于中南路西侧/中南二路，周边有湖北省水利厅、中南建筑设计股份有限公司等。B出口位于中南一路，周边有文物大楼等。C1出口位于中南路西侧，周边有中南商业大楼、外文书店等。C2出口位于中南路西侧，周边有武汉小学、中南商业大楼等。D1出口位于中南路东侧，周边有瑞丰时代大酒店等。D2出口位于中南路东侧，周边有中建广场、鹏程时代大厦等。E出口位于中南路东侧，周边有建设大厦（世纪广场）、银泰百货等。F出口位于中南路东侧，周边有湖北省建设厅、湖北省人才市场、中南勘测设计院等。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线中南路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_24" model="project.map.location">
+            <field name="sequence">24</field>
+            <field name="active">True</field>
+            <field name="name">宝通寺站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">宝通寺地铁车站位于武汉市武珞路和南北走向的石牌岭路交汇路口以西约250米处，车站东南侧为武商亚贸广场，东北侧为广州军区医院，北侧为宝通寺。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线宝通寺站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_25" model="project.map.location">
+            <field name="sequence">25</field>
+            <field name="active">True</field>
+            <field name="name">街道口站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">宝通寺地铁车站位于武汉市武珞路和南北走向的石牌岭路交汇路口以西约250米处，车站东南侧为武商亚贸广场，东北侧为广州军区医院，北侧为宝通寺。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线街道口站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_26" model="project.map.location">
+            <field name="sequence">26</field>
+            <field name="active">True</field>
+            <field name="name">广埠屯站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">广埠屯站位于武汉市洪山区广八路与珞喻路的交叉路口下，西起华中师范大学，东至卓刀泉南路。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线广埠屯站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_27" model="project.map.location">
+            <field name="sequence">27</field>
+            <field name="active">True</field>
+            <field name="name">虎泉站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">虎泉站位于武汉市洪山区虎泉地块内，横跨卓刀泉南路呈东西走向布置，与2号线换乘，为地下四层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线虎泉站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_28" model="project.map.location">
+            <field name="sequence">28</field>
+            <field name="active">True</field>
+            <field name="name">杨家湾站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">杨家湾站位于洪山区虎泉街与雄楚大街交叉口，沿虎泉街设置。车站北侧为中国五环化学工程总公司及其家属区、华师一附中初中部、保利华都，南侧为商住（在建）。车站为地下二层岛式站，近期设置3个出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线杨家湾站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_29" model="project.map.location">
+            <field name="sequence">29</field>
+            <field name="active">True</field>
+            <field name="name">光谷广场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">光谷广场站站台在光谷综合体地下三层，位于光谷转盘下方，与2号线、规划9号线换乘。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线光谷广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_30" model="project.map.location">
+            <field name="sequence">30</field>
+            <field name="active">True</field>
+            <field name="name">珞雄路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于位于珞雄路与珞喻路交叉路口的西侧，沿珞喻路东西方向布置。车站总长250.300m，标准段宽度34.350m。本站为地下三层岛式站台车站，地下一层为珞瑜路市政隧道，地下二层为站厅层和站厅夹层，地下三层为站台层。车站在珞瑜东路两侧布置有5个出入口,2组风亭。车站施工主要采用明挖法施工，南侧临时铺盖系统下采用盖挖法施。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线珞雄路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_31" model="project.map.location">
+            <field name="sequence">31</field>
+            <field name="active">True</field>
+            <field name="name">华中科技大学站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于珞瑜东路下方，珞瑜东路与关山大道丁字路口处，沿珞瑜东路布置。车站总长322m，标准段宽度20.7m。本站为地下两层岛式车站，地下一层为站厅层，地下二层为站台层。车站在珞瑜东路两侧布置有4个出入口。设置3个风亭，2个低矮风亭，1个高大风亭。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线华中科技大学站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_32" model="project.map.location">
+            <field name="sequence">32</field>
+            <field name="active">True</field>
+            <field name="name">光谷大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于珞喻路与光谷大道交叉口，沿珞喻路布置。车站总长239.5m，标准段宽度20.7m。本站为地下两层岛式站台，地下一层为站厅层，地下二层为站台层。车站在珞喻路两侧布置有4个出入口、2组风亭及一座冷却塔。车站施工采用明挖法与局部盖挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线光谷大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_33" model="project.map.location">
+            <field name="sequence">33</field>
+            <field name="active">True</field>
+            <field name="name">佳园路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">车站位于武汉市东湖高新开发区创业街与佳园路交叉口，沿佳园路南北向布置。车站全长208.75m，标准段宽20.9m，有效站台长158m，宽12m。为地下二层岛式站台车站，地下一层为站厅层，地下二层为站台层。车站共设4个出入口、2组风亭。车站采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线佳园路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_34" model="project.map.location">
+            <field name="sequence">34</field>
+            <field name="active">True</field>
+            <field name="name">武汉东站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">武汉东站是与2号线换乘站，11号线车站位于城际铁路武汉东站东广场北侧，百川路地下，沿百川路布置。本站为地下三层（局部二层）岛式车站，地下一层为站厅层，地下三层为站台层，有效站台宽度14m。本站与2号线一起共设5个出入口、8组风亭、8个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线武汉东站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_35" model="project.map.location">
+            <field name="sequence">35</field>
+            <field name="active">True</field>
+            <field name="name">黄龙山路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">黄龙山路站是武汉轨道交通2号线的一个车站，位于武汉市洪山区，地铁2号线南延线于2019年2月19日（正月十五）开通试运营。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线黄龙山路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_36" model="project.map.location">
+            <field name="sequence">36</field>
+            <field name="active">True</field>
+            <field name="name">黄龙山路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">黄龙山路站是武汉轨道交通2号线的一个车站，位于武汉市洪山区，地铁2号线南延线于2019年2月19日（正月十五）开通试运营。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线黄龙山路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_36" model="project.map.location">
+            <field name="sequence">36</field>
+            <field name="active">True</field>
+            <field name="name">金融港北站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">金融港北站是武汉轨道交通2号线的一个车站，位于武汉市洪山区，地铁2号线南延线于2019年2月19日（正月十五）开通试运营。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线金融港北站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_37" model="project.map.location">
+            <field name="sequence">37</field>
+            <field name="active">True</field>
+            <field name="name">秀湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">秀湖站是武汉轨道交通2号线的一个普通车站，位于武汉市东湖高新区，地铁2号线南延线于2019年2月19日（正月十五）开通试运营。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线秀湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_38" model="project.map.location">
+            <field name="sequence">38</field>
+            <field name="active">True</field>
+            <field name="name">藏龙东街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">该站位于武汉市江夏区藏龙东街与高新六路交汇处，呈东西走向。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线藏龙东街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_2_station_39" model="project.map.location">
+            <field name="sequence">39</field>
+            <field name="active">True</field>
+            <field name="name">佛祖岭站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_2"/>
+            <field name="description">佛祖岭站（Fozuling Station），位于武汉市东湖高新区高新六路与光谷一路交汇处，是武汉地铁集团公司管辖的地铁站，是武汉轨道交通2号线的始发车站。佛祖岭站于2019年2月14日通行武汉地铁2号线。佛祖岭站共有2个出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁2号线佛祖岭站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+
+
+    </data>
+</odoo>

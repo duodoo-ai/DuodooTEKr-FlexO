@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 1号线 -->
+        <record id="project_project_wuhan_metro_line_1_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">径河站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线径河站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">三店站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">车站主体沿规划七彩路位于道路中央绿化带上方，站位呈南北走向，南北分别与金山大道站、径河站相邻。本站主体为高架三层侧式站台车站，其中一层为架空层、二层为站厅层、三层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线三店站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">码头潭公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">车站位于七雄北路与金山大道交叉路口南侧，是与6号线二期的换乘车站。本站主体为高架三层侧式站台车站，其中一层为架空层、二层为站厅层、三层为站台层</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线码头潭公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">东吴大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">车站位于七雄北路与金山大道交叉路口南侧，是与6号线二期的换乘车站。本站主体为高架三层侧式站台车站，其中一层为架空层、二层为站厅层、三层为站台层</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线东吴大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">五环大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于东西湖大道北侧，站中心里程WK1+824，主体建筑以北有中信银行、东西湖自来水公司、万国汽配城、中石化加油站、武汉第五制药厂，南侧有武汉华城长江电机有限公司、汇通物流、交通局、华立正源医药、武汉新谷大酒店，附近有中百、中商购物超市</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线五环大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">额头湾站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于舵落口大市场规划道路与107国道交叉口的东侧，站中心里程WK3+479。车站南侧是舵落口大市场，鸿达家具超市、鸿达名家生活馆、东建金鼎湾住宅区，是较大的客流集散点。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线额头湾</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">竹叶海站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于武汉市硚口区解放大道工农路段，毗邻工农路与中环线匝道口，车站的西南侧是舵落口木材场，车站东北侧是石家湾（即落户武汉的瑞典宜家家居广场），车站主体结构架于规划解放大道东侧绿化带及人行道上方，站位呈南北方向，东西分别与舵落口、额头湾相邻。站中心里程WK4+423。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线竹叶海站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">舵落口站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于长丰大道与解放大道路口东侧，站中心里程WK5+230,舵落口是硚口区与东西湖区的交界地。北侧的长丰大道在规划改造期间，交通繁忙，南侧紧靠公交首末站和规划的公交枢纽。车站主体工农路北侧有中石化加油站、武汉有机实业有限公司，南侧有农村商业银行、战友培训接待中心、武汉科龙科技开发公司、武汉市公汽六公司、钛白粉厂。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线舵落口站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">古田一路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于解放大道中间、古田一路口西侧，站中心里程WK6+665,为一号线运营小交路的折返站，站后设折返线及故障车停留线。古田一路站主体北侧有农业银行、十堰汉办二招、长途汽车客运站，南侧有第二电线电缆有限公司、武汉远大制药厂、中石化加油站、丹琦集团、武汉联碱厂宿舍。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线古田一路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">古田二路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于古田二路路口东侧，车站中心里程WK8+183。主建筑西北侧有建设银行、国家电网、汉明喜来登眼睛店；东北侧为辛家地小学、武汉雅辉装饰、武汉海尔电器服务有限公司、省柴小学；南侧有古田路小学，东侧有宇济红瓦苑，南侧有中百仓储总部、融侨·福源街社区。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线古田二路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">古田二路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于古田二路路口东侧，车站中心里程WK8+183。主建筑西北侧有建设银行、国家电网、汉明喜来登眼睛店；东北侧为辛家地小学、武汉雅辉装饰、武汉海尔电器服务有限公司、省柴小学；南侧有古田路小学，东侧有宇济红瓦苑，南侧有中百仓储总部、融侨·福源街社区。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线古田二路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">古田三路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于古田三路西侧，站中心里程WK9+090,。车站主建筑北侧有湖北新华印制厂、湖北警官学院，南侧有武汉市普爱医院创伤治疗中心、武汉市人民解放军军事经济学院、武汉市洪山江北机械厂、武汉市重金属喷塑厂，南侧有广电江湾新城社区、市十医院。附近还有汉口春天小区，融侨景城，东方花城小区。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线古田三路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">古田四路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于古田四路西侧，站中心里程WK9+885。该站主体北侧有大片新老居民区、香港印象社区、中国银行，南侧有麦德龙仓储有限公司、申盛大酒店，西侧有武汉市建筑材料工业学校，东侧有韩家墩街派处所。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线古田四路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">汉西一路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于京汉大道汉西一路口西侧，站中心里程WK10+705。汉西一路站主体建筑北侧有武汉市四中、工商银行、老居民区，南侧有汉水熙园社区、博学仕府、建设银行、韩家墩小学、西北侧有汉口银行。附近还有、硚口新行政中心、武汉市第一聋哑学校。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线汉西一路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">宗关站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于解放大道南侧，东西走向。车站中心里程为DK0＋287。宗关站附近有长途客运站，市自来水公司，市十七中学，市水厂路中学，沃尔玛综合超市、百安居及南国大武汉家装。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线宗关站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">太平洋站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站设于解放大道总线南边226m的汉西路东侧人行道上，东西走向。车站中心里程为DK1＋842m。车站附近有海军工程大学，武汉市二十六中学，六十三中学，汉西路西侧为万盛汽配城、东侧有武商量贩店、新海景酒店、滨江阁大酒店，在汉西路两侧均设置公交停靠站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线太平洋站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">硚口路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站主体建筑位于京汉大道北侧人行道上，车站中心里程DK2+902m。车站主体建筑北侧为硚口路美食一条街，硚口路口东侧为轨道交通一号线工程指挥中心及车场。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线硚口路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">崇仁路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于京汉大道与崇仁路交叉路口的东侧，设置在京汉大道中的12M宽的绿化带上，东西走向。主建筑京汉大道以西崇仁路北侧有十一中、崇仁路小学、亚洲大酒店、体育馆、六十二中、华中科技大学同济医学院附属同济卫校，南侧有茶叶市场和邮票市场、六十五中、武汉现代女子妇科医院、市工商行政管理局硚口分局，东侧有硚口区教育局、第一职教中心。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线崇仁路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">利济北路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于京汉大道武高路口西侧的路中绿化带上方。车站中心里程为DK4＋924m。车站位于市中心较繁华地段，周围有武汉广场、协和医院、和国际展览中心等大型商业和公共设施。车站北侧为滑坡路小学，临街为建设中的展览中心配电房，东北侧为武汉展览馆，南面为武汉中心嘉园社区、武汉建科。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线利济北路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">友谊路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站主体建筑位于京汉大道上方，车站中心里程DK5+812m。车站主体建筑南侧为大片的生活区，北侧为多层住宅区，车站北侧出入口与逸安公寓（18层）紧邻，逸安公寓以东的京汉大道边是商业住宅江城华庭；京汉大道友谊路向北沿双洞正街200m左右为解放大道新华路口，周围分布有新华路长途汽车站、新华路体育场、协和医院等客流聚集场所；沿京汉大道向东400m左右有亚洲心脏病医院，向西400m左右是武汉展览馆。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线友谊路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">循礼门站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">车站位于解放大道和京汉大道之间的江汉路段，车站东侧紧邻船舶广场，西侧为大型超市，南侧为江汉路步行街，北为循礼门地下通道，下穿京汉大道。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线循礼门站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">大智路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于京汉大道大智路口东侧，站位呈东西走向，中心里程K8+90lm。大智路站设两个出入口，北侧出入口与新鸿基花园大楼紧邻，新鸿基花园大楼向东沿京汉大道北侧，是新建的京汉花园大楼和毗邻的3栋9层住宅楼，住宅楼与新鸿基花园大楼之间的三角地段是车站东北方向的球横小区的一个较重要出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线大智路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">三阳路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站位于京汉大道与三阳路交叉路口的东侧，设置在京汉大道中的12M宽的绿化带上，东西走向，车站中心里程为CK8＋893m。车站的西北边为新建的30层三阳广场，交叉路口的东南边规划有公交枢纽站，紧靠公交停车场路边规划有自行车停车场，轨道交通用地以外为民宅及武汉二中分校的办公楼。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线三阳路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_24" model="project.map.location">
+            <field name="sequence">24</field>
+            <field name="active">True</field>
+            <field name="name">黄浦路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">车站位于解放大道与卢沟桥路路口，沿卢沟桥路布置直至解放公园内，车站为地下两层侧式站台车站，车站长380m，宽12.5~32.1m，车站共设7个出入口、1个换乘通道和2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线黄浦路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_25" model="project.map.location">
+            <field name="sequence">25</field>
+            <field name="active">True</field>
+            <field name="name">头道街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站是东段线路的第一个车站，车站中心里程EK1+063。主建筑解放大道西侧有江岸酱品厂，东侧有省粮油进出口公司江岸加工厂、武汉外贸江岸货物联营公司，东北边有江岸水电局、江岸铁路三中、江岸铁路小学；附近还有华云大酒店、中石油加油站、市八十一中学。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线头道街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_26" model="project.map.location">
+            <field name="sequence">26</field>
+            <field name="active">True</field>
+            <field name="name">二七路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">该站主体延解放大道位于道路东侧非机动车道上方，车站中心里程EK1+978。站位呈南北走向，南北分别与头道街、徐州新村相临。一号线将在此站与规划的轨道交通七号线换乘。主建筑解放大道以北有江岸铁路文化宫，以南有京汉铁路总工会旧址，西侧有福建村小区；西北面有东立国际、航天双城小区和铁路医院。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线二七路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_27" model="project.map.location">
+            <field name="sequence">27</field>
+            <field name="active">True</field>
+            <field name="name">徐州新村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">主建筑解放大道以北有江岸铁路文化宫，以南有京汉铁路总工会旧址，西侧有福建村小区。车站中心里程EK2+773。主建筑解放大道以东徐州新村南侧有江岸车辆厂、中百仓储二七购物广场，西侧有中国工商银行武汉分行机具厂、江岸车辆厂文化宫。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线徐州新村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_28" model="project.map.location">
+            <field name="sequence">28</field>
+            <field name="active">True</field>
+            <field name="name">丹水池站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">丹水池站位于解放大道与百步亭路交叉口的东南方向，沿百步亭路南北方向敷设，为地下二层双柱三跨框架结构，采用明挖法施工，车站总长247.355m，标准段宽约23m，基坑深约21m~23m；车站附属结构含4个出入口、2组风亭、1座换乘通道及1座换乘楼。标准段围护结构采用1000mm地连墙（大里程段采用1200mm地连墙），深约60m，主要结构底层位于4-1粉砂层和4-2粉细砂层中。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线丹水池站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_29" model="project.map.location">
+            <field name="sequence">29</field>
+            <field name="active">True</field>
+            <field name="name">新荣站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">新荣站（Xinrong Station），是武汉地铁1号线和武汉地铁阳逻线的换乘站，位于堤角前街与解放大道交叉路口的南侧，呈南北走向，高架车站，侧式站台。轨道交通1号线从汉口北站往径河站方向第5个站点就是新荣站。 新荣站于2010年7月28日通行武汉地铁1号线，于2017年12月26日通行武汉地铁阳逻线。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线新荣站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_30" model="project.map.location">
+            <field name="sequence">30</field>
+            <field name="active">True</field>
+            <field name="name">堤角站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">堤角站是武汉轨道交通1号线的一个车站。位于武汉市江岸区。堤角站位于解放大道与堤边路交叉路口的南侧道路中央上方，呈南北走向，高架车站，侧式站台。其东南是堤角公园，车站东边是堤边路花鸟市场。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线堤角站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_31" model="project.map.location">
+            <field name="sequence">31</field>
+            <field name="active">True</field>
+            <field name="name">滕子岗站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">滕子岗站是武汉轨道交通1号线的汉口北延长线的延长站点。于2014年5月28日随1号线三期投入使用。该站有3个出口，1号线为高架3层侧式站台。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线滕子岗站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_32" model="project.map.location">
+            <field name="sequence">32</field>
+            <field name="active">True</field>
+            <field name="name">滠口新城站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">滠口新城站为武汉地铁1号线三期延长线站点，位于武汉市黄陂区滠口街道，为高架车站，有效站台长度80米。 地理位置</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线滠口新城站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_1_station_33" model="project.map.location">
+            <field name="sequence">33</field>
+            <field name="active">True</field>
+            <field name="name">汉口北站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_1"/>
+            <field name="description">汉口北站为武汉轨道交通1号线三期延长线站点，高架车站，有效站台长度80米。线路走向为：由1号线二期工程东端终点堤角站向东延伸，上跨张公堤，沿解放大道北延长线北行，于滕子中路路口南在规划黄浦新城中部商务区设滕子岗站，之后线路偏出解放大道，北行跨过朱家河，在规划黄浦北路南侧设滠口新城站，上跨三环线后，线路左（西）偏，跨过汉北河，沿规划泵站河西侧前行，至巨龙大道北设汉口北站。之后在巨龙大道北侧新增停车场1处，其出入段线长870m，双线，全高架，跨越泵站河，进入停车场场区后逐渐落地。停车场面积86557.47㎡，合129.8亩，主要包括综合办公楼、停车列检库、工程车库、月检库、材料库、洗车库、变电所、污水处理站等建筑，房屋建筑总面积约17913㎡。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁1号线汉口北站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+
+    </data>
+</odoo>

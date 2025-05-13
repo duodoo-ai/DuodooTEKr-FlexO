@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 5号线 -->
+        <record id="project_project_wuhan_metro_line_5_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">武汉站东广场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">武汉站东广场站位于国铁武汉火车站东广场下，沿东广场南北向呈一字型布置；车站主体为地下三层单柱岛式站台车站，其中地下一层、地下二层为站厅层，地下三层为站台层。车站总长度为241.5m，标准段外包宽度为22.1m。采用明挖顺作法施工。车站共设置3个地铁出入口，3个疏散口及2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线武汉站东广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">厂前场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">厂前站位于团结大道与规划路交叉路口，车站沿团结大道布置。车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长328m，车站标准段外包宽度20.1m。采用明挖顺作法施工。车站共设置3个地铁出入口、1个疏散口及2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线厂前场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">武钢站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">武钢站位于友谊大道与冶金大道交汇口处，沿冶金大道辅路下方敷设；车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长259.1m，标准段外包宽度为20.1m，采用明挖顺作法施工。车站共设置3个地铁出入口、1个疏散口及2组低风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线武钢站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">工人村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">工人村站位于工人村路与兴达路交叉口处；车站主体沿规划工人村路南北向布置，车站设计全长352m，站前设置交叉渡线以连接工人村出入段线。车站主体为地下二层（小里程端轨排井及盾构井段为地下一层）岛式车站,公共区为单柱双跨结构，两端设备区为双柱三跨结构，站台宽度为12m。车站主体及附属结构型式为整体式钢筋混凝土箱形框架结构。采用明挖顺作法施工。本站共设置3个出入口，3个安全口，3组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线工人村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">青宜居站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">青宜居站位于武汉市青山区建设十一路与新村路之间，沿和平大道东西向布置。车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站全长240.3m，标准段结构外包尺寸为20.10x13.99m。车站主体及附属结构型式为整体式钢筋混凝土箱形框架结构。采用明挖顺作法施工。本站共设置4个出入口，1个安全口，2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线青宜居站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">红钢城站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">红钢城站位于和平大道与建设八路交叉口西侧，沿和平大道东西向布置。车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长331.2m，车站标准段外包宽度21.1m。采用明挖顺作法施工。车站共设置3个地铁出入口、5个疏散口、2组风亭和1个物业出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线红钢城站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">和平公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">和平公园站位于和平大道与工业路、冶金大道交叉路口处，车站沿和平大道布置。车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长520.5m，车站标准段外包宽度21.1m。采用明挖顺作法施工。车站共设置4个地铁出入口、2个疏散口及3组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线和平公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">建设二路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">建设二路站沿和平大道东西向设置于和平大道与建设二路交叉口。车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长232.6m，车站标准段外包宽度21.1m。采用明挖顺作法施工。车站共设置4个出入口，1个疏散口，3组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线建设二路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">科普公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">园林路与和平大道交叉口, 沿园林路南北向布置。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线科普公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">余家头站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">余家头站沿和平大道东西向设置于和平大道与铁机路交叉路口东侧。车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长299.4m，车站标准段外包宽度21.1m。采用明挖顺做法施工。车站共设置4个出入口，2个疏散口，2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线余家头站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">杨园铁四院站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">杨园铁四院站位于和平大道与才林街交叉路口下，车站沿和平大道布置。车站为地下二层单柱岛式车站，其中地下一层为站厅层，地下二层为站台层。车站主体结构外包总长232.2m，总宽21.1m（有效站台中心处），采用明挖顺做法施工。车站共设置共4个出入口，1个疏散口及2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线杨园铁四院站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">徐家棚站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">徐家棚站位于和平大道与团结路交叉路口下，车站沿和平大道布置，5号线与7、8号线在徐家棚形成“工”型三线换乘节点。车站为地下两层双柱岛式车站，其中地下一层为站厅层，地下二层为站台层。车站主体结构外包总长573.709m，标准段外包总宽24.3m，采用明挖顺做法施工。车站共设置4个地铁出入口、9个疏散口、4组风亭及2个物业出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线徐家棚站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">三角路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">三角路站沿和平大道东西向设置于和平大道与武车二路交叉路口。车站主体为地下两层双柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长540.4m，车站标准段外包宽度23.1m，采用明挖顺做法施工。车站共设置4个地铁出入口、6个疏散口、4组风亭及4个物业出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线三角路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">三层楼站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">三层楼站位于和平大道与新生路交叉路口。车站主体为地下两层岛式车站。其中地下一层为设备层及公共区，地下二层为站台层。车站总长232.3m,车站标准段外包宽度21.1m。采用明挖顺作法施工。车站共设置4个出入口、2组风亭、1个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线三层楼站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">积玉桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">积玉桥站位于和平大道与四马路交叉路口。车站主体为地下两层岛式车站。其中地下一层为设备层及公共区，地下二层为站台层。车站总长315m,车站标准段外包宽度21.3m。采用盖挖逆作法施工。车站共设置4个出入口（均与2号线共用），3个疏散口，2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线积玉桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">昙华林武胜门站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">昙华林武胜门站位于和平大道与中山路丁字路口。车站主体为地下两层岛式车站。其中地下一层为设备层及公共区，地下二层为站台层。车站总长180m,车站标准段外包宽度21.1m。采用明挖顺作法施工。车站共设置3个出入口、2组风亭、1个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线昙华林武胜门站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">司门口黄鹤楼站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">司门口黄鹤楼站位于民主路与横街交叉口北侧，车站为地下二层岛式车站，全长175.2m，标准段总宽21.5m，车站埋深约17.33m。车站共设3个出入口、2组风亭、3个疏散口。采用明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线司门口黄鹤楼站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">彭刘杨站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">彭刘杨站位于黄鹤楼南路与彭刘杨路交叉口北侧，沿黄鹤楼南路南北向设置。本站为地下两层岛式站台车站，车站总长234.4m，标准宽21.3m。车站标准段结构型式采用双层单柱双跨结构。车站分二层布置，地下一层为站厅层，地下二层为站台层。车站共设置3个出入口、2组风亭、1个疏散口。采用明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线彭刘杨站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">复兴路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">位于紫阳路和复兴路交叉口，与5号线换乘站，为四层岛式站台，外包总长153.3m，标准段宽22.1m，高24.22m，埋深27m，顶板覆土厚度2.82m，主体建筑面积14539m2， 设4个出入口、2组高风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线复兴路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">八铺街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">八铺街站为地下二层岛式楔形车站，车站主体结构外包总长207.90m，有效站台中心里程处外包总宽21.804m。车站共设3个出入口、3组风亭、1个疏散口。采用明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线八铺街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">烽火村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">烽火村站为地下两层岛式车站，车站主体布置在白沙洲大道与安鑫路交叉口南侧、白沙洲大道红线东侧地块内，平行于白沙洲大道布置。车站主体结构外包总长为301.89m，总宽21.3m（标准段）。车站主体采用明挖顺作法施工。车站共设4个出入口、2组风亭及2个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线烽火村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">张家湾站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">张家湾站位于烽胜路与江国路交叉口北侧，沿烽胜路南北呈一字型布设。车站为路中地面三层高架侧式站台车站，其中地面一层为设备层、地面二层为站厅层、地面三层为站台层。车站总长154.8m，车站总宽23.0m。主体结构采用框架结构，纵向主要柱距12m，横向柱距7m。车站桥梁区间按共柱处理。车站共设置4个地铁出入口、1个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线张家湾站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_24" model="project.map.location">
+            <field name="sequence">24</field>
+            <field name="active">True</field>
+            <field name="name">光霞站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">光霞站位于烽胜路与白沙三路交叉口处，沿烽胜路南北呈一字型布设，与12号线换乘。车站为路中地面三层高架侧式站台车站，其中地面一层为设备层、地面二层为站厅层、地面三层为站台层。车站总长154.8m，车站总宽23.0m。主体结构采用框架结构，纵向主要柱距12m，横向柱距7m。车站桥梁区间按共柱处理。车站共设置3个地铁出入口、1个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线光霞站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_25" model="project.map.location">
+            <field name="sequence">25</field>
+            <field name="active">True</field>
+            <field name="name">白沙六路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">白沙六路站位于白沙六路与烽胜路交叉口南侧。车站为路中地面三层高架侧式站台车站，其中地面二层为站厅层、地面三层为站台层。车站总长154.8m，车站总宽23.0m。主体结构采用框架结构，纵向主要柱距12m，横向柱距7m。车站共设4个出入口、5个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线白沙六路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_26" model="project.map.location">
+            <field name="sequence">26</field>
+            <field name="active">True</field>
+            <field name="name">中医药大学站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description">中医药大学站位于白沙洲大道与黄家湖西路之间，黄家湖西路西侧绿化带中。车站为路侧地面三层高架岛式车站，其中地面二层为站厅层、地面三层为站台层。车站总长154.8m，车站总宽21.3m。主体结构采用框架结构，纵向主要柱距12m，横向柱距7m。车站共设4个出入口、3个疏散口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线中医药大学站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_27" model="project.map.location">
+            <field name="sequence">27</field>
+            <field name="active">True</field>
+            <field name="name">黄家湖站(武科大)</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线黄家湖站(武科大)</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_5_station_28" model="project.map.location">
+            <field name="sequence">28</field>
+            <field name="active">True</field>
+            <field name="name">红霞站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_5"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁5号线红霞站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+    </data>
+</odoo>

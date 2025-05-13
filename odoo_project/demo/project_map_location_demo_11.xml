@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 11号线 -->
+        <record id="project_project_wuhan_metro_line_11_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">江安路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">江安路站位于规划武金堤路下方，跨规划江安路南北向布置。为地下两层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉市</field>
+            <field name="street">武汉地铁11号线江安路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">紫阳湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">紫阳湖站位于规划复兴路与保安街的交叉路口，复兴路西侧地块内，并沿复兴路南北向设置。为地下二层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线紫阳湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">武昌站东广场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">武昌站东广场站位于北安街与静安路交叉口，沿北安街方向敷设，为地下三层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线武昌站东广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">丁字桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">丁字桥站位于丁字桥路与瑞景路交叉口，沿瑞景路方向敷设，为地下三层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线丁字桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">马房山站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">马房山站位于珞狮南路与洪兴巷交叉口处西北侧地块内，沿洪兴巷东西向布置，与8号线二期换乘，为地下三层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线马房山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">虎泉站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">虎泉站位于武汉市洪山区虎泉地块内，横跨卓刀泉南路呈东西走向布置，与2号线换乘，为地下四层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线虎泉站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">武汉体育学院站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">武汉体育学院站位于珞喻路与卓刀泉路交叉口以东800米处，沿珞喻路东西向布置，为地下二层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线武汉体育学院站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">光谷广场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">光谷广场站站台在光谷综合体地下三层，位于光谷转盘下方，与2号线、规划9号线换乘。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">关山大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">关山大道站位于洪山区关山大道和雄楚大道交叉口，为地下二层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线关山大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">武汉东站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">武汉东站是与2号线换乘站，11号线车站位于城际铁路武汉东站东广场北侧，百川路地下，沿百川路布置。本站为地下三层（局部二层）岛式车站，地下一层为站厅层，地下三层为站台层，有效站台宽度14m。本站与2号线一起共设5个出入口、8组风亭、8个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线武汉东站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">湖口站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道与教育中路交叉口东侧、沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度12m。本站共设5个出入口，3组风亭，2个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线岳家嘴站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">光谷同济医院站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道和三环线交叉路口向东约700m，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度12m。本站共设4个出入口，2组风亭，3个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷同济医院站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">光谷生物园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道和光谷三路的交叉路口下方，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度为12m。本站共设5个出入口，2组风亭，2个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷生物园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">光谷四路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道和光谷四路交叉路口下方，沿高新大道路东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度为12m。本站共设有5个出入口，2组风亭、1个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷四路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">光谷五路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站是与19号线换乘站，位于光谷五路与神墩一路交叉路口下方，沿神墩一路东西方向布置。本站为地下三层侧岛换乘车站，地下二层为站厅层和19号线站台层，地下三层为11号线站台层，有效站台宽度18m。本站与19号线车站共设8个出入口，4组风亭，9组安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷五路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">光谷六路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于光谷六路与神墩一路交叉路口下方，沿神墩一路东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度12m。本站共设6个出入口、2组风亭，1个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷六路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">豹澥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">洪山路站为8号线二期工程的第四座车站，车站设计为地下两层12m岛式车站。车站主体布置在东一路和洪山路交叉路口下，沿东一路敷设。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线豹澥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">光谷七路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道与光谷七路交叉路口下方，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度为12m。本站共设6个出入口、2组风亭、1个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线光谷七路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">长岭山站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于长岭山南侧，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度为12m。本站共设4个出入口、2组风亭、3个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线长岭山站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">未来一路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道与未来一路交叉路口下方，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度为12m。本站共设4个出入口、2组风亭、1个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线未来一路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">未来三路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道与未来三路交叉路口下方，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度为14m。本站共设4个出入口、2组风亭、2个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线未来三路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">左岭站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道与卸甲路“丁”字交叉口，沿高新大道东西向布置。本站为地下一层带地面厅侧式车站，地面层为站厅层，地下一层为站台层，单侧有效站台宽度为7.65m。本站共设4个出入口、3组风亭、1个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线左岭站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_11_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">葛店南站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_11"/>
+            <field name="description">车站位于高新大道与建设大道交叉路口西侧，沿高新大道东西向布置。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层，有效站台宽度12m。本站共设6个地面出入口、3组风亭，3个安全出口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁11号线葛店南站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+    </data>
+</odoo>

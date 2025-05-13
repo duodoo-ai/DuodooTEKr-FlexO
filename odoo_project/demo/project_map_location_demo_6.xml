@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 6号线 -->
+        <record id="project_project_wuhan_metro_line_6_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">东风公司站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">长约394.28m，标准段宽度23.3m，车站上覆土厚度约为4.5m。车站小里程端由3号线车站合建，合建段为地下三层站，6号线车站借用3号线地下二层空间。车站设6个出入口，其中地铁出入口3个，物业出人口3个，设置3个物业封闭楼梯间，3组风亭，2个无障碍电梯，3个消防疏散口及一组冷却塔。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线东风公司站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">车城东路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于车城东路和车城北路十字交叉路口处，沿车城北路布置，为地下二层岛式站台车站。车站共设3个出入口、1个无障碍出入口、2组风亭。 车站起点里程为K1+296.221,终点里程为K1+519.621,总长223.4m，标准段宽度为20.3m，有效站台中心里程为K1+431.921，有效站台长140m，宽度为11m，车站埋深18.1m,覆土厚度4.7m。车站结构型式为双层单柱双跨、双层双柱三跨钢筋混凝土结构，采用明挖法施工。。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线车城东路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">江城大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">为地下二层车站，面积约15640平方米，车站长度304.9m，标准宽度22.1m，最大开挖深度19.1m，设置4个出入口，2个风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线江城大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">老关村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">老关村站位于汉阳区三环线与武汉经济技术开发区沌口路交叉口西南侧，沿沌口路布置。该站东面为老关村委会；西面为四新混凝土拌合站；西南为华尔文气体有限公司和江堤市政办公楼。车站总长度357.0m，标准段宽22.1m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线老关村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">国博中心南站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于博览中心南侧规划住宅用地内。博览中心站站址西侧有铁路专线箱涵（9m深U形槽结构）和拦江大道下穿隧道，南侧有正在施工的四新南路高架桥。本段现状场地多为荒地，车站主体周边5m范围内无地下管线，车站主体施工期间不需要进行交通疏解。博览中心站为双层三跨箱型结构，车站起点里程为右K8+081.360，终点里程为右K8+454.327。本站采用明挖法施工，基坑围护结构采用800mm厚连续墙，支撑采用一道钢筋砼支撑（局部两道）+3道钢管支撑+1道换撑，车站两端接盾构区间。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线国博中心南站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">国博中心北站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站位于新建成的武汉新城国际博览中心西北向广场下, 靠近博览中心10区及11区天桥，近期6号线与远期11号线在此平行换乘。车站起点里程为右K8+967.441,终点里程为右K9+278.908,全长311.467m,车站设计宽为22.1m。整个车站由车站主体以及物业开发两部分组成，其中车站主体为地下二层岛式车站，站台宽13m，结构型式采用双层三跨结构，地下一层为设备层及公共区，地下二层为站台层，商业开发主体结构为地下一层结构。车站总建筑面积约为21130m2，其中主体建筑面积为19700m2。本站共设五个出入口，四个安全疏散口，均为开敞式。根据地铁和商业开发需要共设置14个地面低风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线国博中心北站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">前进村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">设置在鹦鹉大道上，呈南北向布置，车站总长215.4m，采用明挖法施工，标准段宽度21.3m，有效站台中心里程为K10+619.956，车站埋深16.165m,覆土厚度3.0~3.5m，车站有效站台中心里程处±0.000的绝对标高为8.780m，轨面标高为7.7m，车站共设置4个出入口，2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线前进村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">建港站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">建港位于鹦鹉大道下，鹦鹉大道与规划红建路丁字路口处，沿鹦鹉大道布置。车站总长228.2m，标准段宽度21.3m，车站埋深3.2～3.6m。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层。车站在鹦鹉大道两侧布置有4个出入口、1个消防出入口。设置2组风亭1号风亭为低矮敞口风亭，2号风亭为高风亭。车站主体建筑面积9956 m2，附属面积3394m2。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线建港站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">马鹦路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于鹦鹉大道下，马鹦路与鹦鹉大道十字路口处，沿鹦鹉大道布置。车站总长300m，标准段宽度21.1m，车站埋深2.2～3.0m。本站为地下二层岛式车站，地下一层为站厅层，地下二层为站台层。车站在鹦鹉大道两侧布置有4个出入口、1个消防出入口。设置4组风亭，均为低矮风亭。车站主体建筑面积11094 m2，附属面积2750m2。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线马鹦路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">钟家村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于汉阳大道与鹦鹉大道交汇处，车站外包总长325m，标准总宽为24.1m，设置出入口6座，风亭3组，总建筑面积为31155m2，采用半盖挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线钟家村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">琴台站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">为地下四层箱形结构，13m岛式站台车站。车站长165.2m，标准段宽22.7m。标准段底板埋深32.5m。基坑支护体系为内支撑+1200mm厚连续墙结构体系，车站基坑竖向共设7道支撑加二道换撑，第一道为800×1000mm钢筋砼支撑，第四道为1000×1200mm钢筋砼支撑；其余均采用Ф609mm，t=16mm钢支撑。 车站共设3个出入口、1个消防出入口及3个风亭。附属结构均采用明挖法施工，2号风亭采用800mm厚地下连续墙+4道支撑+一道换撑的支护体系，其余附属结构采用采用Ф800@1000钻孔灌注桩+内支撑+止水帷幕的围护结构形式。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线琴台站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">武胜路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">大部分采用双柱三跨结构，少部分区段采用单柱双跨结构，为13m岛式站台车站，车站总长323.5m,标准段宽22.3m。车站位于武胜路与中山大道交叉路口处，车站共设4个出入口，主体建筑面积22304㎡，附属面积5506㎡，总建筑面积27810㎡。 车站为地下三层：地下一层为物业层，地下二层为站厅层，地下三层为站台层。 车站于2013年5月完成招标，预计2013年11月份开工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线武胜路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">汉正街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">为地下三层双柱三跨框架结构，车站为双柱三跨岛式站台。车站总长196m埋深21.69m,覆土厚度2.20～2.40m。车站主体建筑面积13113m2，车站附属建筑面积2098m2，物业开发总面积6243m2，总建筑面积21454m2。 车站为地下三层：地下一层为物业层，地下二层为站厅层，地下三层为站台层。 车站于2013年5月完成招标，预计2013年12月份开工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线汉正街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">六渡桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">沿中山大道东西向敷设，位于友谊路和三民路之间中山大道正下方。车站总长约221m，标准段宽21.3m，深约16.5m，有效站台长140m，站台宽度为12m。车站总建筑面积11590.43m2，其中主体结构9578.05m2。设有4个出入口车站为地下两层，地下一层为站厅层，地下二层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线六渡桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">江汉路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于中山大道和交通路、前进五路交叉路口，沿中山大道方向设置。车站总长282m，宽22.3m，深16.9m，设有4个出入口，2组风亭，一个冷却塔，车站与2号线江汉路车站换乘。有效站台长140m，宽度为13m，车站覆土厚度2m。车站总建筑面积16437.3m2，其中主体结构12872.0m2。 车站为地下两层：地下一层为站厅层，地下二层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线江汉路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">大智路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">该站位于京汉大道大智路口东侧，站位呈东西走向，中心里程K8+90lm。大智路站设两个出入口，北侧出入口与新鸿基花园大楼紧邻，新鸿基花园大楼向东沿京汉大道北侧，是新建的京汉花园大楼和毗邻的3栋9层住宅楼，住宅楼与新鸿基花园大楼之间的三角地段是车站东北方向的球横小区的一个较重要出入口。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线大智路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">苗栗路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于江岸区，苗栗路与香港路交汇处北侧，南北向设置于香港路下方。车站为地下两层两跨岛式车站，共设置了4个直通地面的出入口，1个预留出入口，及2组风亭。其中Ⅰ号出入口设计预留过规划路地下通道。出入口及风亭均设置在香港路两侧。本站范围内设置了一条单渡线。车站总长293m，标准段宽21.3m，最大开挖深度约19m，明挖法施工。车站总建筑面积14884.3㎡，主体建筑面积11660㎡，附属建筑面积3224.3㎡。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线苗栗路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">香港路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站沿香港路方向布置，为地下一层侧式站台车站。车站总建筑面积1.72万m2，外包总长222.0m，有效站台中心里程处宽50.3m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线香港路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">三眼桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于香港路与三眼桥北路交叉路口下，车站沿香港路东西向布设。站位西北侧为馨兰花苑及香港丽都等高层住宅小区；西南侧为香港浅水湾材料市场及唐家墩菱角湖社区；东南侧为鹏飞湖庭高层住宅小区及香江新村住宅小区。为地下双层双跨岛式车站，车站总长230m，车站标准段宽度为21.1m，车站主体建筑面积10213.30m2。 车站分为两层：地下一层为站厅层，地下二层为站台层。 车站于2013年5月完成招标。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线三眼桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">唐家墩站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于武汉市江汉区，建设大道与唐家墩路交叉路口处，为6 号线与10 号线换乘车站。10 号线在发展大道上,上部有二环线立交，6 号线在唐家墩路上，上部有姑嫂树立交，两线车站形成十字型换乘。本站西南侧为中央锦城及工贸家电；东南侧为全国服装贸易中心及蓝空国粹香舍高层住宅小区；东北侧为顶琇.晶城高层住宅小区；西北侧为发展大厦。站位周边均为成熟的商业及住宅区域，工况复杂。车站总长227.8m，宽23.1m，有效站台宽13.6m，总建筑面积20650㎡。本站为地下三层双柱三跨结构，岛式站台，地下一层为站厅层，地下二层为设备层，地下三层为站台层。车站于2013年6月完成招标，2013年8月开工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线唐家墩站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">石桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站采用明挖法顺作法施工，为地下双柱三跨三层岛式车站，站台宽13m，结构型式为整体式钢筋混凝土矩形结构。车站顶部覆土约3.5m，车站外包总长186m，标准段宽度22.70m，车站外挂附属结构包含：3个出入口、2组风亭、2个安全口及1个换乘通道（6号线石桥站）。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线石桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">杨汊湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">位于武汉市江汉区，机电路与规划石桥路交汇处，车站南北向设置于规划石桥路下。车站总长229.4m，标准段宽度21.3m，有效站台中心里程为K27+377.246，车站埋深17.64m,中心覆土厚度4.100m，车站有效站台中心里程处±0.000的绝对标高为6.710m，轨面标高为5.630m,本站为地下两层车站，地下二层为站台层，车站采用12m宽岛式站台，有效站台长140m，屏蔽门的有效长度135.74m，线路中心线间距为15.2m。车站主体建筑面积10066.16m2，附属面积3454.28m2，总建筑面积13520.44m2。车站于2013年5月完成招标。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线杨汊湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">常青花园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">该车站为6号线与2号线的换乘车站，位于公园环路与常青花园中路交叉路口西侧，东西向设置于常青花园中路下。车站南北两侧现状为空地，西侧为地铁二号线常青花园站，东侧为常青医院。 该车站为地下三层14m岛式站台车站，总长180.98m，宽23.3m，总建筑面积21196.25m2。地下一层为站厅层，地下二层为设备层，地下三层为站台层。与2号线常青花园站实现通道换乘。 该车站于2013年6月完成招标，2013年10月开工</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线常青花园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_24" model="project.map.location">
+            <field name="sequence">24</field>
+            <field name="active">True</field>
+            <field name="name">轻工大学站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站位于武汉市东西湖区常青花园内，现常青花园中路与学府路交叉口处，东西向设置于常青花园中路下。车站北侧为空地，西侧为常青花园9村及11村，南侧为菜市场及超市，东侧为常青夜市。 车站为地下二层车站，地下一层为站厅层，地下二层为站台层。车站总长235.8m，标准段宽21.1m，车站埋深17.59m，覆土厚度4.0~4.5m，总建筑面积13285m2。 该车站于2013年6月完成招标，2013年10月开工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线轻工大学站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_25" model="project.map.location">
+            <field name="sequence">25</field>
+            <field name="active">True</field>
+            <field name="name">园博园北站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">该站与6号线一期站台换乘，采用明挖法施工，为地下二层车站。设5个出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线园博园北站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_26" model="project.map.location">
+            <field name="sequence">26</field>
+            <field name="active">True</field>
+            <field name="name">金银湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站位于金银湖路与金山大道交叉口，沿金山大道东西向布置。车站总长228m，标准段宽度20.1m，平均开挖深度16.7米，总建筑面积13367㎡。车站为地下二层11宽岛式站台车站，地下一层为站厅层，地下二层为站台层。。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线金银湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_27" model="project.map.location">
+            <field name="sequence">27</field>
+            <field name="active">True</field>
+            <field name="name">金银湖公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">环湖西路站为6号线一期工程的终点站，位于环湖路与金山大道交叉口，沿金山大道东西向布置。车站总长403m，标准段宽度20.5m，平均开挖深度18米，总建筑面积25460㎡。车站为地下二层11.4宽岛式站台车站，地下一层为站厅层，地下二层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线金银湖公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_28" model="project.map.location">
+            <field name="sequence">28</field>
+            <field name="active">True</field>
+            <field name="name">海口三路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">海口三路站位于金山大道与海口三路交叉口东侧，沿金山大道东西向布置，车站主体为地下二层单柱岛式站台车站。其中地下一层为站厅层，地下二层为站台层。车站主体结构外包总长度为224.0m，标准设计外包宽度为20.1m，采用明挖顺做法施工。车站共设4个地铁出入口，2部无障碍电梯，1个安全疏散口及2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线海口三路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_29" model="project.map.location">
+            <field name="sequence">29</field>
+            <field name="active">True</field>
+            <field name="name">二雅路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">二雅路站位于金山大道与二雅路交叉口东侧金山大道市政道路以下，沿金山大道东西向呈一字型布置；车站主体为地下两层单柱岛式站台车站，其中地下一层为站厅层，地下二层为站台层。车站总长度为228m，标准段外包宽度为20.1m。采用明挖顺作法施工。车站共设置4个地铁出入口，2部无障碍电梯，1个疏散口及2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线二雅路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_30" model="project.map.location">
+            <field name="sequence">30</field>
+            <field name="active">True</field>
+            <field name="name">五环体育中心站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">五环体育中心站位于金山大道和临空港大道交叉口，沿金山大道东西向布置；车站主体为地下二层单柱岛式站台车站，站前带单渡线。其中地下一层为站厅层，地下二层为站台层。车站主体结构外包总长度为302.2m，标准设计外包宽度为21.3m，采用明挖顺做法施工。车站共设4个地铁出入口，2部无障碍电梯，1个安全疏散口及2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线五环体育中心站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_31" model="project.map.location">
+            <field name="sequence">31</field>
+            <field name="active">True</field>
+            <field name="name">码头潭公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站位于七雄北路与金山大道交叉路口南侧，是与6号线二期的换乘车站。本站主体为高架三层侧式站台车站，其中一层为架空层、二层为站厅层、三层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线码头潭公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_6_station_32" model="project.map.location">
+            <field name="sequence">33</field>
+            <field name="active">True</field>
+            <field name="name">新城十一路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_6"/>
+            <field name="description">车站位于金山大道与规划新城十二路交叉路口，沿金山大道东西向布置。车站主体为地下二层岛式车站。车站全长402m，出入段线全长114m，标准段宽度20.5m。车站主体采用明挖顺做。车站共4个出入口（其中一个预留），1部无障碍电梯，5个疏散口及5座风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁6号线新城十一路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+    </data>
+</odoo>

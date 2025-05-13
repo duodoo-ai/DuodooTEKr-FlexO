@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 7号线 -->
+        <record id="project_project_wuhan_metro_line_7_station_1" model="project.map.location">
+            <field name="sequence">1</field>
+            <field name="active">True</field>
+            <field name="name">黄陂广场站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">黄陂广场站位于黄陂大道与百锦街交叉口，沿黄陂大道设置，为地下二层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线黄陂广场站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_2" model="project.map.location">
+            <field name="sequence">2</field>
+            <field name="active">True</field>
+            <field name="name">百泰路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">百泰路站位于双凤大道与百泰路交叉口的西侧，沿双凤大道设置，为地下二层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线百泰路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_3" model="project.map.location">
+            <field name="sequence">3</field>
+            <field name="active">True</field>
+            <field name="name">青仔村站(轨道产业基地)</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">青仔村站位于胡家堰湾附近，为高架三层车站。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线青仔村站(轨道产业基地)</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_4" model="project.map.location">
+            <field name="sequence">4</field>
+            <field name="active">True</field>
+            <field name="name">横店站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">横店站位于川龙大道与中兴路交叉路口北侧，沿川龙大道西侧敷设。车站长153m，为路侧地上三层高架站，车站主要工程包括车站主体，三处附属用房（附属设备，管理用房、消防站），过街天桥及两个出入口。桩基117根，承台14个，墩身32个。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线横店站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_5" model="project.map.location">
+            <field name="sequence">5</field>
+            <field name="active">True</field>
+            <field name="name">裕福路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线裕福路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_6" model="project.map.location">
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="name">天阳大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线天阳大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_7" model="project.map.location">
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="name">腾龙大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">腾龙大道站为地下二层岛式车站，车站全长255m，标准段总宽21.1m，车站埋深约16.81m。车站共设置4个出入口、2组风亭及1个安全出口。车站总建筑面积为20441.09㎡，其中主体建筑面积为13154.33㎡，附属建筑面积为7286.76㎡。明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线腾龙大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_8" model="project.map.location">
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="name">巨龙大道站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">巨龙大道站为地下三层的岛式车站，车站明挖段389m，暗挖段（停车线）长345m，车站共设置4个出入口及一个预留出入口，3组风亭。车站总建筑面积为42557㎡，其中，主体建筑面积为29792㎡（含夹层3814㎡），附属建筑面积为9047㎡，配线段暗挖面积3718㎡。明挖顺作法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线巨龙大道站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_9" model="project.map.location">
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="name">汤云海路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">汤云海站位于汤云海路与宋家岗东路交叉口处。车站主体为地下两层岛式车站。其中地下一层为设备层及公共区，地下二层为站台层。车站总长255.5m,车站标准段外包宽度20.1m。采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线汤云海路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_10" model="project.map.location">
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="name">马池站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">马池站沿环湖中路布置。车站主体为地下两层岛式车站。其中地下一层为设备层及公共区，地下二层为站台层。车站总长272m,车站标准段外包宽度20.1m。采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线马池站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_11" model="project.map.location">
+            <field name="sequence">11</field>
+            <field name="active">True</field>
+            <field name="name">园博园北站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">该站与6号线一期站台换乘，采用明挖法施工，为地下二层车站。设5个出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线园博园北站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_12" model="project.map.location">
+            <field name="sequence">12</field>
+            <field name="active">True</field>
+            <field name="name">园博园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">该站为地下二层单柱双跨明挖岛式站台车站，有效站台宽度为12m，车站总建筑面积为25777.95㎡。。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线园博园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_13" model="project.map.location">
+            <field name="sequence">13</field>
+            <field name="active">True</field>
+            <field name="name">常码头站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">该站为地下二层单柱两跨岛式站台车站，采用地下连续墙围护结构，明挖顺做法施工。设3个出入口、2组风道。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线常码头站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_14" model="project.map.location">
+            <field name="sequence">14</field>
+            <field name="active">True</field>
+            <field name="name">武汉商务区站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于王家墩商务区中心区域，商务东路、珠江路、商务西路及范海路形成的地块中。为地下两层侧式站台，主体结构采用盆式开挖结合盖挖逆作法施工。车站共设置12个出入口和4组风亭。车站于2011年7月开工建设。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线武汉商务区站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_15" model="project.map.location">
+            <field name="sequence">15</field>
+            <field name="active">True</field>
+            <field name="name">王家墩东站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">该站与2号线一期王家墩东站“T”型换乘，为地下三层钢筋砼矩形结构。共设置3个出入口、3个消防疏散口和2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线王家墩东站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_16" model="project.map.location">
+            <field name="sequence">16</field>
+            <field name="active">True</field>
+            <field name="name">取水楼站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站全长615.5m，标准段宽22.3m，共设置10个出入口，4组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线取水楼站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_17" model="project.map.location">
+            <field name="sequence">17</field>
+            <field name="active">True</field>
+            <field name="name">香港路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站沿香港路方向布置，为地下一层侧式站台车站。车站总建筑面积1.72万m2，外包总长222.0m，有效站台中心里程处宽50.3m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线香港路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_18" model="project.map.location">
+            <field name="sequence">18</field>
+            <field name="active">True</field>
+            <field name="name">三阳路站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">该站位于京汉大道与三阳路交叉路口的东侧，设置在京汉大道中的12M宽的绿化带上，东西走向，车站中心里程为CK8＋893m。车站的西北边为新建的30层三阳广场，交叉路口的东南边规划有公交枢纽站，紧靠公交停车场路边规划有自行车停车场，轨道交通用地以外为民宅及武汉二中分校的办公楼。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线三阳路站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_19" model="project.map.location">
+            <field name="sequence">19</field>
+            <field name="active">True</field>
+            <field name="name">徐家棚站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于和平大道原三三七铁路货场内，车站为地下三层侧式站台车站，车站长约575m，宽约13.9～66.7m，车站共设6个出入口和4组高风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线徐家棚站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_20" model="project.map.location">
+            <field name="sequence">20</field>
+            <field name="active">True</field>
+            <field name="name">湖北大学站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于武汉市武昌区，友谊大道与学院路交叉路口建一友谊大道下。地下二层单柱明挖侧岛式站台车站。共设置6个出入口、4组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线湖北大学站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_21" model="project.map.location">
+            <field name="sequence">21</field>
+            <field name="active">True</field>
+            <field name="name">新河街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于沙湖与内沙湖之间的友谊大道下方，新河街与友谊大道交叉路口的南侧。标准地下两层12m宽岛式站台车站，采用单柱双跨。共设置4各出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线新河街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_22" model="project.map.location">
+            <field name="sequence">22</field>
+            <field name="active">True</field>
+            <field name="name">螃蟹岬站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">螃蟹岬站位于武汉市武昌区友谊大道与中山路及公正路的交叉路口处，站位西北侧为武昌区政府办公大楼，西南侧为凤凰大厦，东端为长江广场。车站东端线路下穿武九铁路。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线螃蟹岬站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_23" model="project.map.location">
+            <field name="sequence">23</field>
+            <field name="active">True</field>
+            <field name="name">小东门站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于中山路和民主路交叉口以北，沿中山路路西敷设。为地下两层单柱双跨结构，岛式站台车站，近期共设置4各出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线小东门站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_24" model="project.map.location">
+            <field name="sequence">24</field>
+            <field name="active">True</field>
+            <field name="name">武昌火车站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于新建武昌火车站房的北侧，横跨中山路，中山路下穿道位于车站上方；车站西端位于电车场的下方，东端地面规划为公交枢纽车场。 车站为地下两层车站：地下一层为站厅层，地下二层为站台层。总建筑面积为4131.556 m2。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线武昌火车站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_25" model="project.map.location">
+            <field name="sequence">25</field>
+            <field name="active">True</field>
+            <field name="name">园博园北站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">该站与6号线一期站台换乘，采用明挖法施工，为地下二层车站。设5个出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线园博园北站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_26" model="project.map.location">
+            <field name="sequence">26</field>
+            <field name="active">True</field>
+            <field name="name">瑞安街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于武汉市武昌区，南湖花园恒安路和瑞安街交叉路口下，沿恒安路方向敷设。车站总建筑面积为31669㎡，其中主体建筑面积为26176㎡，附属建筑面积为5493㎡。近期共设8各出入口、4组风亭。外包总长610.6m，标准段总宽21.1m，站台宽度为12m，车站埋深约16.98m。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线瑞安街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_27" model="project.map.location">
+            <field name="sequence">27</field>
+            <field name="active">True</field>
+            <field name="name">建安街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于武汉市武昌区，恒安路与建安街的交叉路口下，沿恒安路敷设。为标准段地下两层岛式站台车站，车站主体结构为双层双跨与双层三跨矩形框架结构，采用明挖法施工。主体结构采用钢筋砼箱型结构，围护结构采用钻孔灌注桩+内支撑，车站两端区间采用盾构施工。近期共设置4个出入口、2组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线建安街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_28" model="project.map.location">
+            <field name="sequence">28</field>
+            <field name="active">True</field>
+            <field name="name">湖工大站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">环湖西路站为6号线一期工程的终点站，位于环湖路与金山大道交叉口，沿金山大道东西向布置。车站总长403m，标准段宽度20.5m，平均开挖深度18米，总建筑面积25460㎡。车站为地下二层11.4宽岛式站台车站，地下一层为站厅层，地下二层为站台层。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线湖工大站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_29" model="project.map.location">
+            <field name="sequence">29</field>
+            <field name="active">True</field>
+            <field name="name">板桥站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于武汉市洪山区，板桥中学北侧李纸路上。地下二层单柱双跨明挖岛式站台车站。近期共设置6个出入口、2个紧急疏散通道、3组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线板桥站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_30" model="project.map.location">
+            <field name="sequence">30</field>
+            <field name="active">True</field>
+            <field name="name">野芷湖站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">位于珞狮南路、野芷湖大桥、武大铁路南环线、三环线所围合的区域内。7号线一期野芷湖站为地面一层站厅，地下一层为岛式站台，与8号线一期“T”型换乘。近期共设置6个出入口(含2个7、8号线共用出入口和1个8号线地下出入口)、5组风亭。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线野芷湖站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_31" model="project.map.location">
+            <field name="sequence">31</field>
+            <field name="active">True</field>
+            <field name="name">新路村站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于文化大道与规划新路村北路交叉路口，沿文化大道布置。本站为11m岛式地下两层车站，外包总长261.2m，标准段20.1m，共设4个出入口、2组风亭。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线新路村站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_32" model="project.map.location">
+            <field name="sequence">32</field>
+            <field name="active">True</field>
+            <field name="name">大花岭站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于文化大道与大花岭街交叉口北侧，沿文化大道南北向布置。本站为12m岛式地下两层车站，总建筑面积22594 m2，外包总长344.6m，标准段宽21.1m，主体结构基坑深度16.7m，共设6个出入口、3组风亭。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线大花岭站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_33" model="project.map.location">
+            <field name="sequence">33</field>
+            <field name="active">True</field>
+            <field name="name">江夏客厅站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于腾讯大道以北，文华佳园东侧，沿文化大道南北向布置。本站为13m岛式地下两层车站，总建筑面积19252m2，外包总长282m，标准段宽22.1m，主体结构基坑深度17.5~19.7m，共设4个出入口、2组风亭。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线江夏客厅站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_34" model="project.map.location">
+            <field name="sequence">34</field>
+            <field name="active">True</field>
+            <field name="name">谭鑫培公园站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于文化大道与世纪大道交叉路口北侧，沿文化大道南北向布置。本站为13m岛式地下两层车站，站后设停车线，总建筑面积44256m2，外包总624m，标准段宽22.1m，主体结构基坑深度17.3~20.3m，共设13个出入口、4组风亭。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线谭鑫培公园站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_35" model="project.map.location">
+            <field name="sequence">35</field>
+            <field name="active">True</field>
+            <field name="name">北华街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于北华街和文华路交叉路口，沿文华路方向敷设。本站为13m岛式地下两层车站，总建筑面积17722m2，外包总长274m，标准段宽22.1m，主体结构基坑深度18.9m，共设4个出入口、2组风亭。车站施工采用明挖法施工。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线北华街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_36" model="project.map.location">
+            <field name="sequence">36</field>
+            <field name="active">True</field>
+            <field name="name">纸坊大街站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description">车站位于文华路和纸坊大街交叉口以北，沿文华路南北向布置。本站为13m岛式地下两层车站，总建筑面积29294m2，外包总长395m，标准段宽22.1m，主体结构基坑深度17.1~27.1m，共设7个出入口、4组风亭。车站施工采用明挖法施工。</field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线纸坊大街站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+        <record id="project_project_wuhan_metro_line_7_station_37" model="project.map.location">
+            <field name="sequence">37</field>
+            <field name="active">True</field>
+            <field name="name">青龙山地铁小镇站</field>
+            <field name="project_id" ref="odoo_project.project_project_wuhan_metro_line_7"/>
+            <field name="description"></field>
+            <field name="state_id" ref="base.state_cn_HB"/>
+            <field name="city">武汉市</field>
+            <field name="street">武汉地铁7号线青龙山地铁小镇站</field>
+            <field name="country_id" ref="base.cn"/>
+        </record>
+
+    </data>
+</odoo>

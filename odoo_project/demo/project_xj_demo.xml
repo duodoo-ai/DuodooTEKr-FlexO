@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="project_project_xj_1" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">新疆供水线路1</field>
+            <field name="pipeline_no">1001</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">1</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_2" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">新疆供水线路2</field>
+            <field name="pipeline_no">1002</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">2</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_3" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">新疆供水线路3</field>
+            <field name="pipeline_no">1003</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">3</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_4" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">新疆供水线路4</field>
+            <field name="pipeline_no">1004</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">4</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_5" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">克拉玛依线路1</field>
+            <field name="pipeline_no">1005</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">5</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_6" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">克拉玛依线路2</field>
+            <field name="pipeline_no">1006</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">6</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_7" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">克拉玛依线路3</field>
+            <field name="pipeline_no">1007</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">7</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+        <record id="project_project_xj_8" model="project.project">
+            <field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+            <field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+            <field name="name">克拉玛依线路4</field>
+            <field name="pipeline_no">1008</field>
+            <field name="label_tasks"></field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="active">True</field>
+            <field name="sequence">7</field>
+            <field name="last_update_status">done</field>
+            <field name="stage_id" ref="odoo_project.project_project_stage_running"/>
+        </record>
+
+
+
+    </data>
+</odoo>
