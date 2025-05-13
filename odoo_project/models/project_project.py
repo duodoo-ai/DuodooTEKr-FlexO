@@ -149,13 +149,11 @@ class Project(models.Model):
                                 )
                             ]
                         ),
-                        # "total_traffic": sum(projects.mapped("total_traffic")),
                         "total_traffic": sum(item['total_traffic'] for item in projects),
                         "monthly_traffic": sum(item['monthly_traffic'] for item in projects),
                         "seasonal_traffic": sum(item['seasonal_traffic'] for item in projects),
                         "year_traffic": sum(item['year_traffic'] for item in projects),
                     }
-                    # print("发送仪表板数据数据-------------", dashboard_data)
                     # 发送仪表板数据
                     self.env.ref("project.group_project_user").users._bus_send(
                         "online_sync_pipeline_dashboard_data",
@@ -200,11 +198,6 @@ class Project(models.Model):
                     ).strftime(
                         "%Y-%m-%d %H:%M:%S"
                     ),  # 管线第一次启用时间
-                    # "pipeline_running_time": fields.Datetime.context_timestamp(
-                    #     self_tz, project.pipeline_running_time
-                    # ).strftime(
-                    #     "%Y-%m-%d %H:%M:%S"
-                    # ),  # 管线运行时间
                     "running_stage_id": running_stage_id,
                     "stage": project.stage_id.code,
                     "duration_tracking": project.duration_tracking, # 管道运行时间

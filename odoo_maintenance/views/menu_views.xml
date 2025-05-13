@@ -18,7 +18,7 @@
     <!--大模块，工单管理-->
     <menuitem
             id="menu_maintain_root"
-            name="Maintain work order"
+            name="Maintenance Work Order"
             web_icon="odoo_maintenance,static/description/icon_worder.png"
             sequence="481"/>
     <!--子模块，子菜单菜单-->
@@ -98,31 +98,16 @@
     <!--子模块，设置子菜单 技术指标-->
     <menuitem
         id="menu_view_equipment_spec_meu"
-        name="技术指标"
+        name="Technical Indicators"
         parent="menu_maintenance_root"
         action="odoo_maintenance.action_view_equipment_spec"
-        groups="group_equipment_spec_admin"
         sequence="50"/>
 
     <!--子模块，设置子菜单 技术指标-->
     <menuitem
         id="menu_view_equipment_monitoring_meu"
-        name="流体监控"
+        name="Fluid Monitor"
         parent="menu_maintenance_root"
         action="odoo_maintenance.action_view_equipment_monitoring_2025"
-        groups="odoo_maintenance.group_equipment_monitor_admin"
         sequence="60"/>
-
-<!--    <menuitem-->
-<!--            id="menu_equipment_inspection"-->
-<!--            name="设备巡检"-->
-<!--            parent="menu_maintenance_root"-->
-<!--            action="action_equipment_inspection"-->
-<!--            sequence="215"/>-->
-<!--    <menuitem-->
-<!--            id="menu_equipment_inspection_list"-->
-<!--            name="巡检记录"-->
-<!--            parent="menu_equipment_inspection"-->
-<!--            action="action_equipment_inspection"-->
-<!--            groups="base.group_user"/>-->
 </odoo>

@@ -72,7 +72,7 @@ msgstr "完整名称"
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_maintenance_configuration_meu
 msgid "Configuration"
-msgstr "配置"
+msgstr "配置管理"
 
 #. module: odoo_maintenance
 #: model:ir.model.fields.selection,name:odoo_maintenance.selection__maintenance_equipment_category__technical_type__control
@@ -118,7 +118,7 @@ msgstr "电子类"
 #: model:ir.model.fields,field_description:odoo_maintenance.field_equipment_inspection__equipment_id
 #: model:ir.ui.menu,name:odoo_maintenance.menu_equipment_form_meu
 msgid "Equipment"
-msgstr "设备"
+msgstr "设备管理"
 
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_maintenance_cat
@@ -133,7 +133,7 @@ msgstr "设备类别"
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_maintenance_root
 msgid "Equipment Management"
-msgstr "设备"
+msgstr "设备管理"
 
 #. module: odoo_maintenance
 #: model_terms:ir.ui.view,arch_db:odoo_maintenance.qr_template
@@ -428,7 +428,7 @@ msgstr "保养请求"
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_m_request_form_sub
 msgid "Maintenance Requests"
-msgstr "维护安排"
+msgstr "工单安排"
 
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_maintenance_stage_configuration
@@ -1617,6 +1617,15 @@ msgstr ""
 msgid "驱动类型"
 msgstr ""
 
+#. module: odoo_maintenance
+#: model:ir.ui.menu,name:odoo_maintenance.menu_view_equipment_monitoring_meu
+msgid "Fluid Monitor"
+msgstr "流量监测"
+
+#. module: odoo_maintenance
+#: model:ir.ui.menu,name:odoo_maintenance.menu_view_equipment_spec_meu
+msgid "Technical Indicators"
+msgstr "技术指标"
 
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__maintenance_type__corrective

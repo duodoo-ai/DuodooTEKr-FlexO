@@ -607,7 +607,7 @@ msgstr "请输入位置的名称"
 #. module: odoo_project
 #: model_terms:ir.ui.view,arch_db:odoo_project.view_project_map_location_form
 msgid "Please select an project"
-msgstr "请选择一个项目"
+msgstr "请选择一个管线"
 
 #. module: odoo_project
 #: model:project.task.type,name:odoo_project.project_stage_previous_studie
@@ -621,37 +621,37 @@ msgstr "前期研究"
 #: model_terms:ir.ui.view,arch_db:odoo_project.view_project_map_location_form
 #: model_terms:ir.ui.view,arch_db:odoo_project.view_project_map_location_list
 msgid "Project"
-msgstr "项目"
+msgstr "管线"
 
 #. module: odoo_project
 #: model:ir.model.fields,field_description:odoo_project.field_project_project__locations
 msgid "Project Locations"
-msgstr "项目地点"
+msgstr "管线地点"
 
 #. module: odoo_project
 #: model:ir.model.fields,field_description:odoo_project.field_maintenance_equipment__location_id
 #: model_terms:ir.ui.view,arch_db:odoo_project.view_project_map_location_form
 msgid "Project Map Location"
-msgstr "项目地图位置"
+msgstr "管线地图位置"
 
 #. module: odoo_project
 #: model:ir.actions.act_window,name:odoo_project.action_project_map_location
 #: model:ir.ui.menu,name:odoo_project.menu_projects_project_map_location
 msgid "Project Map Locations"
-msgstr "项目地图位置"
+msgstr "管线地图位置"
 
 #. module: odoo_project
 #. odoo-javascript
 #: code:odoo_project/static/src/large_screen/components/overview/overview.xml:0
 #: code:odoo_project/static/src/large_screen/components/overview/overview.xml:0
 msgid "Project Overview"
-msgstr "项目概况"
+msgstr "管线概况"
 
 #. module: odoo_project
 #: model:ir.model,name:odoo_project.model_project_project_stage
 #: model:ir.ui.menu,name:odoo_project.menu_projects_project_group_stage
 msgid "Project Stage"
-msgstr "项目阶段"
+msgstr "管线阶段"
 
 #. module: odoo_project
 #: model:project.task.type,name:odoo_project.project_stage_project_approval
@@ -661,12 +661,12 @@ msgstr "立项获批"
 #. module: odoo_project
 #: model:ir.model,name:odoo_project.model_project_map_location
 msgid "Project map location"
-msgstr "项目地图位置"
+msgstr "管线地图位置"
 
 #. module: odoo_project
 #: model:ir.ui.menu,name:odoo_project.menu_projects_map
 msgid "Projects Map"
-msgstr "项目地图"
+msgstr "管线地图"
 
 #. module: odoo_project
 #: model:ir.model.fields,field_description:odoo_project.field_project_map_location__rating_ids
@@ -1030,3 +1030,15 @@ msgstr ""
 #: model:project.project,name:odoo_project.project_project_xj_4
 msgid "新疆供水线路4"
 msgstr ""
+
+
+#. module: project
+#: model:ir.ui.menu,name:project.menu_main_pm
+msgid "Project"
+msgstr "管线管理"
+
+#. module: project
+#: model:ir.ui.view,arch_db:project.menu_projects
+#: model:ir.ui.view,arch_db:project.menu_projects_group_stage
+msgid "Projects"
+msgstr "管线管理"

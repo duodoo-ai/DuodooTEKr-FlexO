@@ -23,6 +23,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/dtu_data_views.xml',
+        'views/menu_hide_views.xml',
         'views/dtu_menu_views.xml',
     ],
     'demo': [

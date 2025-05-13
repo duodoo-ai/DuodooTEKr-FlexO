@@ -15,7 +15,7 @@
     </menuitem>
 
 
-    <menuitem name="Monitor the large screen" id="menu_projects_large_screen" sequence="70" action="action_projects_large_screen" web_icon="odoo_project,static/description/large_screen.png" groups="project.group_project_manager,project.group_project_user" />
+<!--    <menuitem name="Monitor the large screen" id="menu_projects_large_screen" sequence="70" action="action_projects_large_screen" web_icon="odoo_project,static/description/large_screen.png" groups="project.group_project_manager,project.group_project_user" />-->
 
 
 

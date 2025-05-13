@@ -160,3 +160,9 @@ msgstr "GSM纬度"
 #: model:ir.model.fields,field_description:odoo_dtu.field_dtu_data__Company
 msgid "Company"
 msgstr "公司"
+
+#. module: odoo_dtu
+#: model:ir.ui.menu,name:odoo_dtu.iot_root_menu
+msgid "IoT"
+msgstr "物联网(IoT)"
+
