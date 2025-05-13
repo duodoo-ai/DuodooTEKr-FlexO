@@ -18,38 +18,39 @@
     "installable": True,
     "auto_install": ["eist_web_theme","odoo_project"],
     "post_init_hook": "post_init_hook",  # 安装后执行的方法
-    "assets": {
-        "web._assets_primary_variables": [
-            (
-                "replace",
-                "eist_web_theme/static/src/scss/primary_variables.scss",
+    # "assets": {
+    #     "web._assets_primary_variables": [
+    #         (
+    #             "replace",
+    #             "eist_web_theme/static/src/scss/primary_variables.scss",
                 # "odoo_web_theme/static/src/scss/primary_variables.scss",
-            ),
-        ],
-        "web.assets_backend": [
-            (
-                "after",
-                "eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js",
+        #     ),
+        # ],
+        # "web.assets_backend": [
+        #     (
+        #         "after",
+        #         "eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.js",
                 # "odoo_web_theme/static/src/core/theme_colorlist/theme_colorlist.js",
-            ),
-            (
-                "replace",
-                "eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.scss",
+            # ),
+            # (
+            #     "replace",
+            #     "eist_web_theme/static/src/core/theme_colorlist/theme_colorlist.scss",
                 # "odoo_web_theme/static/src/core/theme_colorlist/theme_colorlist.scss",
-            ),
-            (
-                "after",
-                "eist_web_theme/static/src/views/fields/theme_color_picker/theme_color_picker.js",
+            # ),
+            # (
+            #     "after",
+            #     "eist_web_theme/static/src/views/fields/theme_color_picker/theme_color_picker.js",
                  # "odoo_web_theme/static/src/views/fields/theme_color_picker/theme_color_picker.js",
-            ),
-            (
-                "after",
-                "eist_web_theme/static/src/webclient/webclient_theme.scss",
+            # ),
+            # (
+            #     "after",
+            #     "eist_web_theme/static/src/webclient/webclient_theme.scss",
                 # "odoo_web_theme/static/src/webclient/webclient_theme.scss",
-            ),
-            "odoo_web_theme/static/src/webclient/navbar/**/*",
+            # ),
+            # "odoo_web_theme/static/src/webclient/navbar/**/*",
             # "odoo_web_theme/static/src/webclient/sidebar_menu/**/*",
             # "odoo_web_theme/static/src/webclient/footer/**/*",
-        ]
-    },
+    #     ]
+    # },
 }
+
