@@ -10,12 +10,6 @@
             <field name="stage_id" position="after">
                 <field name="pipeline_diameter" optional="show"/>
                 <field name="pipeline_length" optional="show"/>
-                <!--                <field name="monthly_traffic" optional="show"/>-->
-                <!--                <field name="seasonal_traffic" optional="show"/>-->
-                <!--                <field name="year_traffic" optional="show"/>-->
-                <!--                <field name="real_input_traffic" optional="show"/>-->
-                <!--                <field name="real_output_traffic" optional="show"/>-->
-                <!--                <field name="total_traffic" optional="show"/>-->
             </field>
         </field>
     </record>
@@ -31,7 +25,6 @@
                     <field name="pipeline_no"/>
                     <field name="pipeline_diameter"/>
                     <field name="pipeline_activation_time"/>
-                    <!-- <field name="duration_tracking" widget="jsonb"/> -->
                     <field name="pipeline_length"/>
                 </group>
             </xpath>
@@ -66,7 +59,6 @@
 
     <record id="action_view_project_route_map" model="ir.actions.act_window">
         <field name="name">Route map</field>
-        <!-- <field name="path">project-map</field> -->
         <field name="res_model">project.project</field>
         <field name="domain">[]</field>
         <field name="context">{}</field>
@@ -76,18 +68,78 @@
         ]"/>
     </record>
 
-    <!-- <record id="action_projects_large_screen" model="ir.actions.act_url">
-        <field name="name">Monitor the large screen</field>
-        <field name="type">ir.actions.act_url</field>
-        <field name="target">new</field>
-        <field name="url">/project/large_screen</field>
-    </record> -->
-
-    <record id="action_projects_large_screen" model="ir.actions.client">
-        <field name="name">Monitor the large screen</field>
-        <field name="path">pipeline_large_screen</field>
-        <field name="tag">pipeline_large_screen</field>
-        <field name="target">fullscreen</field>
+<!--    <record id="action_projects_large_screen" model="ir.actions.client">-->
+<!--        <field name="name">Monitor the large screen</field>-->
+<!--        <field name="path">pipeline_large_screen</field>-->
+<!--        <field name="tag">pipeline_large_screen</field>-->
+<!--        <field name="target">fullscreen</field>-->
+<!--    </record>-->
+    <!-- 创建新项目动作，排除kanban视图 -->
+    <record id="open_view_project_all_custom" model="ir.actions.act_window">
+        <field name="name">Projects (Custom)</field>
+        <field name="res_model">project.project</field>
+        <field name="domain">[]</field>
+        <field name="context">{'display_milestone_deadline': True}</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="project.view_project_project_filter"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No projects found. Let's create one!
+            </p>
+            <p>
+                Create projects to organize your tasks. Define a different workflow for each project.
+            </p>
+        </field>
     </record>
 
+    <!-- 更新菜单项指向新动作 -->
+    <record id="project.menu_projects" model="ir.ui.menu">
+        <field name="action" ref="open_view_project_all_custom"/>
+    </record>
+
+    <record id="open_view_project_all_group_stage_custom" model="ir.actions.act_window">
+        <field name="name">Projects</field>
+        <field name="res_model">project.project</field>
+        <field name="context">{'display_milestone_deadline': True}</field>
+        <field name="domain">[]</field>
+        <field name="view_mode">list,form,calendar,activity</field>
+        <field name="search_view_id" ref="project.view_project_project_filter"/>
+        <field name="target">main</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No projects found. Let's create one!
+            </p>
+            <p>
+                Projects contain tasks on the same topic, and each has its own dashboard.
+            </p>
+        </field>
+    </record>
+    <!-- 更新菜单项指向新动作 -->
+    <record id="project.menu_projects_group_stage" model="ir.ui.menu">
+        <field name="action" ref="open_view_project_all_group_stage_custom"/>
+    </record>
+
+    <record id="project_view_project_list" model="ir.ui.view">
+        <field name="name">inherit.project.project.list</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//list/button[@name='action_view_tasks']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="project_edit_project_form" model="ir.ui.view">
+        <field name="name">inherit.project.project.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/div/button[@name='action_view_tasks']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//sheet/div/button[@name='project_update_all_action']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
 </odoo>

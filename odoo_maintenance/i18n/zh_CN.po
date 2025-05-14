@@ -428,7 +428,7 @@ msgstr "保养请求"
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_m_request_form_sub
 msgid "Maintenance Requests"
-msgstr "工单安排"
+msgstr "工单管理"
 
 #. module: odoo_maintenance
 #: model:ir.ui.menu,name:odoo_maintenance.menu_maintenance_stage_configuration

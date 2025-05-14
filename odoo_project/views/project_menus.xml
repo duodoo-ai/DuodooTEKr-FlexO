@@ -4,7 +4,16 @@
     <record id="project.menu_project_management" model="ir.ui.menu">
         <field name="active" eval="False"/>
     </record>
-        <record id="project.menu_project_report" model="ir.ui.menu">
+    <record id="project.menu_project_report" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="project.menu_projects_config_group_stage" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="project.menu_projects_config" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="project.menu_project_config_project" model="ir.ui.menu">
         <field name="active" eval="False"/>
     </record>
 

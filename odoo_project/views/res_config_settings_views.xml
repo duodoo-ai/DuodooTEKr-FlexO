@@ -86,6 +86,22 @@
             <xpath expr="//setting[@id='project_stages']/field[@name='group_project_stages']" position="attributes">
                 <attribute name="readonly">1</attribute>
             </xpath>
+            <xpath expr="//setting[@id='recurring_tasks_setting']/field[@name='group_project_recurring_tasks']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//setting[@id='task_dependencies_setting']/field[@name='group_project_task_dependencies']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//setting[@id='project_milestone']/field[@name='group_project_milestone']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//app/block[@name='project_time']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//app/block[@name='analytic']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
         </field>
     </record>
 </odoo>

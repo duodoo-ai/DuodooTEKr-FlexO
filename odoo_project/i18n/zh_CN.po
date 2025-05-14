@@ -1041,4 +1041,12 @@ msgstr "管线管理"
 #: model:ir.ui.menu,name:project.menu_projects
 #: model:ir.ui.menu,name:project.menu_projects_group_stage
 msgid "Projects"
-msgstr "管线图谱"
+msgstr "管线管理"
+
+#. module: odoo_project
+#: model:ir.ui.menu,name:project.menu_projects
+#: model:ir.ui.menu,name:project.menu_projects_group_stage
+#: model:ir.actions.act_window,name:odoo_project.open_view_project_all_custom
+#: model:ir.actions.act_window,name:odoo_project.open_view_project_all_group_stage_custom
+msgid "Projects"
+msgstr "管线管理"
