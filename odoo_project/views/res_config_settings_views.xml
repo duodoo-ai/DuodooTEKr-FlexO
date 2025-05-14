@@ -6,9 +6,7 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="project.res_config_settings_view_form"/>
         <field name="arch" type="xml">
-
             <block name="analytic" position="after">
-
                 <block title="Electronic map of water supply pipelines" name="water_supply_pipeline_emap">
                     <setting string="E-map">
                         <div class ="content-group">
@@ -82,11 +80,12 @@
                         <field name="water_supply_pipeline_large_screen_background_color" string="Background color" widget="color"/>
                     </setting>
                 </block>
-
             </block>
+
+            <!-- 使用XPath精确定位到group_project_stages字段并添加readonly属性 -->
+            <xpath expr="//setting[@id='project_stages']/field[@name='group_project_stages']" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </xpath>
         </field>
-
     </record>
-
-
 </odoo>

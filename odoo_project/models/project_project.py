@@ -185,6 +185,7 @@ class Project(models.Model):
         running_stage_id = (
             self.env["project.project.stage"].sudo().search([("code", "=", "running")], limit=1)
         ).id
+        print(running_stage_id)
         for project in projects:
             locations = []
             if project.locations:

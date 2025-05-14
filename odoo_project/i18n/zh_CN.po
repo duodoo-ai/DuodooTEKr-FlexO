@@ -716,12 +716,12 @@ msgstr "实时输出流量"
 #. module: odoo_project
 #: model:ir.ui.menu,name:odoo_project.menu_projects_project_route_map
 msgid "Route Map"
-msgstr "路线图"
+msgstr "管线路线图"
 
 #. module: odoo_project
 #: model:ir.actions.act_window,name:odoo_project.action_view_project_route_map
 msgid "Route map"
-msgstr "路线图"
+msgstr "管线路线图"
 
 #. module: odoo_project
 #: model:project.project.stage,name:odoo_project.project_project_stage_running
@@ -1038,7 +1038,7 @@ msgid "Project"
 msgstr "管线管理"
 
 #. module: project
-#: model:ir.ui.view,arch_db:project.menu_projects
-#: model:ir.ui.view,arch_db:project.menu_projects_group_stage
+#: model:ir.ui.menu,name:project.menu_projects
+#: model:ir.ui.menu,name:project.menu_projects_group_stage
 msgid "Projects"
-msgstr "管线管理"
+msgstr "管线图谱"
